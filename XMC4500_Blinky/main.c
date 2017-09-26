@@ -1,6 +1,7 @@
 /*!
  * \brief Simple XMC Relax Kit demo program.
  * \author M. Horauer
+ * \modified by Lukas Reibenwein
  * \version 0.1
  */
 #include "xmc4500.h"
