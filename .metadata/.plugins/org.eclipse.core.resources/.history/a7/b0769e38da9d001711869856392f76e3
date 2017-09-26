@@ -1,0 +1,36 @@
+/*!
+ * \brief Simple XMC Relax Kit demo program.
+ * \author M. Horauer
+ * \version 0.1
+ */
+#include "xmc4500.h"
+
+#define STACK_TOP 0x2000FFFF
+
+//! Function Prototypes
+int main(void);
+void wait(unsigned long);
+
+//! Vector table
+unsigned int *myvectors[2]
+__attribute__ ((section("vectors"))) = {
+    (unsigned int *) STACK_TOP,
+    (unsigned int *) main,
+};
+
+//! \brief Main routine that toggles are port with
+int main(void)
+{
+
+
+	while(1) {
+
+  }
+}
+
+void wait(unsigned long delay) {
+  while(delay--) {
+    __NOP();
+  }
+}
+/*! EOF */

@@ -1,0 +1,98 @@
+10:39:14 **** Incremental Build of configuration Debug for project XMC4500_USIC_UART ****
+make all 
+'Building file: ../main.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"D:\Studium_FH\2017_WS\Embedded_Systems_Software_Design\XMC4500_USIC_UART\Libraries\CM4\inc" -std=gnu11 -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: XMC4500_USIC_UART.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "D:\Studium_FH\2017_WS\Embedded_Systems_Software_Design\XMC4500_USIC_UART\Linker\xmc4500-1024.ld" -nostartfiles -L"D:\Studium_FH\2017_WS\Embedded_Systems_Software_Design\XMC4500_USIC_UART\Linker" -Wl,-Map,"XMC4500_USIC_UART.map" -o "XMC4500_USIC_UART.elf"  ./main.o   
+'Finished building target: XMC4500_USIC_UART.elf'
+' '
+'Invoking: Cross ARM GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary "XMC4500_USIC_UART.elf"  "XMC4500_USIC_UART.bin"
+'Finished building: XMC4500_USIC_UART.bin'
+' '
+'Invoking: Cross ARM GNU Create Listing'
+arm-none-eabi-objdump --source --all-headers --demangle --line-numbers --wide "XMC4500_USIC_UART.elf" > "XMC4500_USIC_UART.lst"
+'Finished building: XMC4500_USIC_UART.lst'
+' '
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley --totals "XMC4500_USIC_UART.elf"
+   text	   data	    bss	    dec	    hex	filename
+    168	      0	      0	    168	     a8	XMC4500_USIC_UART.elf
+    168	      0	      0	    168	     a8	(TOTALS)
+'Finished building: XMC4500_USIC_UART.siz'
+' '
+10:39:20 **** Clean-only build of configuration Debug for project XMC4500_Blinky ****
+make clean 
+rm -rf  ./main.o  XMC4500_Blinky.bin  XMC4500_Blinky.lst  XMC4500_Blinky.siz  ./main.d  XMC4500_Blinky.elf
+makefile:70: recipe for target 'clean' failed
+process_begin: CreateProcess(NULL, rm -rf ./main.o XMC4500_Blinky.bin XMC4500_Blinky.lst XMC4500_Blinky.siz ./main.d XMC4500_Blinky.elf, ...) failed.
+make (e=2): Das System kann die angegebene Datei nicht finden.
+
+make: [clean] Error 2 (ignored)
+' '
+10:39:20 **** Build of configuration Debug for project XMC4500_Blinky ****
+make all 
+'Building target: XMC4500_USIC_UART.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "D:\Studium_FH\2017_WS\Embedded_Systems_Software_Design\XMC4500_USIC_UART\Linker\xmc4500-1024.ld" -nostartfiles -L"D:\Studium_FH\2017_WS\Embedded_Systems_Software_Design\XMC4500_USIC_UART\Linker" -Wl,-Map,"XMC4500_USIC_UART.map" -o "XMC4500_USIC_UART.elf"  ./main.o   
+'Finished building target: XMC4500_USIC_UART.elf'
+' '
+'Invoking: Cross ARM GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary "XMC4500_USIC_UART.elf"  "XMC4500_USIC_UART.bin"
+'Finished building: XMC4500_USIC_UART.bin'
+' '
+'Invoking: Cross ARM GNU Create Listing'
+arm-none-eabi-objdump --source --all-headers --demangle --line-numbers --wide "XMC4500_USIC_UART.elf" > "XMC4500_USIC_UART.lst"
+'Finished building: XMC4500_USIC_UART.lst'
+' '
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley --totals "XMC4500_USIC_UART.elf"
+   text	   data	    bss	    dec	    hex	filename
+    156	      0	      0	    156	     9c	XMC4500_USIC_UART.elf
+    156	      0	      0	    156	     9c	(TOTALS)
+'Finished building: XMC4500_USIC_UART.siz'
+' '
+10:40:23 **** Clean-only build of configuration Debug for project XMC4500_USIC_UART ****
+make clean 
+rm -rf  ./main.o  XMC4500_USIC_UART.bin  XMC4500_USIC_UART.lst  XMC4500_USIC_UART.siz  ./main.d  XMC4500_USIC_UART.elf
+makefile:70: recipe for target 'clean' failed
+process_begin: CreateProcess(NULL, rm -rf ./main.o XMC4500_USIC_UART.bin XMC4500_USIC_UART.lst XMC4500_USIC_UART.siz ./main.d XMC4500_USIC_UART.elf, ...) failed.
+make (e=2): Das System kann die angegebene Datei nicht finden.
+
+make: [clean] Error 2 (ignored)
+' '
+10:40:23 **** Incremental Build of configuration Debug for project XMC4500_USIC_UART ****
+make all 
+'Building target: XMC4500_Blinky.elf'
+'Invoking: Cross ARM C Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "D:\Software\eclipse\workspace_2\XMC4500_Blinky\Linker\xmc4500-1024.ld" -nostartfiles -L"D:\Software\eclipse\workspace_2\XMC4500_Blinky\Linker" -Wl,-Map,"XMC4500_Blinky.map" -o "XMC4500_Blinky.elf"  ./main.o   
+'Finished building target: XMC4500_Blinky.elf'
+' '
+'Invoking: Cross ARM GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary "XMC4500_Blinky.elf"  "XMC4500_Blinky.bin"
+'Finished building: XMC4500_Blinky.bin'
+' '
+'Invoking: Cross ARM GNU Create Listing'
+arm-none-eabi-objdump --source --all-headers --demangle --line-numbers --wide "XMC4500_Blinky.elf" > "XMC4500_Blinky.lst"
+'Finished building: XMC4500_Blinky.lst'
+' '
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley --totals "XMC4500_Blinky.elf"
+   text	   data	    bss	    dec	    hex	filename
+    168	      0	      0	    168	     a8	XMC4500_Blinky.elf
+    168	      0	      0	    168	     a8	(TOTALS)
+'Finished building: XMC4500_Blinky.siz'
+' '
+10:45:14 **** Incremental Build of configuration Debug for project XMC4500_USIC_UART ****
+make all 
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley --totals "XMC4500_USIC_UART.elf"
+   text	   data	    bss	    dec	    hex	filename
+    168	      0	      0	    168	     a8	XMC4500_USIC_UART.elf
+    168	      0	      0	    168	     a8	(TOTALS)
+'Finished building: XMC4500_USIC_UART.siz'
+' '

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="D:\Software"/>
+		<item value="D:\Studium_FH\2017_WS\Embedded_Systems_Software_Design\XMC4500_USIC_UART"/>
+		<item value="D:\Software\eclipse\workspace_2"/>
+	</list>
+	<section name="ExternalProjectImportWizard">
+		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="D:\Studium_FH\2017_WS\Embedded Systems Software Design\xmc4500_blinky.tgz"/>
+		</list>
+	</section>
+</section>

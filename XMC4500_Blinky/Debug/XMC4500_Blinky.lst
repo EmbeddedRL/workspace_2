@@ -1,0 +1,200 @@
+
+XMC4500_Blinky.elf:     file format elf32-littlearm
+XMC4500_Blinky.elf
+architecture: arm, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x0c000000
+
+Program Header:
+    LOAD off    0x00010000 vaddr 0x0c000000 paddr 0x0c000000 align 2**16
+         filesz 0x0000009c memsz 0x0000009c flags r-x
+private flags = 5000200: [Version5 EABI] [soft-float ABI]
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn  Flags
+  0 .text         00000008  0c000000  0c000000  00010000  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .text.main    00000074  0c000008  0c000008  00010008  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .text.wait    00000020  0c00007c  0c00007c  0001007c  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  3 .debug_info   0000029f  00000000  00000000  0001009c  2**0  CONTENTS, READONLY, DEBUGGING
+  4 .debug_abbrev 0000012f  00000000  00000000  0001033b  2**0  CONTENTS, READONLY, DEBUGGING
+  5 .debug_aranges 00000028  00000000  00000000  0001046a  2**0  CONTENTS, READONLY, DEBUGGING
+  6 .debug_ranges 00000018  00000000  00000000  00010492  2**0  CONTENTS, READONLY, DEBUGGING
+  7 .debug_macro  000167b7  00000000  00000000  000104aa  2**0  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   0000021e  00000000  00000000  00026c61  2**0  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    0008dd04  00000000  00000000  00026e7f  2**0  CONTENTS, READONLY, DEBUGGING
+ 10 .comment      0000006e  00000000  00000000  000b4b83  2**0  CONTENTS, READONLY
+ 11 .ARM.attributes 00000033  00000000  00000000  000b4bf1  2**0  CONTENTS, READONLY
+ 12 .debug_frame  00000058  00000000  00000000  000b4c24  2**2  CONTENTS, READONLY, DEBUGGING
+SYMBOL TABLE:
+0c000000 l    d  .text	00000000 .text
+0c000008 l    d  .text.main	00000000 .text.main
+0c00007c l    d  .text.wait	00000000 .text.wait
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    df *ABS*	00000000 main.c
+0c00007c g     F .text.wait	00000020 wait
+0c000008 g     F .text.main	00000074 main
+0c000000 g     O .text	00000008 myvectors
+
+
+
+Disassembly of section .text:
+
+0c000000 <myvectors>:
+ c000000:	ff ff 00 20 09 00 00 0c                             ... ....
+
+Disassembly of section .text.main:
+
+0c000008 <main>:
+main():
+D:\Software\eclipse\workspace_2\XMC4500_Blinky\Debug/../main.c:23
+    (unsigned int *) main,
+};
+
+//! \brief Main routine that toggles are port with
+int main(void)
+{
+ c000008:	b580      	push	{r7, lr}
+ c00000a:	b082      	sub	sp, #8
+ c00000c:	af00      	add	r7, sp, #0
+D:\Software\eclipse\workspace_2\XMC4500_Blinky\Debug/../main.c:24
+  unsigned int i = 100000;
+ c00000e:	4b18      	ldr	r3, [pc, #96]	; (c000070 <main+0x68>)
+ c000010:	607b      	str	r3, [r7, #4]
+D:\Software\eclipse\workspace_2\XMC4500_Blinky\Debug/../main.c:25
+  unsigned int dir = 0; //down=0|up=1
+ c000012:	2300      	movs	r3, #0
+ c000014:	603b      	str	r3, [r7, #0]
+D:\Software\eclipse\workspace_2\XMC4500_Blinky\Debug/../main.c:29
+
+  //PORT1->IOCR0 |= 0x8000; // P1.1 output, push pull
+  //PORT1->IOCR0 |= 0x0080; // P1.0 output, push pull
+  PORT1->IOCR0 |= 0x8080; // P1.0 & P1.1 output, push pull
+ c000016:	4a17      	ldr	r2, [pc, #92]	; (c000074 <main+0x6c>)
+ c000018:	4b16      	ldr	r3, [pc, #88]	; (c000074 <main+0x6c>)
+ c00001a:	691b      	ldr	r3, [r3, #16]
+ c00001c:	f443 4300 	orr.w	r3, r3, #32768	; 0x8000
+ c000020:	f043 0380 	orr.w	r3, r3, #128	; 0x80
+ c000024:	6113      	str	r3, [r2, #16]
+D:\Software\eclipse\workspace_2\XMC4500_Blinky\Debug/../main.c:32
+
+  while(1) {
+    PORT1->OUT = 0x2; // write 1 to P1.1 -> Port1.1 is low
+ c000026:	4b13      	ldr	r3, [pc, #76]	; (c000074 <main+0x6c>)
+ c000028:	2202      	movs	r2, #2
+ c00002a:	601a      	str	r2, [r3, #0]
+D:\Software\eclipse\workspace_2\XMC4500_Blinky\Debug/../main.c:33
+    wait(i);
+ c00002c:	6878      	ldr	r0, [r7, #4]
+ c00002e:	f000 f825 	bl	c00007c <wait>
+D:\Software\eclipse\workspace_2\XMC4500_Blinky\Debug/../main.c:34
+    PORT1->OUT = 0x1; // write 0 to P1.1 -> Port 1.1 is high
+ c000032:	4b10      	ldr	r3, [pc, #64]	; (c000074 <main+0x6c>)
+ c000034:	2201      	movs	r2, #1
+ c000036:	601a      	str	r2, [r3, #0]
+D:\Software\eclipse\workspace_2\XMC4500_Blinky\Debug/../main.c:35
+    wait(i);
+ c000038:	6878      	ldr	r0, [r7, #4]
+ c00003a:	f000 f81f 	bl	c00007c <wait>
+D:\Software\eclipse\workspace_2\XMC4500_Blinky\Debug/../main.c:37
+
+    if(dir)
+ c00003e:	683b      	ldr	r3, [r7, #0]
+ c000040:	2b00      	cmp	r3, #0
+ c000042:	d004      	beq.n	c00004e <main+0x46>
+D:\Software\eclipse\workspace_2\XMC4500_Blinky\Debug/../main.c:39
+    {
+    	i = i + 500;
+ c000044:	687b      	ldr	r3, [r7, #4]
+ c000046:	f503 73fa 	add.w	r3, r3, #500	; 0x1f4
+ c00004a:	607b      	str	r3, [r7, #4]
+ c00004c:	e003      	b.n	c000056 <main+0x4e>
+D:\Software\eclipse\workspace_2\XMC4500_Blinky\Debug/../main.c:43
+    }
+    else
+    {
+       	i = i - 500;
+ c00004e:	687b      	ldr	r3, [r7, #4]
+ c000050:	f5a3 73fa 	sub.w	r3, r3, #500	; 0x1f4
+ c000054:	607b      	str	r3, [r7, #4]
+D:\Software\eclipse\workspace_2\XMC4500_Blinky\Debug/../main.c:46
+    }
+
+    if(i<=0)
+ c000056:	687b      	ldr	r3, [r7, #4]
+ c000058:	2b00      	cmp	r3, #0
+ c00005a:	d102      	bne.n	c000062 <main+0x5a>
+D:\Software\eclipse\workspace_2\XMC4500_Blinky\Debug/../main.c:48
+    {
+    	dir = 1;
+ c00005c:	2301      	movs	r3, #1
+ c00005e:	603b      	str	r3, [r7, #0]
+ c000060:	e7e1      	b.n	c000026 <main+0x1e>
+D:\Software\eclipse\workspace_2\XMC4500_Blinky\Debug/../main.c:50
+    }
+    else if(i>=200000)
+ c000062:	687b      	ldr	r3, [r7, #4]
+ c000064:	4a04      	ldr	r2, [pc, #16]	; (c000078 <main+0x70>)
+ c000066:	4293      	cmp	r3, r2
+ c000068:	d9dd      	bls.n	c000026 <main+0x1e>
+D:\Software\eclipse\workspace_2\XMC4500_Blinky\Debug/../main.c:52
+    {
+        dir = 0;
+ c00006a:	2300      	movs	r3, #0
+ c00006c:	603b      	str	r3, [r7, #0]
+D:\Software\eclipse\workspace_2\XMC4500_Blinky\Debug/../main.c:54
+    }
+  }
+ c00006e:	e7da      	b.n	c000026 <main+0x1e>
+ c000070:	000186a0 	.word	0x000186a0
+ c000074:	48028100 	.word	0x48028100
+ c000078:	00030d3f 	.word	0x00030d3f
+
+Disassembly of section .text.wait:
+
+0c00007c <wait>:
+wait():
+D:\Software\eclipse\workspace_2\XMC4500_Blinky\Debug/../main.c:57
+}
+
+void wait(unsigned long delay) {
+ c00007c:	b480      	push	{r7}
+ c00007e:	b083      	sub	sp, #12
+ c000080:	af00      	add	r7, sp, #0
+ c000082:	6078      	str	r0, [r7, #4]
+D:\Software\eclipse\workspace_2\XMC4500_Blinky\Debug/../main.c:58
+  while(delay--) {
+ c000084:	e000      	b.n	c000088 <wait+0xc>
+__NOP():
+D:\Software\eclipse\workspace_2\XMC4500_Blinky\Libraries\CM4\inc/core_cmInstr.h:271
+
+    No Operation does nothing. This instruction can be used for code alignment purposes.
+ */
+__attribute__( ( always_inline ) ) static __INLINE void __NOP(void)
+{
+  __ASM volatile ("nop");
+ c000086:	bf00      	nop
+wait():
+D:\Software\eclipse\workspace_2\XMC4500_Blinky\Debug/../main.c:58
+ c000088:	687b      	ldr	r3, [r7, #4]
+ c00008a:	1e5a      	subs	r2, r3, #1
+ c00008c:	607a      	str	r2, [r7, #4]
+ c00008e:	2b00      	cmp	r3, #0
+ c000090:	d1f9      	bne.n	c000086 <wait+0xa>
+D:\Software\eclipse\workspace_2\XMC4500_Blinky\Debug/../main.c:61
+    __NOP();
+  }
+}
+ c000092:	bf00      	nop
+ c000094:	370c      	adds	r7, #12
+ c000096:	46bd      	mov	sp, r7
+ c000098:	bc80      	pop	{r7}
+ c00009a:	4770      	bx	lr
