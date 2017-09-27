@@ -1,0 +1,187 @@
+
+XMC4500_USIC_UART.elf:     file format elf32-littlearm
+XMC4500_USIC_UART.elf
+architecture: arm, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x0c000000
+
+Program Header:
+    LOAD off    0x00010000 vaddr 0x0c000000 paddr 0x0c000000 align 2**16
+         filesz 0x000000a8 memsz 0x000000a8 flags r-x
+private flags = 5000200: [Version5 EABI] [soft-float ABI]
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn  Flags
+  0 .text         00000008  0c000000  0c000000  00010000  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .text.main    00000080  0c000008  0c000008  00010008  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .text.wait    00000020  0c000088  0c000088  00010088  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  3 .debug_info   00000575  00000000  00000000  000100a8  2**0  CONTENTS, READONLY, DEBUGGING
+  4 .debug_abbrev 00000179  00000000  00000000  0001061d  2**0  CONTENTS, READONLY, DEBUGGING
+  5 .debug_aranges 00000028  00000000  00000000  00010796  2**0  CONTENTS, READONLY, DEBUGGING
+  6 .debug_ranges 00000018  00000000  00000000  000107be  2**0  CONTENTS, READONLY, DEBUGGING
+  7 .debug_macro  000167b7  00000000  00000000  000107d6  2**0  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00000247  00000000  00000000  00026f8d  2**0  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    0008de33  00000000  00000000  000271d4  2**0  CONTENTS, READONLY, DEBUGGING
+ 10 .comment      0000006e  00000000  00000000  000b5007  2**0  CONTENTS, READONLY
+ 11 .ARM.attributes 00000033  00000000  00000000  000b5075  2**0  CONTENTS, READONLY
+ 12 .debug_frame  00000054  00000000  00000000  000b50a8  2**2  CONTENTS, READONLY, DEBUGGING
+SYMBOL TABLE:
+0c000000 l    d  .text	00000000 .text
+0c000008 l    d  .text.main	00000000 .text.main
+0c000088 l    d  .text.wait	00000000 .text.wait
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    df *ABS*	00000000 main.c
+0c000088 g     F .text.wait	00000020 wait
+0c000008 g     F .text.main	00000080 main
+0c000000 g     O .text	00000008 myvectors
+
+
+
+Disassembly of section .text:
+
+0c000000 <myvectors>:
+ c000000:	ff ff 00 20 09 00 00 0c                             ... ....
+
+Disassembly of section .text.main:
+
+0c000008 <main>:
+main():
+D:\Studium_FH\2017_WS\Embedded_Systems_Software_Design\XMC4500_USIC_UART\Debug/../main.c:23
+    (unsigned int *) main,
+};
+
+//! \brief Main routine that toggles are port with
+int main(void)
+{
+ c000008:	b580      	push	{r7, lr}
+ c00000a:	af00      	add	r7, sp, #0
+D:\Studium_FH\2017_WS\Embedded_Systems_Software_Design\XMC4500_USIC_UART\Debug/../main.c:24
+	USIC0_CH0->CCR |= 0x0002;	//Configure USIC as UART/ASC
+ c00000c:	4a1c      	ldr	r2, [pc, #112]	; (c000080 <main+0x78>)
+ c00000e:	4b1c      	ldr	r3, [pc, #112]	; (c000080 <main+0x78>)
+ c000010:	6c1b      	ldr	r3, [r3, #64]	; 0x40
+ c000012:	f043 0302 	orr.w	r3, r3, #2
+ c000016:	6413      	str	r3, [r2, #64]	; 0x40
+D:\Studium_FH\2017_WS\Embedded_Systems_Software_Design\XMC4500_USIC_UART\Debug/../main.c:25
+	USIC0_CH0->FDR |= 0x8052;	//Configure USIC in fractional divider mode to generate 9600 Baudrate
+ c000018:	4a19      	ldr	r2, [pc, #100]	; (c000080 <main+0x78>)
+ c00001a:	4b19      	ldr	r3, [pc, #100]	; (c000080 <main+0x78>)
+ c00001c:	691b      	ldr	r3, [r3, #16]
+ c00001e:	f443 4300 	orr.w	r3, r3, #32768	; 0x8000
+ c000022:	f043 0352 	orr.w	r3, r3, #82	; 0x52
+ c000026:	6113      	str	r3, [r2, #16]
+D:\Studium_FH\2017_WS\Embedded_Systems_Software_Design\XMC4500_USIC_UART\Debug/../main.c:27
+
+	USIC0_CH0->DX0CR |= 0x0001;	//Configure Input DX0B P1.4 Rx
+ c000028:	4a15      	ldr	r2, [pc, #84]	; (c000080 <main+0x78>)
+ c00002a:	4b15      	ldr	r3, [pc, #84]	; (c000080 <main+0x78>)
+ c00002c:	69db      	ldr	r3, [r3, #28]
+ c00002e:	f043 0301 	orr.w	r3, r3, #1
+ c000032:	61d3      	str	r3, [r2, #28]
+D:\Studium_FH\2017_WS\Embedded_Systems_Software_Design\XMC4500_USIC_UART\Debug/../main.c:30
+								//Configure Output P1.5 Tx
+
+	PORT1->IOCR4 |= 0x0000;		//Configure P1.4 as Input
+ c000034:	4a13      	ldr	r2, [pc, #76]	; (c000084 <main+0x7c>)
+ c000036:	4b13      	ldr	r3, [pc, #76]	; (c000084 <main+0x7c>)
+ c000038:	695b      	ldr	r3, [r3, #20]
+ c00003a:	6153      	str	r3, [r2, #20]
+D:\Studium_FH\2017_WS\Embedded_Systems_Software_Design\XMC4500_USIC_UART\Debug/../main.c:31
+	PORT1->HWSEL |= 0x0400;		//Enable HW0 for P1.5
+ c00003c:	4a11      	ldr	r2, [pc, #68]	; (c000084 <main+0x7c>)
+ c00003e:	4b11      	ldr	r3, [pc, #68]	; (c000084 <main+0x7c>)
+ c000040:	6f5b      	ldr	r3, [r3, #116]	; 0x74
+ c000042:	f443 6380 	orr.w	r3, r3, #1024	; 0x400
+ c000046:	6753      	str	r3, [r2, #116]	; 0x74
+D:\Studium_FH\2017_WS\Embedded_Systems_Software_Design\XMC4500_USIC_UART\Debug/../main.c:33
+
+	USIC0_CH0->SCTR |= 0x0002;	//Set passive level to 1
+ c000048:	4a0d      	ldr	r2, [pc, #52]	; (c000080 <main+0x78>)
+ c00004a:	4b0d      	ldr	r3, [pc, #52]	; (c000080 <main+0x78>)
+ c00004c:	6b5b      	ldr	r3, [r3, #52]	; 0x34
+ c00004e:	f043 0302 	orr.w	r3, r3, #2
+ c000052:	6353      	str	r3, [r2, #52]	; 0x34
+D:\Studium_FH\2017_WS\Embedded_Systems_Software_Design\XMC4500_USIC_UART\Debug/../main.c:34
+	USIC0_CH0->KSCFG |= 0x0003;	//Enable USIC clock
+ c000054:	4a0a      	ldr	r2, [pc, #40]	; (c000080 <main+0x78>)
+ c000056:	4b0a      	ldr	r3, [pc, #40]	; (c000080 <main+0x78>)
+ c000058:	68db      	ldr	r3, [r3, #12]
+ c00005a:	f043 0303 	orr.w	r3, r3, #3
+ c00005e:	60d3      	str	r3, [r2, #12]
+D:\Studium_FH\2017_WS\Embedded_Systems_Software_Design\XMC4500_USIC_UART\Debug/../main.c:35
+	while(((USIC0_CH0->KSCFG) && 0x01)!=0x01);
+ c000060:	bf00      	nop
+D:\Studium_FH\2017_WS\Embedded_Systems_Software_Design\XMC4500_USIC_UART\Debug/../main.c:35 (discriminator 1)
+ c000062:	4b07      	ldr	r3, [pc, #28]	; (c000080 <main+0x78>)
+ c000064:	68db      	ldr	r3, [r3, #12]
+ c000066:	2b00      	cmp	r3, #0
+ c000068:	d0fb      	beq.n	c000062 <main+0x5a>
+D:\Studium_FH\2017_WS\Embedded_Systems_Software_Design\XMC4500_USIC_UART\Debug/../main.c:39 (discriminator 1)
+
+
+	while(1) {
+		wait(1000);
+ c00006a:	f44f 707a 	mov.w	r0, #1000	; 0x3e8
+ c00006e:	f000 f80b 	bl	c000088 <wait>
+D:\Studium_FH\2017_WS\Embedded_Systems_Software_Design\XMC4500_USIC_UART\Debug/../main.c:40 (discriminator 1)
+		USIC0_CH0->TBUF[0] = 0x10101010;
+ c000072:	4b03      	ldr	r3, [pc, #12]	; (c000080 <main+0x78>)
+ c000074:	f04f 3210 	mov.w	r2, #269488144	; 0x10101010
+ c000078:	f8c3 2080 	str.w	r2, [r3, #128]	; 0x80
+D:\Studium_FH\2017_WS\Embedded_Systems_Software_Design\XMC4500_USIC_UART\Debug/../main.c:42 (discriminator 1)
+
+  }
+ c00007c:	e7f5      	b.n	c00006a <main+0x62>
+ c00007e:	bf00      	nop
+ c000080:	40030000 	.word	0x40030000
+ c000084:	48028100 	.word	0x48028100
+
+Disassembly of section .text.wait:
+
+0c000088 <wait>:
+wait():
+D:\Studium_FH\2017_WS\Embedded_Systems_Software_Design\XMC4500_USIC_UART\Debug/../main.c:45
+}
+
+void wait(unsigned long delay) {
+ c000088:	b480      	push	{r7}
+ c00008a:	b083      	sub	sp, #12
+ c00008c:	af00      	add	r7, sp, #0
+ c00008e:	6078      	str	r0, [r7, #4]
+D:\Studium_FH\2017_WS\Embedded_Systems_Software_Design\XMC4500_USIC_UART\Debug/../main.c:46
+  while(delay--) {
+ c000090:	e000      	b.n	c000094 <wait+0xc>
+__NOP():
+D:\Studium_FH\2017_WS\Embedded_Systems_Software_Design\XMC4500_USIC_UART\Libraries\CM4\inc/core_cmInstr.h:271
+
+    No Operation does nothing. This instruction can be used for code alignment purposes.
+ */
+__attribute__( ( always_inline ) ) static __INLINE void __NOP(void)
+{
+  __ASM volatile ("nop");
+ c000092:	bf00      	nop
+wait():
+D:\Studium_FH\2017_WS\Embedded_Systems_Software_Design\XMC4500_USIC_UART\Debug/../main.c:46
+ c000094:	687b      	ldr	r3, [r7, #4]
+ c000096:	1e5a      	subs	r2, r3, #1
+ c000098:	607a      	str	r2, [r7, #4]
+ c00009a:	2b00      	cmp	r3, #0
+ c00009c:	d1f9      	bne.n	c000092 <wait+0xa>
+D:\Studium_FH\2017_WS\Embedded_Systems_Software_Design\XMC4500_USIC_UART\Debug/../main.c:49
+    __NOP();
+  }
+}
+ c00009e:	bf00      	nop
+ c0000a0:	370c      	adds	r7, #12
+ c0000a2:	46bd      	mov	sp, r7
+ c0000a4:	bc80      	pop	{r7}
+ c0000a6:	4770      	bx	lr
