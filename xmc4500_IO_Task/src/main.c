@@ -45,64 +45,89 @@
    Version 1.0.0 Initial <br>
  */
 
+/*---------- Includes ----------*/
 #include <debug_lib.h>
 #include <stdio.h>
 #include <xmc_gpio.h>
-#include "test_uart.h"
 
+/*---------- Defines ----------*/
 #define TICKS_PER_SECOND 1000
 #define TICKS_WAIT 500
 
-#define LED1 P1_1
-#define LED2 P1_0
+#define cb_SIZE 64	//Number of elements in the ringbuffer
 
-#define RX_BUFFER_SIZE 64
+/*---------- Globale Variablen ----------*/
+char cb[cb_SIZE] = {0};	//Creates Ringbuffer
+int inix;	//Element of the Ringbuffer in which the next element will be put
+int outix;	//Element of the Ringbuffer that will be read next
+int full, empty;	//Indicates a full / empty ringbuffer
 
+/*---------- Systick_INT Handler ----------*/
 void SysTick_Handler(void) {
 	static uint32_t ticks = 0;
 	static int32_t cnt = 0;
 
 	ticks++;
 	if (ticks == TICKS_WAIT) {
-		XMC_GPIO_ToggleOutput(LED1);
-		XMC_GPIO_ToggleOutput(LED2);
-		printf("Testing... %d\n", (int)cnt++);
 
-		ticks = 0;
 	}
 }
 
+/*---------- Ringbuffer functions ----------*/
+void cb_init (void) {
+  inix = 0;		//Input-Pointer
+  outix = 0;	//Output-Pointer
+  full = 0;		//Indicates that the ringbuffer is full
+  empty = 1;	//Indicates that the ringbuffer is empty
+}
+
+int cb_put (unsigned char item) {
+  if (full)
+    return -1;
+  inix = (inix + 1) % cb_SIZE;
+  cb[inix] = item;
+  if (inix == outix)
+    full = 1;
+  empty = 0;
+  return 0;
+}
+
+int cb_get (unsigned char *pitem) {
+  if (empty)
+    return -1;
+  outix = (outix + 1) % cb_SIZE;
+  *pitem = cb[outix];
+  if (outix == inix)
+    empty = 1;
+  full = 0;
+  return 0;
+}
 
 int main(void) {
-	XMC_GPIO_CONFIG_t config;
-	char rx_buff[RX_BUFFER_SIZE] = {0};
-
 	initRetargetSwo();
 
-	config.mode = XMC_GPIO_MODE_OUTPUT_PUSH_PULL;
-	config.output_level = XMC_GPIO_OUTPUT_LEVEL_HIGH;
-	config.output_strength = XMC_GPIO_OUTPUT_STRENGTH_MEDIUM;
+	PORT1->IOCR0 |= 0x8080; // P1.0 & P1.1 output, push pull
+	PORT1->OUT = 0x3;
+	wait(300);
+	PORT1->OUT = 0x0;
+	wait(300);
 
-	XMC_GPIO_Init(LED1, &config);
+	cb_init();
 
-	config.output_level = XMC_GPIO_OUTPUT_LEVEL_LOW;
-	XMC_GPIO_Init(LED2, &config);
-
-	_initUART0_CH0();
 
 	/* System timer configuration */
 	SysTick_Config(SystemCoreClock / TICKS_PER_SECOND);
 
-	/* Available UART functions */
-	_uart_send_char('X');
-	_uart_send_string("Testing...\n");
-	_uart_printf("Magic Number = %d\n",42);
-
-	_uart_get_string (rx_buff);
-	_uart_printf("RX string = %s\n", rx_buff);
 
 	while(1) {
 	}
+}
+
+
+void wait(unsigned long delay) {
+  while(delay--) {
+    __NOP();
+  }
 }
 
 /* EOF */
