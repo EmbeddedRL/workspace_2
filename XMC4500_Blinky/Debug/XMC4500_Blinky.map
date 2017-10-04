@@ -108,12 +108,12 @@ OUTPUT(XMC4500_Blinky.elf elf32-littlearm)
  .debug_macro   0x00001675       0x6a ./main.o
  .debug_macro   0x000016df    0x150d8 ./main.o
 
-.debug_line     0x00000000      0x21e
- .debug_line    0x00000000      0x21e ./main.o
+.debug_line     0x00000000      0x216
+ .debug_line    0x00000000      0x216 ./main.o
 
-.debug_str      0x00000000    0x8dd04
- .debug_str     0x00000000    0x8dd04 ./main.o
-                              0x8df92 (size before relaxing)
+.debug_str      0x00000000    0x8dcfc
+ .debug_str     0x00000000    0x8dcfc ./main.o
+                              0x8df8a (size before relaxing)
 
 .comment        0x00000000       0x6e
  .comment       0x00000000       0x6e ./main.o

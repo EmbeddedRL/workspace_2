@@ -1,4 +1,4 @@
-10:45:14 **** Incremental Build of configuration Debug for project XMC4500_USIC_UART ****
+17:29:43 **** Incremental Build of configuration Debug for project XMC4500_USIC_UART ****
 make all 
 'Invoking: Cross ARM GNU Print Size'
 arm-none-eabi-size --format=berkeley --totals "XMC4500_USIC_UART.elf"
@@ -8,5 +8,5 @@ arm-none-eabi-size --format=berkeley --totals "XMC4500_USIC_UART.elf"
 'Finished building: XMC4500_USIC_UART.siz'
 ' '
 
-10:45:15 Build Finished (took 358ms)
+17:29:43 Build Finished (took 419ms)
 

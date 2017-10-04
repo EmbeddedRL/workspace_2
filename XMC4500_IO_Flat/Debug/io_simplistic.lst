@@ -1,0 +1,2558 @@
+
+io_simplistic.elf:     file format elf32-littlearm
+io_simplistic.elf
+architecture: arm, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x0c0007f5
+
+Program Header:
+    LOAD off    0x00008000 vaddr 0x0c000000 paddr 0x0c000000 align 2**15
+         filesz 0x00000be0 memsz 0x00000be0 flags r-x
+    LOAD off    0x00010000 vaddr 0x20000000 paddr 0x0c000be0 align 2**15
+         filesz 0x00000004 memsz 0x0000000c flags rw-
+    LOAD off    0x0001000c vaddr 0x2000000c paddr 0x0c000be4 align 2**15
+         filesz 0x00000000 memsz 0x00000004 flags rw-
+    LOAD off    0x00010010 vaddr 0x20000010 paddr 0x0c000be4 align 2**15
+         filesz 0x00000000 memsz 0x00000004 flags rw-
+    LOAD off    0x00010014 vaddr 0x20000014 paddr 0x0c000be4 align 2**15
+         filesz 0x00000000 memsz 0x00000004 flags rw-
+private flags = 5000002: [Version5 EABI] [has entry point]
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn  Flags
+  0 .text         00000200  0c000000  0c000000  00008000  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .text.SystemInit 00000060  0c000200  0c000200  00008200  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .text.SystemCoreClockUpdate 000000dc  0c000260  0c000260  00008260  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  3 .text.SystemClockSetup 000002b8  0c00033c  0c00033c  0000833c  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  4 .text._open   0000001c  0c0005f4  0c0005f4  000085f4  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  5 .text._lseek  0000001c  0c000610  0c000610  00008610  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  6 .text._read   0000001c  0c00062c  0c00062c  0000862c  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  7 .text._write  0000001c  0c000648  0c000648  00008648  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  8 .text._close  00000014  0c000664  0c000664  00008664  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  9 .text._fstat  00000028  0c000678  0c000678  00008678  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 10 .text._link   00000028  0c0006a0  0c0006a0  000086a0  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 11 .text._unlink 00000018  0c0006c8  0c0006c8  000086c8  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 12 .text._sbrk   00000070  0c0006e0  0c0006e0  000086e0  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 13 .text._times  00000018  0c000750  0c000750  00008750  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 14 .text._wait   00000018  0c000768  0c000768  00008768  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 15 .text._kill   0000001c  0c000780  0c000780  00008780  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 16 .text._fork   00000014  0c00079c  0c00079c  0000879c  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 17 .text._getpid 00000014  0c0007b0  0c0007b0  000087b0  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 18 .text._exit   0000000c  0c0007c4  0c0007c4  000087c4  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 19 .text._init   0000000c  0c0007d0  0c0007d0  000087d0  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 20 .text._isatty 00000018  0c0007dc  0c0007dc  000087dc  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 21 .text.Reset_Handler 00000064  0c0007f4  0c0007f4  000087f4  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 22 .text.Dummy_Handler 00000008  0c000858  0c000858  00008858  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 23 .text.AllowPLLInitByStartup 00000010  0c000860  0c000860  00008860  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 24 .text.NVIC_SetPriority 00000054  0c000870  0c000870  00008870  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 25 .text.SysTick_Config 00000044  0c0008c4  0c0008c4  000088c4  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 26 .text.P1_0_set_mode 00000030  0c000908  0c000908  00008908  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 27 .text.P1_0_set_driver_strength 00000030  0c000938  0c000938  00008938  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 28 .text.P1_0_reset 00000018  0c000968  0c000968  00008968  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 29 .text.P1_0_toggle 00000018  0c000980  0c000980  00008980  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 30 .text.P1_1_set_mode 00000034  0c000998  0c000998  00008998  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 31 .text.P1_1_set_driver_strength 00000034  0c0009cc  0c0009cc  000089cc  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 32 .text.P1_1_reset 00000018  0c000a00  0c000a00  00008a00  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 33 .text.P1_1_toggle 00000018  0c000a18  0c000a18  00008a18  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 34 .text.P1_14_set_mode 00000034  0c000a30  0c000a30  00008a30  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 35 .text.P1_14_read 0000001c  0c000a64  0c000a64  00008a64  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 36 .text.P1_15_set_mode 00000034  0c000a80  0c000a80  00008a80  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 37 .text.P1_15_read 0000001c  0c000ab4  0c000ab4  00008ab4  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 38 .text.main    00000064  0c000ad0  0c000ad0  00008ad0  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 39 .text.SysTick_Handler 000000ac  0c000b34  0c000b34  00008b34  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 40 .data.SystemCoreClock 00000004  20000000  0c000be0  00010000  2**2  CONTENTS, ALLOC, LOAD, DATA
+ 41 .bss          00000008  20000004  0c000be4  00010004  2**2  ALLOC
+ 42 .bss.__dso_handle 00000004  2000000c  0c000be4  0001000c  2**2  ALLOC
+ 43 .bss.heap.4627 00000004  20000010  0c000be4  00010010  2**2  ALLOC
+ 44 .bss.HeapBound.4626 00000004  20000014  0c000be4  00010014  2**2  ALLOC
+ 45 .debug_info   00001b45  00000000  00000000  00010004  2**0  CONTENTS, READONLY, DEBUGGING
+ 46 .debug_abbrev 00000560  00000000  00000000  00011b49  2**0  CONTENTS, READONLY, DEBUGGING
+ 47 .debug_aranges 00000198  00000000  00000000  000120a9  2**0  CONTENTS, READONLY, DEBUGGING
+ 48 .debug_ranges 00000158  00000000  00000000  00012241  2**0  CONTENTS, READONLY, DEBUGGING
+ 49 .debug_macro  00017b0c  00000000  00000000  00012399  2**0  CONTENTS, READONLY, DEBUGGING
+ 50 .debug_line   00000db8  00000000  00000000  00029ea5  2**0  CONTENTS, READONLY, DEBUGGING
+ 51 .debug_str    0009397d  00000000  00000000  0002ac5d  2**0  CONTENTS, READONLY, DEBUGGING
+ 52 .comment      00000070  00000000  00000000  000be5da  2**0  CONTENTS, READONLY
+ 53 .ARM.attributes 00000033  00000000  00000000  000be64a  2**0  CONTENTS, READONLY
+ 54 .debug_frame  00000464  00000000  00000000  000be680  2**2  CONTENTS, READONLY, DEBUGGING
+SYMBOL TABLE:
+0c000000 l    d  .text	00000000 .text
+0c000200 l    d  .text.SystemInit	00000000 .text.SystemInit
+0c000260 l    d  .text.SystemCoreClockUpdate	00000000 .text.SystemCoreClockUpdate
+0c00033c l    d  .text.SystemClockSetup	00000000 .text.SystemClockSetup
+0c0005f4 l    d  .text._open	00000000 .text._open
+0c000610 l    d  .text._lseek	00000000 .text._lseek
+0c00062c l    d  .text._read	00000000 .text._read
+0c000648 l    d  .text._write	00000000 .text._write
+0c000664 l    d  .text._close	00000000 .text._close
+0c000678 l    d  .text._fstat	00000000 .text._fstat
+0c0006a0 l    d  .text._link	00000000 .text._link
+0c0006c8 l    d  .text._unlink	00000000 .text._unlink
+0c0006e0 l    d  .text._sbrk	00000000 .text._sbrk
+0c000750 l    d  .text._times	00000000 .text._times
+0c000768 l    d  .text._wait	00000000 .text._wait
+0c000780 l    d  .text._kill	00000000 .text._kill
+0c00079c l    d  .text._fork	00000000 .text._fork
+0c0007b0 l    d  .text._getpid	00000000 .text._getpid
+0c0007c4 l    d  .text._exit	00000000 .text._exit
+0c0007d0 l    d  .text._init	00000000 .text._init
+0c0007dc l    d  .text._isatty	00000000 .text._isatty
+0c0007f4 l    d  .text.Reset_Handler	00000000 .text.Reset_Handler
+0c000858 l    d  .text.Dummy_Handler	00000000 .text.Dummy_Handler
+0c000860 l    d  .text.AllowPLLInitByStartup	00000000 .text.AllowPLLInitByStartup
+0c000870 l    d  .text.NVIC_SetPriority	00000000 .text.NVIC_SetPriority
+0c0008c4 l    d  .text.SysTick_Config	00000000 .text.SysTick_Config
+0c000908 l    d  .text.P1_0_set_mode	00000000 .text.P1_0_set_mode
+0c000938 l    d  .text.P1_0_set_driver_strength	00000000 .text.P1_0_set_driver_strength
+0c000968 l    d  .text.P1_0_reset	00000000 .text.P1_0_reset
+0c000980 l    d  .text.P1_0_toggle	00000000 .text.P1_0_toggle
+0c000998 l    d  .text.P1_1_set_mode	00000000 .text.P1_1_set_mode
+0c0009cc l    d  .text.P1_1_set_driver_strength	00000000 .text.P1_1_set_driver_strength
+0c000a00 l    d  .text.P1_1_reset	00000000 .text.P1_1_reset
+0c000a18 l    d  .text.P1_1_toggle	00000000 .text.P1_1_toggle
+0c000a30 l    d  .text.P1_14_set_mode	00000000 .text.P1_14_set_mode
+0c000a64 l    d  .text.P1_14_read	00000000 .text.P1_14_read
+0c000a80 l    d  .text.P1_15_set_mode	00000000 .text.P1_15_set_mode
+0c000ab4 l    d  .text.P1_15_read	00000000 .text.P1_15_read
+0c000ad0 l    d  .text.main	00000000 .text.main
+0c000b34 l    d  .text.SysTick_Handler	00000000 .text.SysTick_Handler
+20000000 l    d  .data.SystemCoreClock	00000000 .data.SystemCoreClock
+20000004 l    d  .bss	00000000 .bss
+2000000c l    d  .bss.__dso_handle	00000000 .bss.__dso_handle
+20000010 l    d  .bss.heap.4627	00000000 .bss.heap.4627
+20000014 l    d  .bss.HeapBound.4626	00000000 .bss.HeapBound.4626
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    df *ABS*	00000000 XMC4500_startup.c
+00000000 l    df *ABS*	00000000 System_XMC4500.c
+0c00033c l     F .text.SystemClockSetup	000002b8 SystemClockSetup
+00000000 l    df *ABS*	00000000 System_LibcStubs.c
+20000010 l     O .bss.heap.4627	00000004 heap.4627
+20000014 l     O .bss.HeapBound.4626	00000004 HeapBound.4626
+00000000 l    df *ABS*	00000000 io_simplistic.c
+0c000870 l     F .text.NVIC_SetPriority	00000054 NVIC_SetPriority
+0c0008c4 l     F .text.SysTick_Config	00000044 SysTick_Config
+0c000908 l     F .text.P1_0_set_mode	00000030 P1_0_set_mode
+0c000938 l     F .text.P1_0_set_driver_strength	00000030 P1_0_set_driver_strength
+0c000968 l     F .text.P1_0_reset	00000018 P1_0_reset
+0c000980 l     F .text.P1_0_toggle	00000018 P1_0_toggle
+0c000998 l     F .text.P1_1_set_mode	00000034 P1_1_set_mode
+0c0009cc l     F .text.P1_1_set_driver_strength	00000034 P1_1_set_driver_strength
+0c000a00 l     F .text.P1_1_reset	00000018 P1_1_reset
+0c000a18 l     F .text.P1_1_toggle	00000018 P1_1_toggle
+0c000a30 l     F .text.P1_14_set_mode	00000034 P1_14_set_mode
+0c000a64 l     F .text.P1_14_read	0000001c P1_14_read
+0c000a80 l     F .text.P1_15_set_mode	00000034 P1_15_set_mode
+0c000ab4 l     F .text.P1_15_read	0000001c P1_15_read
+00000000 l    df *ABS*	00000000 
+30000000 g       .debug_info	00000000 Heap_Bank2_Start
+0c000858  w    F .text.Dummy_Handler	00000006 VADC0_C0_3_IRQHandler
+0c0007b0  w    F .text._getpid	00000012 _getpid
+0c000858  w    F .text.Dummy_Handler	00000006 DSD0_7_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 DebugMon_Handler
+0c000858  w    F .text.Dummy_Handler	00000006 VADC0_C0_0_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 CAN0_4_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 VADC0_G2_0_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 USIC0_5_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 POSIF0_0_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 POSIF1_0_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 HardFault_Handler
+0c000858  w    F .text.Dummy_Handler	00000006 VADC0_G1_1_IRQHandler
+0c000b34 g     F .text.SysTick_Handler	000000ac SysTick_Handler
+20010000 g       *ABS*	00000000 Heap_Bank1_End
+0c000858  w    F .text.Dummy_Handler	00000006 PendSV_Handler
+0c000858  w    F .text.Dummy_Handler	00000006 NMI_Handler
+0c000858  w    F .text.Dummy_Handler	00000006 USIC1_3_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 CCU40_2_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 SCU_0_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 ERU0_0_IRQHandler
+20000000 g       .data.SystemCoreClock	00000000 _start_data
+0c000860 g     F .text.AllowPLLInitByStartup	00000010 AllowPLLInitByStartup
+0c000858  w    F .text.Dummy_Handler	00000006 CCU41_0_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 USIC1_5_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 DSD0_4_IRQHandler
+20000000 g       .data.SystemCoreClock	00000000 _end_data
+0c000858  w    F .text.Dummy_Handler	00000006 CCU80_1_IRQHandler
+20000000 g     O .data.SystemCoreClock	00000004 SystemCoreClock
+00010000 g       *ABS*	00000000 Heap_Bank3_Size
+0c000858  w    F .text.Dummy_Handler	00000006 CCU81_0_IRQHandler
+0c000678  w    F .text._fstat	00000026 _fstat
+0c000858  w    F .text.Dummy_Handler	00000006 UsageFault_Handler
+0c000858  w    F .text.Dummy_Handler	00000006 USIC0_0_IRQHandler
+2000000c g     O .bss.__dso_handle	00000004 __dso_handle
+0c000858  w    F .text.Dummy_Handler	00000006 POSIF1_1_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 ERU0_2_IRQHandler
+0c0007dc  w    F .text._isatty	00000018 _isatty
+0c000858  w    F .text.Dummy_Handler	00000006 CCU81_1_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 ERU1_1_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 VADC0_G2_3_IRQHandler
+20000004 g     O .bss	00000004 p1_15_pressed
+0c000858  w    F .text.Dummy_Handler	00000006 VADC0_G2_2_IRQHandler
+0c0005f4  w    F .text._open	0000001c _open
+0c0006e0  w    F .text._sbrk	00000070 _sbrk
+0c000858  w    F .text.Dummy_Handler	00000006 CCU42_3_IRQHandler
+0c0007d0  w    F .text._init	0000000c _init
+0c000200 g       .text	00000000 _end_text
+0c000858  w    F .text.Dummy_Handler	00000006 ERU0_3_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 DSD0_5_IRQHandler
+0c000750  w    F .text._times	00000018 _times
+0c0007f4 g     F .text.Reset_Handler	00000064 Reset_Handler
+0c000858  w    F .text.Dummy_Handler	00000006 CAN0_6_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 CCU43_0_IRQHandler
+2000ffff g       .debug_info	00000000 _stack_top
+20000008 g     O .bss	00000004 p1_14_pressed
+0c000858  w    F .text.Dummy_Handler	00000006 VADC0_G0_1_IRQHandler
+0c000858 g     F .text.Dummy_Handler	00000006 Dummy_Handler
+0c000858  w    F .text.Dummy_Handler	00000006 CCU81_2_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 USIC2_4_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 CCU81_3_IRQHandler
+20010000 g       .bss.HeapBound.4626	00000000 __Xmc4500_heap_start
+0c000858  w    F .text.Dummy_Handler	00000006 CCU42_1_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 USIC1_1_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 USIC2_5_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 CCU40_0_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 CAN0_0_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 ERU1_0_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 CCU42_2_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 USIC1_4_IRQHandler
+0c000768  w    F .text._wait	00000018 _wait
+0c000858  w    F .text.Dummy_Handler	00000006 ERU1_3_IRQHandler
+0c000610  w    F .text._lseek	0000001c _lseek
+0c000858  w    F .text.Dummy_Handler	00000006 USIC1_0_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 POSIF0_1_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 VADC0_G0_0_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 DSD0_2_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 CCU80_3_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 CCU41_3_IRQHandler
+20010000 g       .bss.HeapBound.4626	00000000 Heap_Bank1_Start
+0c000858  w    F .text.Dummy_Handler	00000006 CCU80_2_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 VADC0_G1_3_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 VADC0_G0_3_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 GPDMA0_0_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 PMU0_0_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 CAN0_7_IRQHandler
+10000000 g       .debug_info	00000000 Heap_Bank3_Start
+0c000858  w    F .text.Dummy_Handler	00000006 DSD0_1_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 CCU41_2_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 VADC0_C0_1_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 CCU43_2_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 USIC2_2_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 MemManage_Handler
+0c000858  w    F .text.Dummy_Handler	00000006 VADC0_G3_1_IRQHandler
+0c000ad0 g     F .text.main	00000064 main
+0c0006a0  w    F .text._link	00000028 _link
+0c000858  w    F .text.Dummy_Handler	00000006 DAC0_0_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 SVC_Handler
+0c000858  w    F .text.Dummy_Handler	00000006 VADC0_G3_3_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 ERU1_2_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 CCU41_1_IRQHandler
+0c000000 g     O .text	00000200 myvectors
+0c000858  w    F .text.Dummy_Handler	00000006 DSD0_6_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 CCU43_1_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 VADC0_G1_2_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 USIC2_3_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 CAN0_2_IRQHandler
+0c000200 g     F .text.SystemInit	00000060 SystemInit
+0c000858  w    F .text.Dummy_Handler	00000006 USIC2_0_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 VADC0_G0_2_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 VADC0_G2_1_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 CAN0_3_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 ETH0_0_IRQHandler
+0c0006c8  w    F .text._unlink	00000018 _unlink
+0c000858  w    F .text.Dummy_Handler	00000006 USIC0_3_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 DSD0_0_IRQHandler
+0c00079c  w    F .text._fork	00000012 _fork
+0c000858  w    F .text.Dummy_Handler	00000006 VADC0_C0_2_IRQHandler
+20000004 g       .bss	00000000 _end_bss
+0c000858  w    F .text.Dummy_Handler	00000006 CCU42_0_IRQHandler
+20000004 g       .bss	00000000 _start_bss
+0c000648  w    F .text._write	0000001c _write
+20010000 g       *ABS*	00000000 __Xmc4500_heap_end
+0c000858  w    F .text.Dummy_Handler	00000006 FCE0_0_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 VADC0_G1_0_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 USB0_0_IRQHandler
+0c000260 g     F .text.SystemCoreClockUpdate	000000dc SystemCoreClockUpdate
+0c000858  w    F .text.Dummy_Handler	00000006 CAN0_5_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 CCU80_0_IRQHandler
+0c000780  w    F .text._kill	0000001a _kill
+0c000858  w    F .text.Dummy_Handler	00000006 CCU40_1_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 USIC2_1_IRQHandler
+00000000 g       *ABS*	00000000 Heap_Bank1_Size
+0c00062c  w    F .text._read	0000001a _read
+0c000858  w    F .text.Dummy_Handler	00000006 USIC0_1_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 VADC0_G3_2_IRQHandler
+00008000 g       *ABS*	00000000 Heap_Bank2_Size
+0c000858  w    F .text.Dummy_Handler	00000006 CCU40_3_IRQHandler
+0c0007c4  w    F .text._exit	0000000a _exit
+0c000858  w    F .text.Dummy_Handler	00000006 BusFault_Handler
+0c000858  w    F .text.Dummy_Handler	00000006 LEDTS0_0_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 USIC0_4_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 CCU43_3_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 ERU0_1_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 VADC0_G3_0_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 USIC1_2_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 DSD0_3_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 SDMMC0_0_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 CAN0_1_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 USIC0_2_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 DAC0_1_IRQHandler
+0c000858  w    F .text.Dummy_Handler	00000006 GPDMA1_0_IRQHandler
+0c000664  w    F .text._close	00000012 _close
+
+
+
+Disassembly of section .text:
+
+0c000000 <myvectors>:
+$d():
+ c000000:	ff ff 00 20 f5 07 00 0c 59 08 00 0c 59 08 00 0c     ... ....Y...Y...
+ c000010:	59 08 00 0c 59 08 00 0c 59 08 00 0c 00 00 00 00     Y...Y...Y.......
+	...
+ c00002c:	59 08 00 0c 59 08 00 0c 00 00 00 00 59 08 00 0c     Y...Y.......Y...
+ c00003c:	35 0b 00 0c 59 08 00 0c 59 08 00 0c 59 08 00 0c     5...Y...Y...Y...
+ c00004c:	59 08 00 0c 59 08 00 0c 59 08 00 0c 59 08 00 0c     Y...Y...Y...Y...
+ c00005c:	59 08 00 0c 59 08 00 0c 00 00 00 00 00 00 00 00     Y...Y...........
+ c00006c:	00 00 00 00 59 08 00 0c 00 00 00 00 59 08 00 0c     ....Y.......Y...
+ c00007c:	59 08 00 0c 59 08 00 0c 59 08 00 0c 59 08 00 0c     Y...Y...Y...Y...
+ c00008c:	59 08 00 0c 59 08 00 0c 59 08 00 0c 59 08 00 0c     Y...Y...Y...Y...
+ c00009c:	59 08 00 0c 59 08 00 0c 59 08 00 0c 59 08 00 0c     Y...Y...Y...Y...
+ c0000ac:	59 08 00 0c 59 08 00 0c 59 08 00 0c 59 08 00 0c     Y...Y...Y...Y...
+ c0000bc:	59 08 00 0c 59 08 00 0c 59 08 00 0c 59 08 00 0c     Y...Y...Y...Y...
+ c0000cc:	59 08 00 0c 59 08 00 0c 59 08 00 0c 59 08 00 0c     Y...Y...Y...Y...
+ c0000dc:	59 08 00 0c 59 08 00 0c 59 08 00 0c 59 08 00 0c     Y...Y...Y...Y...
+ c0000ec:	59 08 00 0c 59 08 00 0c 59 08 00 0c 59 08 00 0c     Y...Y...Y...Y...
+ c0000fc:	59 08 00 0c 59 08 00 0c 59 08 00 0c 59 08 00 0c     Y...Y...Y...Y...
+ c00010c:	59 08 00 0c 59 08 00 0c 59 08 00 0c 59 08 00 0c     Y...Y...Y...Y...
+ c00011c:	59 08 00 0c 59 08 00 0c 59 08 00 0c 59 08 00 0c     Y...Y...Y...Y...
+ c00012c:	59 08 00 0c 59 08 00 0c 59 08 00 0c 59 08 00 0c     Y...Y...Y...Y...
+ c00013c:	59 08 00 0c 59 08 00 0c 59 08 00 0c 59 08 00 0c     Y...Y...Y...Y...
+ c00014c:	59 08 00 0c 59 08 00 0c 59 08 00 0c 59 08 00 0c     Y...Y...Y...Y...
+ c00015c:	59 08 00 0c 00 00 00 00 00 00 00 00 00 00 00 00     Y...............
+ c00016c:	00 00 00 00 59 08 00 0c 59 08 00 0c 59 08 00 0c     ....Y...Y...Y...
+ c00017c:	59 08 00 0c 59 08 00 0c 59 08 00 0c 59 08 00 0c     Y...Y...Y...Y...
+ c00018c:	59 08 00 0c 59 08 00 0c 59 08 00 0c 59 08 00 0c     Y...Y...Y...Y...
+ c00019c:	59 08 00 0c 59 08 00 0c 59 08 00 0c 59 08 00 0c     Y...Y...Y...Y...
+ c0001ac:	59 08 00 0c 59 08 00 0c 59 08 00 0c 59 08 00 0c     Y...Y...Y...Y...
+ c0001bc:	59 08 00 0c 59 08 00 0c 59 08 00 0c 59 08 00 0c     Y...Y...Y...Y...
+ c0001cc:	59 08 00 0c 59 08 00 0c 59 08 00 0c 59 08 00 0c     Y...Y...Y...Y...
+ c0001dc:	00 00 00 00 59 08 00 0c 59 08 00 0c 59 08 00 0c     ....Y...Y...Y...
+ c0001ec:	59 08 00 0c 59 08 00 0c 00 00 00 00 59 08 00 0c     Y...Y.......Y...
+ c0001fc:	00 00 00 00                                         ....
+
+Disassembly of section .text.SystemInit:
+
+0c000200 <SystemInit>:
+SystemInit():
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:217
+  *         SystemCoreClock variable.
+  * @param  None
+  * @retval None
+  */
+void SystemInit(void)
+{
+ c000200:	b580      	push	{r7, lr}
+ c000202:	b082      	sub	sp, #8
+ c000204:	af00      	add	r7, sp, #0
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:226
+SCB->CPACR |= ((3UL << 10*2) |                 /* set CP10 Full Access */
+               (3UL << 11*2)  );               /* set CP11 Full Access */
+#endif
+
+/* Enable unaligned memory access - SCB_CCR.UNALIGN_TRP = 0 */
+SCB->CCR &= ~(SCB_CCR_UNALIGN_TRP_Msk);
+ c000206:	4b13      	ldr	r3, [pc, #76]	; (c000254 <_end_text+0x54>)
+ c000208:	4a12      	ldr	r2, [pc, #72]	; (c000254 <_end_text+0x54>)
+ c00020a:	6952      	ldr	r2, [r2, #20]
+ c00020c:	f022 0208 	bic.w	r2, r2, #8
+ c000210:	615a      	str	r2, [r3, #20]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:231
+	
+/* Setup the WDT */
+#if WDT_SETUP
+
+WDT->CTR &= ~WDTENB_nVal; 
+ c000212:	4b11      	ldr	r3, [pc, #68]	; (c000258 <_end_text+0x58>)
+ c000214:	4a10      	ldr	r2, [pc, #64]	; (c000258 <_end_text+0x58>)
+ c000216:	6852      	ldr	r2, [r2, #4]
+ c000218:	f022 0201 	bic.w	r2, r2, #1
+ c00021c:	605a      	str	r2, [r3, #4]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:237
+
+#endif
+
+/* Setup the Flash Wait State */
+#if PMU_FLASH
+temp = FLASH0->FCON; 
+ c00021e:	4b0f      	ldr	r3, [pc, #60]	; (c00025c <_end_text+0x5c>)
+ c000220:	f503 5380 	add.w	r3, r3, #4096	; 0x1000
+ c000224:	3314      	adds	r3, #20
+ c000226:	681b      	ldr	r3, [r3, #0]
+ c000228:	607b      	str	r3, [r7, #4]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:238
+temp &= ~FLASH_FCON_WSPFLASH_Msk;
+ c00022a:	687b      	ldr	r3, [r7, #4]
+ c00022c:	f023 030f 	bic.w	r3, r3, #15
+ c000230:	607b      	str	r3, [r7, #4]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:239
+temp |= PMU_FLASH_WS+3;
+ c000232:	687b      	ldr	r3, [r7, #4]
+ c000234:	f043 0303 	orr.w	r3, r3, #3
+ c000238:	607b      	str	r3, [r7, #4]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:240
+FLASH0->FCON = temp;
+ c00023a:	4b08      	ldr	r3, [pc, #32]	; (c00025c <_end_text+0x5c>)
+ c00023c:	687a      	ldr	r2, [r7, #4]
+ c00023e:	f503 5380 	add.w	r3, r3, #4096	; 0x1000
+ c000242:	3314      	adds	r3, #20
+ c000244:	601a      	str	r2, [r3, #0]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:266
+#endif
+
+
+/* Setup the System clock */ 
+#if SCU_CLOCK_SETUP
+SystemClockSetup();
+ c000246:	f000 f879 	bl	c00033c <SystemClockSetup>
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:272
+#endif
+
+/*----------------------------------------------------------------------------
+  Clock Variable definitions
+ *----------------------------------------------------------------------------*/
+SystemCoreClockUpdate();/*!< System Clock Frequency (Core Clock)*/
+ c00024a:	f000 f809 	bl	c000260 <SystemCoreClockUpdate>
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:282
+USBClockSetup();
+#endif
+
+
+
+}
+ c00024e:	3708      	adds	r7, #8
+ c000250:	46bd      	mov	sp, r7
+ c000252:	bd80      	pop	{r7, pc}
+ c000254:	e000ed00 	.word	0xe000ed00
+ c000258:	50008000 	.word	0x50008000
+ c00025c:	58001000 	.word	0x58001000
+
+Disassembly of section .text.SystemCoreClockUpdate:
+
+0c000260 <SystemCoreClockUpdate>:
+SystemCoreClockUpdate():
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:292
+  * @note   -  
+  * @param  None
+  * @retval None
+  */
+void SystemCoreClockUpdate(void)
+{
+ c000260:	b480      	push	{r7}
+ c000262:	b085      	sub	sp, #20
+ c000264:	af00      	add	r7, sp, #0
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:302
+
+
+/*----------------------------------------------------------------------------
+  Clock Variable definitions
+ *----------------------------------------------------------------------------*/
+if (SCU_CLK->SYSCLKCR ==  0x00010000)
+ c000266:	4b30      	ldr	r3, [pc, #192]	; (c000328 <SystemCoreClockUpdate+0xc8>)
+ c000268:	68db      	ldr	r3, [r3, #12]
+ c00026a:	f5b3 3f80 	cmp.w	r3, #65536	; 0x10000
+ c00026e:	d152      	bne.n	c000316 <SystemCoreClockUpdate+0xb6>
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:304
+{
+	if (SCU_PLL->PLLSTAT & SCU_PLL_PLLSTAT_VCOLOCK_Msk){
+ c000270:	4b2e      	ldr	r3, [pc, #184]	; (c00032c <SystemCoreClockUpdate+0xcc>)
+ c000272:	681b      	ldr	r3, [r3, #0]
+ c000274:	f003 0304 	and.w	r3, r3, #4
+ c000278:	2b00      	cmp	r3, #0
+ c00027a:	d04f      	beq.n	c00031c <SystemCoreClockUpdate+0xbc>
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:307
+		/* check if PLL is locked */
+		/* read back divider settings */
+		 PDIV = ((SCU_PLL->PLLCON1 & SCU_PLL_PLLCON1_PDIV_Msk)>>24)+1;
+ c00027c:	4b2b      	ldr	r3, [pc, #172]	; (c00032c <SystemCoreClockUpdate+0xcc>)
+ c00027e:	689b      	ldr	r3, [r3, #8]
+ c000280:	f003 6370 	and.w	r3, r3, #251658240	; 0xf000000
+ c000284:	0e1b      	lsrs	r3, r3, #24
+ c000286:	3301      	adds	r3, #1
+ c000288:	60fb      	str	r3, [r7, #12]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:308
+		 NDIV = ((SCU_PLL->PLLCON1 & SCU_PLL_PLLCON1_NDIV_Msk)>>8)+1;
+ c00028a:	4b28      	ldr	r3, [pc, #160]	; (c00032c <SystemCoreClockUpdate+0xcc>)
+ c00028c:	689b      	ldr	r3, [r3, #8]
+ c00028e:	f403 43fe 	and.w	r3, r3, #32512	; 0x7f00
+ c000292:	0a1b      	lsrs	r3, r3, #8
+ c000294:	3301      	adds	r3, #1
+ c000296:	60bb      	str	r3, [r7, #8]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:309
+		 K2DIV  = ((SCU_PLL->PLLCON1 & SCU_PLL_PLLCON1_K2DIV_Msk)>>16)+1;
+ c000298:	4b24      	ldr	r3, [pc, #144]	; (c00032c <SystemCoreClockUpdate+0xcc>)
+ c00029a:	689b      	ldr	r3, [r3, #8]
+ c00029c:	f403 03fe 	and.w	r3, r3, #8323072	; 0x7f0000
+ c0002a0:	0c1b      	lsrs	r3, r3, #16
+ c0002a2:	3301      	adds	r3, #1
+ c0002a4:	607b      	str	r3, [r7, #4]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:311
+
+		if(SCU_PLL->PLLCON2 & SCU_PLL_PLLCON2_PINSEL_Msk){
+ c0002a6:	4b21      	ldr	r3, [pc, #132]	; (c00032c <SystemCoreClockUpdate+0xcc>)
+ c0002a8:	68db      	ldr	r3, [r3, #12]
+ c0002aa:	f003 0301 	and.w	r3, r3, #1
+ c0002ae:	2b00      	cmp	r3, #0
+ c0002b0:	d018      	beq.n	c0002e4 <SystemCoreClockUpdate+0x84>
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:313
+		/* the selected clock is the Backup clock fofi */
+		VCO = (CLOCK_BACK_UP/PDIV)*NDIV;
+ c0002b2:	4a1f      	ldr	r2, [pc, #124]	; (c000330 <SystemCoreClockUpdate+0xd0>)
+ c0002b4:	68fb      	ldr	r3, [r7, #12]
+ c0002b6:	fbb2 f3f3 	udiv	r3, r2, r3
+ c0002ba:	68ba      	ldr	r2, [r7, #8]
+ c0002bc:	fb02 f303 	mul.w	r3, r2, r3
+ c0002c0:	603b      	str	r3, [r7, #0]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:314
+		SystemCoreClock = VCO/K2DIV;
+ c0002c2:	683a      	ldr	r2, [r7, #0]
+ c0002c4:	687b      	ldr	r3, [r7, #4]
+ c0002c6:	fbb2 f2f3 	udiv	r2, r2, r3
+ c0002ca:	4b1a      	ldr	r3, [pc, #104]	; (c000334 <SystemCoreClockUpdate+0xd4>)
+ c0002cc:	601a      	str	r2, [r3, #0]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:316
+		/* in case the sysclock div is used */
+		SystemCoreClock = SystemCoreClock/((SCU_CLK->SYSCLKCR & SCU_CLK_SYSCLKCR_SYSDIV_Msk)+1);
+ c0002ce:	4b19      	ldr	r3, [pc, #100]	; (c000334 <SystemCoreClockUpdate+0xd4>)
+ c0002d0:	681a      	ldr	r2, [r3, #0]
+ c0002d2:	4b15      	ldr	r3, [pc, #84]	; (c000328 <SystemCoreClockUpdate+0xc8>)
+ c0002d4:	68db      	ldr	r3, [r3, #12]
+ c0002d6:	b2db      	uxtb	r3, r3
+ c0002d8:	3301      	adds	r3, #1
+ c0002da:	fbb2 f2f3 	udiv	r2, r2, r3
+ c0002de:	4b15      	ldr	r3, [pc, #84]	; (c000334 <SystemCoreClockUpdate+0xd4>)
+ c0002e0:	601a      	str	r2, [r3, #0]
+ c0002e2:	e01b      	b.n	c00031c <SystemCoreClockUpdate+0xbc>
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:322
+		
+		}
+		else
+		{
+		/* the selected clock is the PLL external oscillator */		
+		VCO = (CLOCK_CRYSTAL_FREQUENCY/PDIV)*NDIV;
+ c0002e4:	4a14      	ldr	r2, [pc, #80]	; (c000338 <SystemCoreClockUpdate+0xd8>)
+ c0002e6:	68fb      	ldr	r3, [r7, #12]
+ c0002e8:	fbb2 f3f3 	udiv	r3, r2, r3
+ c0002ec:	68ba      	ldr	r2, [r7, #8]
+ c0002ee:	fb02 f303 	mul.w	r3, r2, r3
+ c0002f2:	603b      	str	r3, [r7, #0]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:323
+		SystemCoreClock = VCO/K2DIV;
+ c0002f4:	683a      	ldr	r2, [r7, #0]
+ c0002f6:	687b      	ldr	r3, [r7, #4]
+ c0002f8:	fbb2 f2f3 	udiv	r2, r2, r3
+ c0002fc:	4b0d      	ldr	r3, [pc, #52]	; (c000334 <SystemCoreClockUpdate+0xd4>)
+ c0002fe:	601a      	str	r2, [r3, #0]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:325
+		/* in case the sysclock div is used */
+		SystemCoreClock = SystemCoreClock/((SCU_CLK->SYSCLKCR & SCU_CLK_SYSCLKCR_SYSDIV_Msk)+1);
+ c000300:	4b0c      	ldr	r3, [pc, #48]	; (c000334 <SystemCoreClockUpdate+0xd4>)
+ c000302:	681a      	ldr	r2, [r3, #0]
+ c000304:	4b08      	ldr	r3, [pc, #32]	; (c000328 <SystemCoreClockUpdate+0xc8>)
+ c000306:	68db      	ldr	r3, [r3, #12]
+ c000308:	b2db      	uxtb	r3, r3
+ c00030a:	3301      	adds	r3, #1
+ c00030c:	fbb2 f2f3 	udiv	r2, r2, r3
+ c000310:	4b08      	ldr	r3, [pc, #32]	; (c000334 <SystemCoreClockUpdate+0xd4>)
+ c000312:	601a      	str	r2, [r3, #0]
+ c000314:	e002      	b.n	c00031c <SystemCoreClockUpdate+0xbc>
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:333
+	
+	}
+}
+else
+{
+SystemCoreClock = CLOCK_BACK_UP;
+ c000316:	4b07      	ldr	r3, [pc, #28]	; (c000334 <SystemCoreClockUpdate+0xd4>)
+ c000318:	4a05      	ldr	r2, [pc, #20]	; (c000330 <SystemCoreClockUpdate+0xd0>)
+ c00031a:	601a      	str	r2, [r3, #0]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:337
+}
+
+
+}
+ c00031c:	3714      	adds	r7, #20
+ c00031e:	46bd      	mov	sp, r7
+ c000320:	f85d 7b04 	ldr.w	r7, [sp], #4
+ c000324:	4770      	bx	lr
+ c000326:	bf00      	nop
+ c000328:	50004600 	.word	0x50004600
+ c00032c:	50004710 	.word	0x50004710
+ c000330:	016e3600 	.word	0x016e3600
+ c000334:	20000000 	.word	0x20000000
+ c000338:	00b71b00 	.word	0x00b71b00
+
+Disassembly of section .text.SystemClockSetup:
+
+0c00033c <SystemClockSetup>:
+SystemClockSetup():
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:348
+  * @param  None
+  * @retval None
+  */
+#if (SCU_CLOCK_SETUP == 1)
+static int SystemClockSetup(void)
+{
+ c00033c:	b580      	push	{r7, lr}
+ c00033e:	b082      	sub	sp, #8
+ c000340:	af00      	add	r7, sp, #0
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:354
+int temp;
+unsigned int long VCO;
+int stepping_K2DIV;	
+
+/* this weak function enables DAVE3 clock App usage */	
+if(AllowPLLInitByStartup()){
+ c000342:	f000 fa8d 	bl	c000860 <AllowPLLInitByStartup>
+ c000346:	4603      	mov	r3, r0
+ c000348:	2b00      	cmp	r3, #0
+ c00034a:	f000 8133 	beq.w	c0005b4 <SystemClockSetup+0x278>
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:357
+	
+/* check if PLL is switched on */
+if ((SCU_PLL->PLLCON0 &(SCU_PLL_PLLCON0_VCOPWD_Msk | SCU_PLL_PLLCON0_PLLPWD_Msk)) != 0){
+ c00034e:	4b9c      	ldr	r3, [pc, #624]	; (c0005c0 <SystemClockSetup+0x284>)
+ c000350:	685a      	ldr	r2, [r3, #4]
+ c000352:	4b9c      	ldr	r3, [pc, #624]	; (c0005c4 <SystemClockSetup+0x288>)
+ c000354:	4013      	ands	r3, r2
+ c000356:	2b00      	cmp	r3, #0
+ c000358:	d007      	beq.n	c00036a <SystemClockSetup+0x2e>
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:359
+/* enable PLL first */
+  SCU_PLL->PLLCON0 &= ~(SCU_PLL_PLLCON0_VCOPWD_Msk | SCU_PLL_PLLCON0_PLLPWD_Msk);
+ c00035a:	4a99      	ldr	r2, [pc, #612]	; (c0005c0 <SystemClockSetup+0x284>)
+ c00035c:	4b98      	ldr	r3, [pc, #608]	; (c0005c0 <SystemClockSetup+0x284>)
+ c00035e:	685b      	ldr	r3, [r3, #4]
+ c000360:	f423 3380 	bic.w	r3, r3, #65536	; 0x10000
+ c000364:	f023 0302 	bic.w	r3, r3, #2
+ c000368:	6053      	str	r3, [r2, #4]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:370
+  {
+	/********************************************************************************************************************/
+	/*   Use external crystal for PLL clock input                                                                            */
+	/********************************************************************************************************************/
+
+   if (SCU_OSC->OSCHPCTRL & SCU_OSC_OSCHPCTRL_MODE_Msk){
+ c00036a:	4b97      	ldr	r3, [pc, #604]	; (c0005c8 <SystemClockSetup+0x28c>)
+ c00036c:	685b      	ldr	r3, [r3, #4]
+ c00036e:	f003 0330 	and.w	r3, r3, #48	; 0x30
+ c000372:	2b00      	cmp	r3, #0
+ c000374:	d03b      	beq.n	c0003ee <SystemClockSetup+0xb2>
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:371
+	   SCU_OSC->OSCHPCTRL &= ~(SCU_OSC_HP_MODE);	 /*enable the OSC_HP*/
+ c000376:	4b94      	ldr	r3, [pc, #592]	; (c0005c8 <SystemClockSetup+0x28c>)
+ c000378:	4a93      	ldr	r2, [pc, #588]	; (c0005c8 <SystemClockSetup+0x28c>)
+ c00037a:	6852      	ldr	r2, [r2, #4]
+ c00037c:	f022 02f0 	bic.w	r2, r2, #240	; 0xf0
+ c000380:	605a      	str	r2, [r3, #4]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:373
+	   /* setup OSC WDG devider */
+	   SCU_OSC->OSCHPCTRL |= (SCU_OSCHPWDGDIV<<16);         
+ c000382:	4b91      	ldr	r3, [pc, #580]	; (c0005c8 <SystemClockSetup+0x28c>)
+ c000384:	4a90      	ldr	r2, [pc, #576]	; (c0005c8 <SystemClockSetup+0x28c>)
+ c000386:	6852      	ldr	r2, [r2, #4]
+ c000388:	f442 3200 	orr.w	r2, r2, #131072	; 0x20000
+ c00038c:	605a      	str	r2, [r3, #4]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:375
+	   /* select external OSC as PLL input */
+	   SCU_PLL->PLLCON2 &= ~SCU_PLL_PLLCON2_PINSEL_Msk;
+ c00038e:	4b8c      	ldr	r3, [pc, #560]	; (c0005c0 <SystemClockSetup+0x284>)
+ c000390:	4a8b      	ldr	r2, [pc, #556]	; (c0005c0 <SystemClockSetup+0x284>)
+ c000392:	68d2      	ldr	r2, [r2, #12]
+ c000394:	f022 0201 	bic.w	r2, r2, #1
+ c000398:	60da      	str	r2, [r3, #12]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:377
+	   /* restart OSC Watchdog */
+	   SCU_PLL->PLLCON0 &= ~SCU_PLL_PLLCON0_OSCRES_Msk;  
+ c00039a:	4b89      	ldr	r3, [pc, #548]	; (c0005c0 <SystemClockSetup+0x284>)
+ c00039c:	4a88      	ldr	r2, [pc, #544]	; (c0005c0 <SystemClockSetup+0x284>)
+ c00039e:	6852      	ldr	r2, [r2, #4]
+ c0003a0:	f422 3200 	bic.w	r2, r2, #131072	; 0x20000
+ c0003a4:	605a      	str	r2, [r3, #4]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:381
+
+       /* Timeout for wait loop ~150ms */
+	   /********************************/
+	   SysTick->LOAD  = ((5000000+100) & SysTick_LOAD_RELOAD_Msk) - 1;/* set reload register */
+ c0003a6:	4b89      	ldr	r3, [pc, #548]	; (c0005cc <SystemClockSetup+0x290>)
+ c0003a8:	4a89      	ldr	r2, [pc, #548]	; (c0005d0 <SystemClockSetup+0x294>)
+ c0003aa:	605a      	str	r2, [r3, #4]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:382
+	   SysTick->VAL   = 0;                                         /* Load the SysTick Counter Value */
+ c0003ac:	4b87      	ldr	r3, [pc, #540]	; (c0005cc <SystemClockSetup+0x290>)
+ c0003ae:	2200      	movs	r2, #0
+ c0003b0:	609a      	str	r2, [r3, #8]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:383
+	   SysTick->CTRL  = SysTick_CTRL_CLKSOURCE_Msk |
+ c0003b2:	4b86      	ldr	r3, [pc, #536]	; (c0005cc <SystemClockSetup+0x290>)
+ c0003b4:	2205      	movs	r2, #5
+ c0003b6:	601a      	str	r2, [r3, #0]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:388 (discriminator 1)
+	                   SysTick_CTRL_ENABLE_Msk;                    /* Enable SysTick IRQ and SysTick Timer */		  
+	   do 
+	   {
+       ;/* wait for ~150ms  */
+	   }while((((SCU_PLL->PLLSTAT) & (SCU_PLL_PLLSTAT_PLLHV_Msk | SCU_PLL_PLLSTAT_PLLLV_Msk |SCU_PLL_PLLSTAT_PLLSP_Msk)) != 0x380)&&(SysTick->VAL >= 500)); 
+ c0003b8:	4b81      	ldr	r3, [pc, #516]	; (c0005c0 <SystemClockSetup+0x284>)
+ c0003ba:	681b      	ldr	r3, [r3, #0]
+ c0003bc:	f403 7360 	and.w	r3, r3, #896	; 0x380
+ c0003c0:	f5b3 7f60 	cmp.w	r3, #896	; 0x380
+ c0003c4:	d004      	beq.n	c0003d0 <SystemClockSetup+0x94>
+ c0003c6:	4b81      	ldr	r3, [pc, #516]	; (c0005cc <SystemClockSetup+0x290>)
+ c0003c8:	689b      	ldr	r3, [r3, #8]
+ c0003ca:	f5b3 7ffa 	cmp.w	r3, #500	; 0x1f4
+ c0003ce:	d2f3      	bcs.n	c0003b8 <SystemClockSetup+0x7c>
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:390
+
+	   SysTick->CTRL  &= ~SysTick_CTRL_ENABLE_Msk;                 /* Stop SysTick Timer */
+ c0003d0:	4b7e      	ldr	r3, [pc, #504]	; (c0005cc <SystemClockSetup+0x290>)
+ c0003d2:	4a7e      	ldr	r2, [pc, #504]	; (c0005cc <SystemClockSetup+0x290>)
+ c0003d4:	6812      	ldr	r2, [r2, #0]
+ c0003d6:	f022 0201 	bic.w	r2, r2, #1
+ c0003da:	601a      	str	r2, [r3, #0]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:391
+	   if (((SCU_PLL->PLLSTAT) & (SCU_PLL_PLLSTAT_PLLHV_Msk | SCU_PLL_PLLSTAT_PLLLV_Msk |SCU_PLL_PLLSTAT_PLLSP_Msk)) != 0x380)
+ c0003dc:	4b78      	ldr	r3, [pc, #480]	; (c0005c0 <SystemClockSetup+0x284>)
+ c0003de:	681b      	ldr	r3, [r3, #0]
+ c0003e0:	f403 7360 	and.w	r3, r3, #896	; 0x380
+ c0003e4:	f5b3 7f60 	cmp.w	r3, #896	; 0x380
+ c0003e8:	d001      	beq.n	c0003ee <SystemClockSetup+0xb2>
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:392
+	   return(0);/* Return Error */
+ c0003ea:	2300      	movs	r3, #0
+ c0003ec:	e0e3      	b.n	c0005b6 <SystemClockSetup+0x27a>
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:482
+
+	/********************************************************************************************************************/
+	/*   Setup and look the main PLL                                                                                    */
+	/********************************************************************************************************************/
+
+if (!(SCU_PLL->PLLSTAT & SCU_PLL_PLLSTAT_VCOLOCK_Msk)){
+ c0003ee:	4b74      	ldr	r3, [pc, #464]	; (c0005c0 <SystemClockSetup+0x284>)
+ c0003f0:	681b      	ldr	r3, [r3, #0]
+ c0003f2:	f003 0304 	and.w	r3, r3, #4
+ c0003f6:	2b00      	cmp	r3, #0
+ c0003f8:	f040 80dc 	bne.w	c0005b4 <SystemClockSetup+0x278>
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:485
+	/* Systen is still running from internal clock */
+		   /* select FOFI as system clock */
+		   if((SCU_CLK->SYSCLKCR & SCU_CLK_SYSCLKCR_SYSSEL_Msk) != 0x0)SCU_CLK->SYSCLKCR &= ~SCU_CLK_SYSCLKCR_SYSSEL_Msk; /*Select FOFI*/
+ c0003fc:	4b75      	ldr	r3, [pc, #468]	; (c0005d4 <SystemClockSetup+0x298>)
+ c0003fe:	68db      	ldr	r3, [r3, #12]
+ c000400:	f403 3380 	and.w	r3, r3, #65536	; 0x10000
+ c000404:	2b00      	cmp	r3, #0
+ c000406:	d005      	beq.n	c000414 <SystemClockSetup+0xd8>
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:485 (discriminator 1)
+ c000408:	4b72      	ldr	r3, [pc, #456]	; (c0005d4 <SystemClockSetup+0x298>)
+ c00040a:	4a72      	ldr	r2, [pc, #456]	; (c0005d4 <SystemClockSetup+0x298>)
+ c00040c:	68d2      	ldr	r2, [r2, #12]
+ c00040e:	f422 3280 	bic.w	r2, r2, #65536	; 0x10000
+ c000412:	60da      	str	r2, [r3, #12]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:489 (discriminator 1)
+
+
+			 /*calulation for stepping*/
+			 if (SCU_PLL_CLOCK_INPUT == SCU_CLOCK_CRYSTAL)VCO = (CLOCK_CRYSTAL_FREQUENCY/(SCU_PLL_PDIV+1))*(SCU_PLL_NDIV+1);
+ c000414:	4b70      	ldr	r3, [pc, #448]	; (c0005d8 <SystemClockSetup+0x29c>)
+ c000416:	607b      	str	r3, [r7, #4]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:493 (discriminator 1)
+			 if ((SCU_PLL_CLOCK_INPUT == SCU_CLOCK_BACK_UP_AUTOMATIC) ||(SCU_PLL_CLOCK_INPUT == SCU_CLOCK_BACK_UP_FACTORY))
+					VCO = (CLOCK_BACK_UP/(SCU_PLL_PDIV+1))*(SCU_PLL_NDIV+1);
+	 
+			 stepping_K2DIV = (VCO/24000000)-1;	
+ c000418:	687a      	ldr	r2, [r7, #4]
+ c00041a:	4b70      	ldr	r3, [pc, #448]	; (c0005dc <SystemClockSetup+0x2a0>)
+ c00041c:	fba3 1302 	umull	r1, r3, r3, r2
+ c000420:	0d5b      	lsrs	r3, r3, #21
+ c000422:	3b01      	subs	r3, #1
+ c000424:	603b      	str	r3, [r7, #0]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:495 (discriminator 1)
+			 /* Go to bypass the Main PLL */
+		   SCU_PLL->PLLCON0 |= SCU_PLL_PLLCON0_VCOBYP_Msk;
+ c000426:	4b66      	ldr	r3, [pc, #408]	; (c0005c0 <SystemClockSetup+0x284>)
+ c000428:	4a65      	ldr	r2, [pc, #404]	; (c0005c0 <SystemClockSetup+0x284>)
+ c00042a:	6852      	ldr	r2, [r2, #4]
+ c00042c:	f042 0201 	orr.w	r2, r2, #1
+ c000430:	605a      	str	r2, [r3, #4]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:497 (discriminator 1)
+		   /* disconnect OSC_HP to PLL */
+		   SCU_PLL->PLLCON0 |= SCU_PLL_PLLCON0_FINDIS_Msk;
+ c000432:	4b63      	ldr	r3, [pc, #396]	; (c0005c0 <SystemClockSetup+0x284>)
+ c000434:	4a62      	ldr	r2, [pc, #392]	; (c0005c0 <SystemClockSetup+0x284>)
+ c000436:	6852      	ldr	r2, [r2, #4]
+ c000438:	f042 0210 	orr.w	r2, r2, #16
+ c00043c:	605a      	str	r2, [r3, #4]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:499 (discriminator 1)
+		   /* Setup devider settings for main PLL */
+		   SCU_PLL->PLLCON1 = ((SCU_PLL_K1DIV) | (SCU_PLL_NDIV<<8) | (stepping_K2DIV<<16) | (SCU_PLL_PDIV<<24));
+ c00043e:	4a60      	ldr	r2, [pc, #384]	; (c0005c0 <SystemClockSetup+0x284>)
+ c000440:	683b      	ldr	r3, [r7, #0]
+ c000442:	0419      	lsls	r1, r3, #16
+ c000444:	4b66      	ldr	r3, [pc, #408]	; (c0005e0 <SystemClockSetup+0x2a4>)
+ c000446:	430b      	orrs	r3, r1
+ c000448:	6093      	str	r3, [r2, #8]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:501 (discriminator 1)
+		   /* we may have to set OSCDISCDIS */
+		   SCU_PLL->PLLCON0 |= SCU_PLL_PLLCON0_OSCDISCDIS_Msk;
+ c00044a:	4b5d      	ldr	r3, [pc, #372]	; (c0005c0 <SystemClockSetup+0x284>)
+ c00044c:	4a5c      	ldr	r2, [pc, #368]	; (c0005c0 <SystemClockSetup+0x284>)
+ c00044e:	6852      	ldr	r2, [r2, #4]
+ c000450:	f042 0240 	orr.w	r2, r2, #64	; 0x40
+ c000454:	605a      	str	r2, [r3, #4]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:503 (discriminator 1)
+		   /* connect OSC_HP to PLL */
+		   SCU_PLL->PLLCON0 &= ~SCU_PLL_PLLCON0_FINDIS_Msk;
+ c000456:	4b5a      	ldr	r3, [pc, #360]	; (c0005c0 <SystemClockSetup+0x284>)
+ c000458:	4a59      	ldr	r2, [pc, #356]	; (c0005c0 <SystemClockSetup+0x284>)
+ c00045a:	6852      	ldr	r2, [r2, #4]
+ c00045c:	f022 0210 	bic.w	r2, r2, #16
+ c000460:	605a      	str	r2, [r3, #4]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:505 (discriminator 1)
+		   /* restart PLL Lock detection */
+		   SCU_PLL->PLLCON0 |= SCU_PLL_PLLCON0_RESLD_Msk;
+ c000462:	4b57      	ldr	r3, [pc, #348]	; (c0005c0 <SystemClockSetup+0x284>)
+ c000464:	4a56      	ldr	r2, [pc, #344]	; (c0005c0 <SystemClockSetup+0x284>)
+ c000466:	6852      	ldr	r2, [r2, #4]
+ c000468:	f442 2280 	orr.w	r2, r2, #262144	; 0x40000
+ c00046c:	605a      	str	r2, [r3, #4]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:510 (discriminator 1)
+		   /* wait for PLL Lock */
+		   /* setup time out loop */
+	       /* Timeout for wait loo ~150ms */
+		   /********************************/
+		   SysTick->LOAD  = ((5000000+100) & SysTick_LOAD_RELOAD_Msk) - 1;/* set reload register */
+ c00046e:	4b57      	ldr	r3, [pc, #348]	; (c0005cc <SystemClockSetup+0x290>)
+ c000470:	4a57      	ldr	r2, [pc, #348]	; (c0005d0 <SystemClockSetup+0x294>)
+ c000472:	605a      	str	r2, [r3, #4]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:511 (discriminator 1)
+		   SysTick->VAL   = 0;                                         /* Load the SysTick Counter Value */
+ c000474:	4b55      	ldr	r3, [pc, #340]	; (c0005cc <SystemClockSetup+0x290>)
+ c000476:	2200      	movs	r2, #0
+ c000478:	609a      	str	r2, [r3, #8]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:512 (discriminator 1)
+		   SysTick->CTRL  = SysTick_CTRL_CLKSOURCE_Msk |
+ c00047a:	4b54      	ldr	r3, [pc, #336]	; (c0005cc <SystemClockSetup+0x290>)
+ c00047c:	2205      	movs	r2, #5
+ c00047e:	601a      	str	r2, [r3, #0]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:515 (discriminator 1)
+		                   SysTick_CTRL_ENABLE_Msk;                    /* Enable SysTick IRQ and SysTick Timer */		  
+		   
+		   while ((!(SCU_PLL->PLLSTAT & SCU_PLL_PLLSTAT_VCOLOCK_Msk))&&(SysTick->VAL >= 500));
+ c000480:	bf00      	nop
+ c000482:	4b4f      	ldr	r3, [pc, #316]	; (c0005c0 <SystemClockSetup+0x284>)
+ c000484:	681b      	ldr	r3, [r3, #0]
+ c000486:	f003 0304 	and.w	r3, r3, #4
+ c00048a:	2b00      	cmp	r3, #0
+ c00048c:	d104      	bne.n	c000498 <SystemClockSetup+0x15c>
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:515 (discriminator 2)
+ c00048e:	4b4f      	ldr	r3, [pc, #316]	; (c0005cc <SystemClockSetup+0x290>)
+ c000490:	689b      	ldr	r3, [r3, #8]
+ c000492:	f5b3 7ffa 	cmp.w	r3, #500	; 0x1f4
+ c000496:	d2f4      	bcs.n	c000482 <SystemClockSetup+0x146>
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:516
+	       SysTick->CTRL  &= ~SysTick_CTRL_ENABLE_Msk;                 /* Stop SysTick Timer */
+ c000498:	4b4c      	ldr	r3, [pc, #304]	; (c0005cc <SystemClockSetup+0x290>)
+ c00049a:	4a4c      	ldr	r2, [pc, #304]	; (c0005cc <SystemClockSetup+0x290>)
+ c00049c:	6812      	ldr	r2, [r2, #0]
+ c00049e:	f022 0201 	bic.w	r2, r2, #1
+ c0004a2:	601a      	str	r2, [r3, #0]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:518
+
+		   if ((SCU_PLL->PLLSTAT & SCU_PLL_PLLSTAT_VCOLOCK_Msk)==SCU_PLL_PLLSTAT_VCOLOCK_Msk)
+ c0004a4:	4b46      	ldr	r3, [pc, #280]	; (c0005c0 <SystemClockSetup+0x284>)
+ c0004a6:	681b      	ldr	r3, [r3, #0]
+ c0004a8:	f003 0304 	and.w	r3, r3, #4
+ c0004ac:	2b00      	cmp	r3, #0
+ c0004ae:	d025      	beq.n	c0004fc <SystemClockSetup+0x1c0>
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:521
+		   		{
+				/* Go back to the Main PLL */
+				SCU_PLL->PLLCON0 &= ~SCU_PLL_PLLCON0_VCOBYP_Msk;
+ c0004b0:	4b43      	ldr	r3, [pc, #268]	; (c0005c0 <SystemClockSetup+0x284>)
+ c0004b2:	4a43      	ldr	r2, [pc, #268]	; (c0005c0 <SystemClockSetup+0x284>)
+ c0004b4:	6852      	ldr	r2, [r2, #4]
+ c0004b6:	f022 0201 	bic.w	r2, r2, #1
+ c0004ba:	605a      	str	r2, [r3, #4]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:530
+	
+	   /*********************************************************
+	   here we need to setup the system clock divider
+	   *********************************************************/
+	
+		SCU_CLK->CPUCLKCR = SCU_CPUCLKCR_DIV;
+ c0004bc:	4b45      	ldr	r3, [pc, #276]	; (c0005d4 <SystemClockSetup+0x298>)
+ c0004be:	2200      	movs	r2, #0
+ c0004c0:	611a      	str	r2, [r3, #16]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:531
+		SCU_CLK->PBCLKCR = SCU_PBCLKCR_DIV;	
+ c0004c2:	4b44      	ldr	r3, [pc, #272]	; (c0005d4 <SystemClockSetup+0x298>)
+ c0004c4:	2200      	movs	r2, #0
+ c0004c6:	615a      	str	r2, [r3, #20]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:532
+		SCU_CLK->CCUCLKCR = SCU_CCUCLKCR_DIV;
+ c0004c8:	4b42      	ldr	r3, [pc, #264]	; (c0005d4 <SystemClockSetup+0x298>)
+ c0004ca:	2200      	movs	r2, #0
+ c0004cc:	621a      	str	r2, [r3, #32]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:536
+	
+
+		 /* Switch system clock to PLL */
+	   SCU_CLK->SYSCLKCR |=  0x00010000; 
+ c0004ce:	4b41      	ldr	r3, [pc, #260]	; (c0005d4 <SystemClockSetup+0x298>)
+ c0004d0:	4a40      	ldr	r2, [pc, #256]	; (c0005d4 <SystemClockSetup+0x298>)
+ c0004d2:	68d2      	ldr	r2, [r2, #12]
+ c0004d4:	f442 3280 	orr.w	r2, r2, #65536	; 0x10000
+ c0004d8:	60da      	str	r2, [r3, #12]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:539
+				
+	   /* we may have to reset OSCDISCDIS */
+	   SCU_PLL->PLLCON0 &= ~SCU_PLL_PLLCON0_OSCDISCDIS_Msk;
+ c0004da:	4b39      	ldr	r3, [pc, #228]	; (c0005c0 <SystemClockSetup+0x284>)
+ c0004dc:	4a38      	ldr	r2, [pc, #224]	; (c0005c0 <SystemClockSetup+0x284>)
+ c0004de:	6852      	ldr	r2, [r2, #4]
+ c0004e0:	f022 0240 	bic.w	r2, r2, #64	; 0x40
+ c0004e4:	605a      	str	r2, [r3, #4]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:545
+				
+																  
+		 /*********************************************************/
+		 /* Delay for next K2 step ~50탎 */
+		 /*********************************************************/
+		 SysTick->LOAD  = ((1250+100) & SysTick_LOAD_RELOAD_Msk) - 1;/* set reload register */
+ c0004e6:	4b39      	ldr	r3, [pc, #228]	; (c0005cc <SystemClockSetup+0x290>)
+ c0004e8:	f240 5245 	movw	r2, #1349	; 0x545
+ c0004ec:	605a      	str	r2, [r3, #4]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:546
+		 SysTick->VAL   = 0;                                         /* Load the SysTick Counter Value */
+ c0004ee:	4b37      	ldr	r3, [pc, #220]	; (c0005cc <SystemClockSetup+0x290>)
+ c0004f0:	2200      	movs	r2, #0
+ c0004f2:	609a      	str	r2, [r3, #8]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:547
+		 SysTick->CTRL  = SysTick_CTRL_CLKSOURCE_Msk |
+ c0004f4:	4b35      	ldr	r3, [pc, #212]	; (c0005cc <SystemClockSetup+0x290>)
+ c0004f6:	2205      	movs	r2, #5
+ c0004f8:	601a      	str	r2, [r3, #0]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:550
+										 SysTick_CTRL_ENABLE_Msk;                    /* Enable SysTick IRQ and SysTick Timer */
+	
+		 while (SysTick->VAL >= 100);								   /* wait for ~50탎  */
+ c0004fa:	e001      	b.n	c000500 <SystemClockSetup+0x1c4>
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:523
+		   if ((SCU_PLL->PLLSTAT & SCU_PLL_PLLSTAT_VCOLOCK_Msk)==SCU_PLL_PLLSTAT_VCOLOCK_Msk)
+		   		{
+				/* Go back to the Main PLL */
+				SCU_PLL->PLLCON0 &= ~SCU_PLL_PLLCON0_VCOBYP_Msk;
+				}
+				else return(0);
+ c0004fc:	2300      	movs	r3, #0
+ c0004fe:	e05a      	b.n	c0005b6 <SystemClockSetup+0x27a>
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:550 (discriminator 1)
+		 SysTick->LOAD  = ((1250+100) & SysTick_LOAD_RELOAD_Msk) - 1;/* set reload register */
+		 SysTick->VAL   = 0;                                         /* Load the SysTick Counter Value */
+		 SysTick->CTRL  = SysTick_CTRL_CLKSOURCE_Msk |
+										 SysTick_CTRL_ENABLE_Msk;                    /* Enable SysTick IRQ and SysTick Timer */
+	
+		 while (SysTick->VAL >= 100);								   /* wait for ~50탎  */
+ c000500:	4b32      	ldr	r3, [pc, #200]	; (c0005cc <SystemClockSetup+0x290>)
+ c000502:	689b      	ldr	r3, [r3, #8]
+ c000504:	2b63      	cmp	r3, #99	; 0x63
+ c000506:	d8fb      	bhi.n	c000500 <SystemClockSetup+0x1c4>
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:551
+		 SysTick->CTRL  &= ~SysTick_CTRL_ENABLE_Msk;                 /* Stop SysTick Timer */
+ c000508:	4b30      	ldr	r3, [pc, #192]	; (c0005cc <SystemClockSetup+0x290>)
+ c00050a:	4a30      	ldr	r2, [pc, #192]	; (c0005cc <SystemClockSetup+0x290>)
+ c00050c:	6812      	ldr	r2, [r2, #0]
+ c00050e:	f022 0201 	bic.w	r2, r2, #1
+ c000512:	601a      	str	r2, [r3, #0]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:559
+	   /*********************************************************
+	   here the ramp up of the system clock starts FSys < 60MHz
+	   *********************************************************/
+		if (CLOCK_FSYS > 60000000){
+			 /*calulation for stepping*/
+			 if (SCU_PLL_CLOCK_INPUT == SCU_CLOCK_CRYSTAL)VCO = (CLOCK_CRYSTAL_FREQUENCY/(SCU_PLL_PDIV+1))*(SCU_PLL_NDIV+1);
+ c000514:	4b30      	ldr	r3, [pc, #192]	; (c0005d8 <SystemClockSetup+0x29c>)
+ c000516:	607b      	str	r3, [r7, #4]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:563
+			 if ((SCU_PLL_CLOCK_INPUT == SCU_CLOCK_BACK_UP_AUTOMATIC) ||(SCU_PLL_CLOCK_INPUT == SCU_CLOCK_BACK_UP_FACTORY))
+					VCO = (CLOCK_BACK_UP/(SCU_PLL_PDIV+1))*(SCU_PLL_NDIV+1);
+	 
+			 stepping_K2DIV = (VCO/60000000)-1;	
+ c000518:	687b      	ldr	r3, [r7, #4]
+ c00051a:	0a1a      	lsrs	r2, r3, #8
+ c00051c:	4b31      	ldr	r3, [pc, #196]	; (c0005e4 <SystemClockSetup+0x2a8>)
+ c00051e:	fba3 1302 	umull	r1, r3, r3, r2
+ c000522:	0a9b      	lsrs	r3, r3, #10
+ c000524:	3b01      	subs	r3, #1
+ c000526:	603b      	str	r3, [r7, #0]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:566
+
+			 /* Setup devider settings for main PLL */
+				SCU_PLL->PLLCON1 = ((SCU_PLL_K1DIV) | (SCU_PLL_NDIV<<8) | (stepping_K2DIV<<16) | (SCU_PLL_PDIV<<24));
+ c000528:	4a25      	ldr	r2, [pc, #148]	; (c0005c0 <SystemClockSetup+0x284>)
+ c00052a:	683b      	ldr	r3, [r7, #0]
+ c00052c:	0419      	lsls	r1, r3, #16
+ c00052e:	4b2c      	ldr	r3, [pc, #176]	; (c0005e0 <SystemClockSetup+0x2a4>)
+ c000530:	430b      	orrs	r3, r1
+ c000532:	6093      	str	r3, [r2, #8]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:579
+		 }
+
+		 /*********************************************************/
+		 /* Delay for next K2 step ~50탎 */
+		 /*********************************************************/
+	   SysTick->LOAD  = ((3000+100) & SysTick_LOAD_RELOAD_Msk) - 1;
+ c000534:	4b25      	ldr	r3, [pc, #148]	; (c0005cc <SystemClockSetup+0x290>)
+ c000536:	f640 421b 	movw	r2, #3099	; 0xc1b
+ c00053a:	605a      	str	r2, [r3, #4]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:580
+	   SysTick->VAL   = 0;                                         /* Load the SysTick Counter Value */
+ c00053c:	4b23      	ldr	r3, [pc, #140]	; (c0005cc <SystemClockSetup+0x290>)
+ c00053e:	2200      	movs	r2, #0
+ c000540:	609a      	str	r2, [r3, #8]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:581
+	   SysTick->CTRL  = SysTick_CTRL_CLKSOURCE_Msk |
+ c000542:	4b22      	ldr	r3, [pc, #136]	; (c0005cc <SystemClockSetup+0x290>)
+ c000544:	2205      	movs	r2, #5
+ c000546:	601a      	str	r2, [r3, #0]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:584
+	                   SysTick_CTRL_ENABLE_Msk;                    /* Enable SysTick IRQ and SysTick Timer */
+	
+	   while (SysTick->VAL >= 100);								   /* wait for ~50탎  */
+ c000548:	bf00      	nop
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:584 (discriminator 1)
+ c00054a:	4b20      	ldr	r3, [pc, #128]	; (c0005cc <SystemClockSetup+0x290>)
+ c00054c:	689b      	ldr	r3, [r3, #8]
+ c00054e:	2b63      	cmp	r3, #99	; 0x63
+ c000550:	d8fb      	bhi.n	c00054a <SystemClockSetup+0x20e>
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:585
+	   SysTick->CTRL  &= ~SysTick_CTRL_ENABLE_Msk;                 /* Stop SysTick Timer */
+ c000552:	4b1e      	ldr	r3, [pc, #120]	; (c0005cc <SystemClockSetup+0x290>)
+ c000554:	4a1d      	ldr	r2, [pc, #116]	; (c0005cc <SystemClockSetup+0x290>)
+ c000556:	6812      	ldr	r2, [r2, #0]
+ c000558:	f022 0201 	bic.w	r2, r2, #1
+ c00055c:	601a      	str	r2, [r3, #0]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:593
+   /*********************************************************
+	   here the ramp up of the system clock starts FSys < 90MHz
+	   *********************************************************/
+		if (CLOCK_FSYS > 90000000){
+			 /*calulation for stepping*/
+			 if (SCU_PLL_CLOCK_INPUT == SCU_CLOCK_CRYSTAL)VCO = (CLOCK_CRYSTAL_FREQUENCY/(SCU_PLL_PDIV+1))*(SCU_PLL_NDIV+1);
+ c00055e:	4b1e      	ldr	r3, [pc, #120]	; (c0005d8 <SystemClockSetup+0x29c>)
+ c000560:	607b      	str	r3, [r7, #4]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:597
+			 if ((SCU_PLL_CLOCK_INPUT == SCU_CLOCK_BACK_UP_AUTOMATIC) ||(SCU_PLL_CLOCK_INPUT == SCU_CLOCK_BACK_UP_FACTORY))
+					VCO = (CLOCK_BACK_UP/(SCU_PLL_PDIV+1))*(SCU_PLL_NDIV+1);
+
+			 stepping_K2DIV = (VCO/90000000)-1;			
+ c000562:	687b      	ldr	r3, [r7, #4]
+ c000564:	09da      	lsrs	r2, r3, #7
+ c000566:	4b20      	ldr	r3, [pc, #128]	; (c0005e8 <SystemClockSetup+0x2ac>)
+ c000568:	fba3 1302 	umull	r1, r3, r3, r2
+ c00056c:	0adb      	lsrs	r3, r3, #11
+ c00056e:	3b01      	subs	r3, #1
+ c000570:	603b      	str	r3, [r7, #0]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:600
+
+			 /* Setup devider settings for main PLL */
+				SCU_PLL->PLLCON1 = ((SCU_PLL_K1DIV) | (SCU_PLL_NDIV<<8) | (stepping_K2DIV<<16) | (SCU_PLL_PDIV<<24));
+ c000572:	4a13      	ldr	r2, [pc, #76]	; (c0005c0 <SystemClockSetup+0x284>)
+ c000574:	683b      	ldr	r3, [r7, #0]
+ c000576:	0419      	lsls	r1, r3, #16
+ c000578:	4b19      	ldr	r3, [pc, #100]	; (c0005e0 <SystemClockSetup+0x2a4>)
+ c00057a:	430b      	orrs	r3, r1
+ c00057c:	6093      	str	r3, [r2, #8]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:613
+		 }
+	
+		 /*********************************************************/
+		 /* Delay for next K2 step ~50탎 */
+		 /*********************************************************/
+	   SysTick->LOAD  = ((4800+100) & SysTick_LOAD_RELOAD_Msk) - 1;
+ c00057e:	4b13      	ldr	r3, [pc, #76]	; (c0005cc <SystemClockSetup+0x290>)
+ c000580:	f241 3223 	movw	r2, #4899	; 0x1323
+ c000584:	605a      	str	r2, [r3, #4]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:614
+	   SysTick->VAL   = 0;                                         /* Load the SysTick Counter Value */
+ c000586:	4b11      	ldr	r3, [pc, #68]	; (c0005cc <SystemClockSetup+0x290>)
+ c000588:	2200      	movs	r2, #0
+ c00058a:	609a      	str	r2, [r3, #8]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:615
+	   SysTick->CTRL  = SysTick_CTRL_CLKSOURCE_Msk |
+ c00058c:	4b0f      	ldr	r3, [pc, #60]	; (c0005cc <SystemClockSetup+0x290>)
+ c00058e:	2205      	movs	r2, #5
+ c000590:	601a      	str	r2, [r3, #0]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:618
+	                   SysTick_CTRL_ENABLE_Msk;                    /* Enable SysTick IRQ and SysTick Timer */
+	
+	   while (SysTick->VAL >= 100);								   /* wait for ~50탎  */
+ c000592:	bf00      	nop
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:618 (discriminator 1)
+ c000594:	4b0d      	ldr	r3, [pc, #52]	; (c0005cc <SystemClockSetup+0x290>)
+ c000596:	689b      	ldr	r3, [r3, #8]
+ c000598:	2b63      	cmp	r3, #99	; 0x63
+ c00059a:	d8fb      	bhi.n	c000594 <SystemClockSetup+0x258>
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:619
+	   SysTick->CTRL  &= ~SysTick_CTRL_ENABLE_Msk;                 /* Stop SysTick Timer */
+ c00059c:	4b0b      	ldr	r3, [pc, #44]	; (c0005cc <SystemClockSetup+0x290>)
+ c00059e:	4a0b      	ldr	r2, [pc, #44]	; (c0005cc <SystemClockSetup+0x290>)
+ c0005a0:	6812      	ldr	r2, [r2, #0]
+ c0005a2:	f022 0201 	bic.w	r2, r2, #1
+ c0005a6:	601a      	str	r2, [r3, #0]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:623
+	   /********************************/
+	
+	   /* Setup devider settings for main PLL */
+	   SCU_PLL->PLLCON1 = ((SCU_PLL_K1DIV) | (SCU_PLL_NDIV<<8) | (SCU_PLL_K2DIV<<16) | (SCU_PLL_PDIV<<24));
+ c0005a8:	4b05      	ldr	r3, [pc, #20]	; (c0005c0 <SystemClockSetup+0x284>)
+ c0005aa:	4a10      	ldr	r2, [pc, #64]	; (c0005ec <SystemClockSetup+0x2b0>)
+ c0005ac:	609a      	str	r2, [r3, #8]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:625
+	
+	   SCU_TRAP->TRAPCLR = SCU_TRAP_TRAPCLR_SOSCWDGT_Msk | SCU_TRAP_TRAPCLR_SVCOLCKT_Msk;  /* clear request for System OCS Watchdog Trap and System VCO Lock Trap  */
+ c0005ae:	4b10      	ldr	r3, [pc, #64]	; (c0005f0 <SystemClockSetup+0x2b4>)
+ c0005b0:	2205      	movs	r2, #5
+ c0005b2:	60da      	str	r2, [r3, #12]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:628
+	}
+ }/* end this weak function enables DAVE3 clock App usage */	
+   return(1);
+ c0005b4:	2301      	movs	r3, #1
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.c:630
+
+}
+ c0005b6:	4618      	mov	r0, r3
+ c0005b8:	3708      	adds	r7, #8
+ c0005ba:	46bd      	mov	sp, r7
+ c0005bc:	bd80      	pop	{r7, pc}
+ c0005be:	bf00      	nop
+ c0005c0:	50004710 	.word	0x50004710
+ c0005c4:	00010002 	.word	0x00010002
+ c0005c8:	50004700 	.word	0x50004700
+ c0005cc:	e000e010 	.word	0xe000e010
+ c0005d0:	004c4ba3 	.word	0x004c4ba3
+ c0005d4:	50004600 	.word	0x50004600
+ c0005d8:	1c9c3800 	.word	0x1c9c3800
+ c0005dc:	165e9f81 	.word	0x165e9f81
+ c0005e0:	01004f01 	.word	0x01004f01
+ c0005e4:	011e54c7 	.word	0x011e54c7
+ c0005e8:	00bee32f 	.word	0x00bee32f
+ c0005ec:	01034f01 	.word	0x01034f01
+ c0005f0:	50004160 	.word	0x50004160
+
+Disassembly of section .text._open:
+
+0c0005f4 <_open>:
+_open():
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:58
+/* ========================================================================= */
+/*
+ * File open
+ */
+__attribute__((weak)) int _open(const char *name, int flags, int mode)
+{
+ c0005f4:	b480      	push	{r7}
+ c0005f6:	b085      	sub	sp, #20
+ c0005f8:	af00      	add	r7, sp, #0
+ c0005fa:	60f8      	str	r0, [r7, #12]
+ c0005fc:	60b9      	str	r1, [r7, #8]
+ c0005fe:	607a      	str	r2, [r7, #4]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:61
+ flags = flags;
+ mode = mode;
+ return -1;
+ c000600:	f04f 33ff 	mov.w	r3, #4294967295
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:62
+}
+ c000604:	4618      	mov	r0, r3
+ c000606:	3714      	adds	r7, #20
+ c000608:	46bd      	mov	sp, r7
+ c00060a:	f85d 7b04 	ldr.w	r7, [sp], #4
+ c00060e:	4770      	bx	lr
+
+Disassembly of section .text._lseek:
+
+0c000610 <_lseek>:
+_lseek():
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:68
+
+/*
+ * File position seek
+ */
+__attribute__((weak)) int _lseek(int file, int offset, int whence)
+{
+ c000610:	b480      	push	{r7}
+ c000612:	b085      	sub	sp, #20
+ c000614:	af00      	add	r7, sp, #0
+ c000616:	60f8      	str	r0, [r7, #12]
+ c000618:	60b9      	str	r1, [r7, #8]
+ c00061a:	607a      	str	r2, [r7, #4]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:72
+ file = file;
+ offset = offset;
+ whence = whence;
+ return -1;
+ c00061c:	f04f 33ff 	mov.w	r3, #4294967295
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:73
+}
+ c000620:	4618      	mov	r0, r3
+ c000622:	3714      	adds	r7, #20
+ c000624:	46bd      	mov	sp, r7
+ c000626:	f85d 7b04 	ldr.w	r7, [sp], #4
+ c00062a:	4770      	bx	lr
+
+Disassembly of section .text._read:
+
+0c00062c <_read>:
+_read():
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:79
+
+/*
+ * File read
+ */
+__attribute__((weak)) int _read(int file, char *ptr, int len)
+{
+ c00062c:	b480      	push	{r7}
+ c00062e:	b085      	sub	sp, #20
+ c000630:	af00      	add	r7, sp, #0
+ c000632:	60f8      	str	r0, [r7, #12]
+ c000634:	60b9      	str	r1, [r7, #8]
+ c000636:	607a      	str	r2, [r7, #4]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:82
+ file = file;
+ len  = len;
+ return 0;
+ c000638:	2300      	movs	r3, #0
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:83
+}
+ c00063a:	4618      	mov	r0, r3
+ c00063c:	3714      	adds	r7, #20
+ c00063e:	46bd      	mov	sp, r7
+ c000640:	f85d 7b04 	ldr.w	r7, [sp], #4
+ c000644:	4770      	bx	lr
+ c000646:	bf00      	nop
+
+Disassembly of section .text._write:
+
+0c000648 <_write>:
+_write():
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:89
+
+/*
+ * File write
+ */
+__attribute__((weak)) int _write(int file, char *buf, int nbytes)
+{
+ c000648:	b480      	push	{r7}
+ c00064a:	b085      	sub	sp, #20
+ c00064c:	af00      	add	r7, sp, #0
+ c00064e:	60f8      	str	r0, [r7, #12]
+ c000650:	60b9      	str	r1, [r7, #8]
+ c000652:	607a      	str	r2, [r7, #4]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:90
+ return -1;
+ c000654:	f04f 33ff 	mov.w	r3, #4294967295
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:91
+}
+ c000658:	4618      	mov	r0, r3
+ c00065a:	3714      	adds	r7, #20
+ c00065c:	46bd      	mov	sp, r7
+ c00065e:	f85d 7b04 	ldr.w	r7, [sp], #4
+ c000662:	4770      	bx	lr
+
+Disassembly of section .text._close:
+
+0c000664 <_close>:
+_close():
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:97
+
+/*
+ * File close
+ */
+__attribute__((weak)) int _close(void)
+{
+ c000664:	b480      	push	{r7}
+ c000666:	af00      	add	r7, sp, #0
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:98
+ return -1;
+ c000668:	f04f 33ff 	mov.w	r3, #4294967295
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:99
+}
+ c00066c:	4618      	mov	r0, r3
+ c00066e:	46bd      	mov	sp, r7
+ c000670:	f85d 7b04 	ldr.w	r7, [sp], #4
+ c000674:	4770      	bx	lr
+ c000676:	bf00      	nop
+
+Disassembly of section .text._fstat:
+
+0c000678 <_fstat>:
+_fstat():
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:105
+
+/*
+ * File status
+ */
+__attribute__((weak)) int _fstat(int file, struct stat *st)
+{
+ c000678:	b480      	push	{r7}
+ c00067a:	b083      	sub	sp, #12
+ c00067c:	af00      	add	r7, sp, #0
+ c00067e:	6078      	str	r0, [r7, #4]
+ c000680:	6039      	str	r1, [r7, #0]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:107
+ file = file;
+ if(st)
+ c000682:	683b      	ldr	r3, [r7, #0]
+ c000684:	2b00      	cmp	r3, #0
+ c000686:	d002      	beq.n	c00068e <_fstat+0x16>
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:108
+  return -1;
+ c000688:	f04f 33ff 	mov.w	r3, #4294967295
+ c00068c:	e001      	b.n	c000692 <_fstat+0x1a>
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:110
+ else
+  return -2;
+ c00068e:	f06f 0301 	mvn.w	r3, #1
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:111
+}
+ c000692:	4618      	mov	r0, r3
+ c000694:	370c      	adds	r7, #12
+ c000696:	46bd      	mov	sp, r7
+ c000698:	f85d 7b04 	ldr.w	r7, [sp], #4
+ c00069c:	4770      	bx	lr
+ c00069e:	bf00      	nop
+
+Disassembly of section .text._link:
+
+0c0006a0 <_link>:
+_link():
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:116
+/*
+ * File linking
+ */
+__attribute__((weak)) int _link (char *old, char *new)
+{
+ c0006a0:	b480      	push	{r7}
+ c0006a2:	b083      	sub	sp, #12
+ c0006a4:	af00      	add	r7, sp, #0
+ c0006a6:	6078      	str	r0, [r7, #4]
+ c0006a8:	6039      	str	r1, [r7, #0]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:117
+ if (old == new)
+ c0006aa:	687a      	ldr	r2, [r7, #4]
+ c0006ac:	683b      	ldr	r3, [r7, #0]
+ c0006ae:	429a      	cmp	r2, r3
+ c0006b0:	d102      	bne.n	c0006b8 <_link+0x18>
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:118
+  return -1;
+ c0006b2:	f04f 33ff 	mov.w	r3, #4294967295
+ c0006b6:	e001      	b.n	c0006bc <_link+0x1c>
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:120
+ else
+  return -2;
+ c0006b8:	f06f 0301 	mvn.w	r3, #1
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:121
+}
+ c0006bc:	4618      	mov	r0, r3
+ c0006be:	370c      	adds	r7, #12
+ c0006c0:	46bd      	mov	sp, r7
+ c0006c2:	f85d 7b04 	ldr.w	r7, [sp], #4
+ c0006c6:	4770      	bx	lr
+
+Disassembly of section .text._unlink:
+
+0c0006c8 <_unlink>:
+_unlink():
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:127
+
+/*
+ * Unlinking directory entry
+ */
+__attribute__((weak)) int _unlink(char *name)
+{
+ c0006c8:	b480      	push	{r7}
+ c0006ca:	b083      	sub	sp, #12
+ c0006cc:	af00      	add	r7, sp, #0
+ c0006ce:	6078      	str	r0, [r7, #4]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:128
+ return -1;
+ c0006d0:	f04f 33ff 	mov.w	r3, #4294967295
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:129
+}
+ c0006d4:	4618      	mov	r0, r3
+ c0006d6:	370c      	adds	r7, #12
+ c0006d8:	46bd      	mov	sp, r7
+ c0006da:	f85d 7b04 	ldr.w	r7, [sp], #4
+ c0006de:	4770      	bx	lr
+
+Disassembly of section .text._sbrk:
+
+0c0006e0 <_sbrk>:
+_sbrk():
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:137
+/* ========================================================================= */
+/*
+ * Heap break (position)
+ */
+__attribute__((weak)) void *_sbrk(int RequestedSize)
+{
+ c0006e0:	b480      	push	{r7}
+ c0006e2:	b087      	sub	sp, #28
+ c0006e4:	af00      	add	r7, sp, #0
+ c0006e6:	6078      	str	r0, [r7, #4]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:148
+ unsigned int  HeapSize;
+ static unsigned char *HeapBound;
+ static unsigned char * heap= (unsigned char *)NULL;
+
+
+ HeapSize   = (unsigned int)(&Heap_Bank1_Size);
+ c0006e8:	4b15      	ldr	r3, [pc, #84]	; (c000740 <_sbrk+0x60>)
+ c0006ea:	617b      	str	r3, [r7, #20]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:154
+
+ /*
+  * If this is the first time malloc() was invoked, we start with the
+  * begining of the heap.
+  */
+ if(heap == (unsigned char *)NULL)
+ c0006ec:	4b15      	ldr	r3, [pc, #84]	; (c000744 <_sbrk+0x64>)
+ c0006ee:	681b      	ldr	r3, [r3, #0]
+ c0006f0:	2b00      	cmp	r3, #0
+ c0006f2:	d108      	bne.n	c000706 <_sbrk+0x26>
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:156
+  {
+   heap = (unsigned char *)&Heap_Bank1_Start;
+ c0006f4:	4b13      	ldr	r3, [pc, #76]	; (c000744 <_sbrk+0x64>)
+ c0006f6:	4a14      	ldr	r2, [pc, #80]	; (c000748 <_sbrk+0x68>)
+ c0006f8:	601a      	str	r2, [r3, #0]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:157
+   HeapBound  = (unsigned char *) (heap + HeapSize);
+ c0006fa:	4b12      	ldr	r3, [pc, #72]	; (c000744 <_sbrk+0x64>)
+ c0006fc:	681a      	ldr	r2, [r3, #0]
+ c0006fe:	697b      	ldr	r3, [r7, #20]
+ c000700:	441a      	add	r2, r3
+ c000702:	4b12      	ldr	r3, [pc, #72]	; (c00074c <_sbrk+0x6c>)
+ c000704:	601a      	str	r2, [r3, #0]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:163
+  }
+
+ /* Super duper algo to find out if we have memory for the latest request */
+ /* Given conditions are: */
+ /* 1. Latest break */
+ CurrBreak = heap;
+ c000706:	4b0f      	ldr	r3, [pc, #60]	; (c000744 <_sbrk+0x64>)
+ c000708:	681b      	ldr	r3, [r3, #0]
+ c00070a:	613b      	str	r3, [r7, #16]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:166
+
+ /* And 2. Potential break based on requested size */
+ NextBreak = (unsigned char *)( (((unsigned int)(heap)) + RequestedSize + 7)
+ c00070c:	4b0d      	ldr	r3, [pc, #52]	; (c000744 <_sbrk+0x64>)
+ c00070e:	681b      	ldr	r3, [r3, #0]
+ c000710:	461a      	mov	r2, r3
+ c000712:	687b      	ldr	r3, [r7, #4]
+ c000714:	4413      	add	r3, r2
+ c000716:	3307      	adds	r3, #7
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:167
+                                          & 0xFFFFFFF8);
+ c000718:	f023 0307 	bic.w	r3, r3, #7
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:166
+ /* Given conditions are: */
+ /* 1. Latest break */
+ CurrBreak = heap;
+
+ /* And 2. Potential break based on requested size */
+ NextBreak = (unsigned char *)( (((unsigned int)(heap)) + RequestedSize + 7)
+ c00071c:	60fb      	str	r3, [r7, #12]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:170
+                                          & 0xFFFFFFF8);
+
+ /* Return no memory condition if we sense we are crossing the limit */
+ if (NextBreak >=  HeapBound )
+ c00071e:	4b0b      	ldr	r3, [pc, #44]	; (c00074c <_sbrk+0x6c>)
+ c000720:	681b      	ldr	r3, [r3, #0]
+ c000722:	68fa      	ldr	r2, [r7, #12]
+ c000724:	429a      	cmp	r2, r3
+ c000726:	d301      	bcc.n	c00072c <_sbrk+0x4c>
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:171
+  return ((unsigned char *)NULL);
+ c000728:	2300      	movs	r3, #0
+ c00072a:	e003      	b.n	c000734 <_sbrk+0x54>
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:174
+ else
+ {
+  heap = NextBreak;
+ c00072c:	4b05      	ldr	r3, [pc, #20]	; (c000744 <_sbrk+0x64>)
+ c00072e:	68fa      	ldr	r2, [r7, #12]
+ c000730:	601a      	str	r2, [r3, #0]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:175
+  return CurrBreak;
+ c000732:	693b      	ldr	r3, [r7, #16]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:177
+ }
+}
+ c000734:	4618      	mov	r0, r3
+ c000736:	371c      	adds	r7, #28
+ c000738:	46bd      	mov	sp, r7
+ c00073a:	f85d 7b04 	ldr.w	r7, [sp], #4
+ c00073e:	4770      	bx	lr
+ c000740:	00000000 	.word	0x00000000
+ c000744:	20000010 	.word	0x20000010
+ c000748:	20010000 	.word	0x20010000
+ c00074c:	20000014 	.word	0x20000014
+
+Disassembly of section .text._times:
+
+0c000750 <_times>:
+_times():
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:186
+/* ========================================================================= */
+/*
+ * Process timing information
+ */
+__attribute__((weak)) int _times(struct tms *buf)
+{
+ c000750:	b480      	push	{r7}
+ c000752:	b083      	sub	sp, #12
+ c000754:	af00      	add	r7, sp, #0
+ c000756:	6078      	str	r0, [r7, #4]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:187
+ return -1;
+ c000758:	f04f 33ff 	mov.w	r3, #4294967295
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:188
+}
+ c00075c:	4618      	mov	r0, r3
+ c00075e:	370c      	adds	r7, #12
+ c000760:	46bd      	mov	sp, r7
+ c000762:	f85d 7b04 	ldr.w	r7, [sp], #4
+ c000766:	4770      	bx	lr
+
+Disassembly of section .text._wait:
+
+0c000768 <_wait>:
+_wait():
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:193
+/*
+ * Waiting for a child process to complete
+ */
+__attribute__((weak)) int _wait(int *status)
+{
+ c000768:	b480      	push	{r7}
+ c00076a:	b083      	sub	sp, #12
+ c00076c:	af00      	add	r7, sp, #0
+ c00076e:	6078      	str	r0, [r7, #4]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:194
+ return -1;
+ c000770:	f04f 33ff 	mov.w	r3, #4294967295
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:195
+}
+ c000774:	4618      	mov	r0, r3
+ c000776:	370c      	adds	r7, #12
+ c000778:	46bd      	mov	sp, r7
+ c00077a:	f85d 7b04 	ldr.w	r7, [sp], #4
+ c00077e:	4770      	bx	lr
+
+Disassembly of section .text._kill:
+
+0c000780 <_kill>:
+_kill():
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:201
+
+/*
+ * Kill a process
+ */
+__attribute__((weak)) int _kill(int pid,int sig)
+{
+ c000780:	b480      	push	{r7}
+ c000782:	b083      	sub	sp, #12
+ c000784:	af00      	add	r7, sp, #0
+ c000786:	6078      	str	r0, [r7, #4]
+ c000788:	6039      	str	r1, [r7, #0]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:204
+ pid = pid;
+ sig = sig;
+ return -1;
+ c00078a:	f04f 33ff 	mov.w	r3, #4294967295
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:205
+}
+ c00078e:	4618      	mov	r0, r3
+ c000790:	370c      	adds	r7, #12
+ c000792:	46bd      	mov	sp, r7
+ c000794:	f85d 7b04 	ldr.w	r7, [sp], #4
+ c000798:	4770      	bx	lr
+ c00079a:	bf00      	nop
+
+Disassembly of section .text._fork:
+
+0c00079c <_fork>:
+_fork():
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:211
+
+/*
+ * Forking a child process
+ */
+__attribute__((weak)) int _fork(void)
+{
+ c00079c:	b480      	push	{r7}
+ c00079e:	af00      	add	r7, sp, #0
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:212
+ return -1;
+ c0007a0:	f04f 33ff 	mov.w	r3, #4294967295
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:213
+}
+ c0007a4:	4618      	mov	r0, r3
+ c0007a6:	46bd      	mov	sp, r7
+ c0007a8:	f85d 7b04 	ldr.w	r7, [sp], #4
+ c0007ac:	4770      	bx	lr
+ c0007ae:	bf00      	nop
+
+Disassembly of section .text._getpid:
+
+0c0007b0 <_getpid>:
+_getpid():
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:219
+
+/*
+ * Process ID
+ */
+__attribute__((weak)) int _getpid(void)
+{
+ c0007b0:	b480      	push	{r7}
+ c0007b2:	af00      	add	r7, sp, #0
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:220
+ return -1;
+ c0007b4:	f04f 33ff 	mov.w	r3, #4294967295
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:221
+}
+ c0007b8:	4618      	mov	r0, r3
+ c0007ba:	46bd      	mov	sp, r7
+ c0007bc:	f85d 7b04 	ldr.w	r7, [sp], #4
+ c0007c0:	4770      	bx	lr
+ c0007c2:	bf00      	nop
+
+Disassembly of section .text._exit:
+
+0c0007c4 <_exit>:
+_exit():
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:227
+
+/*
+ * Program/process exit
+ */
+__attribute__((weak)) void _exit(int rc)
+{
+ c0007c4:	b480      	push	{r7}
+ c0007c6:	b083      	sub	sp, #12
+ c0007c8:	af00      	add	r7, sp, #0
+ c0007ca:	6078      	str	r0, [r7, #4]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:229 (discriminator 1)
+ rc = rc;
+ while(1){}
+ c0007cc:	e7fe      	b.n	c0007cc <_exit+0x8>
+ c0007ce:	bf00      	nop
+
+Disassembly of section .text._init:
+
+0c0007d0 <_init>:
+_init():
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:234
+}
+
+/* Init */
+__attribute__((weak)) void _init(void)
+{}
+ c0007d0:	b480      	push	{r7}
+ c0007d2:	af00      	add	r7, sp, #0
+ c0007d4:	46bd      	mov	sp, r7
+ c0007d6:	f85d 7b04 	ldr.w	r7, [sp], #4
+ c0007da:	4770      	bx	lr
+
+Disassembly of section .text._isatty:
+
+0c0007dc <_isatty>:
+_isatty():
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:244
+
+/*
+ * Terminal type evaluation
+ */
+__attribute__((weak)) int _isatty(int file)
+{
+ c0007dc:	b480      	push	{r7}
+ c0007de:	b083      	sub	sp, #12
+ c0007e0:	af00      	add	r7, sp, #0
+ c0007e2:	6078      	str	r0, [r7, #4]
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:246
+ file = file;
+ return -1;
+ c0007e4:	f04f 33ff 	mov.w	r3, #4294967295
+/home/horauer/workspace/io_simplistic/Debug/../system/CMSIS/Infineon/Lib/System_LibcStubs.c:247
+}
+ c0007e8:	4618      	mov	r0, r3
+ c0007ea:	370c      	adds	r7, #12
+ c0007ec:	46bd      	mov	sp, r7
+ c0007ee:	f85d 7b04 	ldr.w	r7, [sp], #4
+ c0007f2:	4770      	bx	lr
+
+Disassembly of section .text.Reset_Handler:
+
+0c0007f4 <Reset_Handler>:
+Reset_Handler():
+/home/horauer/workspace/io_simplistic/Debug/../system/XMC4500_startup.c:263
+	GPDMA1_0_IRQHandler,      /* Handler name for SR GPDMA1_0  */
+	0                         /* Not Available                 */
+};
+
+void Reset_Handler(void)
+{	
+ c0007f4:	b580      	push	{r7, lr}
+ c0007f6:	b082      	sub	sp, #8
+ c0007f8:	af00      	add	r7, sp, #0
+/home/horauer/workspace/io_simplistic/Debug/../system/XMC4500_startup.c:267
+	unsigned int *src, *dst;
+
+	/* Copy data section from flash to RAM */
+	src = &_end_text;
+ c0007fa:	4b12      	ldr	r3, [pc, #72]	; (c000844 <Reset_Handler+0x50>)
+ c0007fc:	607b      	str	r3, [r7, #4]
+/home/horauer/workspace/io_simplistic/Debug/../system/XMC4500_startup.c:268
+	dst = &_start_data;
+ c0007fe:	4b12      	ldr	r3, [pc, #72]	; (c000848 <Reset_Handler+0x54>)
+ c000800:	603b      	str	r3, [r7, #0]
+/home/horauer/workspace/io_simplistic/Debug/../system/XMC4500_startup.c:269
+	while (dst < &_end_data)
+ c000802:	e007      	b.n	c000814 <Reset_Handler+0x20>
+/home/horauer/workspace/io_simplistic/Debug/../system/XMC4500_startup.c:270
+		*dst++ = *src++;
+ c000804:	683b      	ldr	r3, [r7, #0]
+ c000806:	1d1a      	adds	r2, r3, #4
+ c000808:	603a      	str	r2, [r7, #0]
+ c00080a:	687a      	ldr	r2, [r7, #4]
+ c00080c:	1d11      	adds	r1, r2, #4
+ c00080e:	6079      	str	r1, [r7, #4]
+ c000810:	6812      	ldr	r2, [r2, #0]
+ c000812:	601a      	str	r2, [r3, #0]
+/home/horauer/workspace/io_simplistic/Debug/../system/XMC4500_startup.c:269 (discriminator 1)
+	unsigned int *src, *dst;
+
+	/* Copy data section from flash to RAM */
+	src = &_end_text;
+	dst = &_start_data;
+	while (dst < &_end_data)
+ c000814:	683a      	ldr	r2, [r7, #0]
+ c000816:	4b0d      	ldr	r3, [pc, #52]	; (c00084c <Reset_Handler+0x58>)
+ c000818:	429a      	cmp	r2, r3
+ c00081a:	d3f3      	bcc.n	c000804 <Reset_Handler+0x10>
+/home/horauer/workspace/io_simplistic/Debug/../system/XMC4500_startup.c:273
+		*dst++ = *src++;
+
+ 	/* Clear the bss section */
+	dst = &_start_bss;
+ c00081c:	4b0c      	ldr	r3, [pc, #48]	; (c000850 <Reset_Handler+0x5c>)
+ c00081e:	603b      	str	r3, [r7, #0]
+/home/horauer/workspace/io_simplistic/Debug/../system/XMC4500_startup.c:274
+	while (dst < &_end_bss)
+ c000820:	e004      	b.n	c00082c <Reset_Handler+0x38>
+/home/horauer/workspace/io_simplistic/Debug/../system/XMC4500_startup.c:275
+		*dst++ = 0;
+ c000822:	683b      	ldr	r3, [r7, #0]
+ c000824:	1d1a      	adds	r2, r3, #4
+ c000826:	603a      	str	r2, [r7, #0]
+ c000828:	2200      	movs	r2, #0
+ c00082a:	601a      	str	r2, [r3, #0]
+/home/horauer/workspace/io_simplistic/Debug/../system/XMC4500_startup.c:274 (discriminator 1)
+	while (dst < &_end_data)
+		*dst++ = *src++;
+
+ 	/* Clear the bss section */
+	dst = &_start_bss;
+	while (dst < &_end_bss)
+ c00082c:	683a      	ldr	r2, [r7, #0]
+ c00082e:	4b09      	ldr	r3, [pc, #36]	; (c000854 <Reset_Handler+0x60>)
+ c000830:	429a      	cmp	r2, r3
+ c000832:	d3f6      	bcc.n	c000822 <Reset_Handler+0x2e>
+/home/horauer/workspace/io_simplistic/Debug/../system/XMC4500_startup.c:277
+		*dst++ = 0;
+
+	SystemInit();
+ c000834:	f7ff fce4 	bl	c000200 <_end_text>
+/home/horauer/workspace/io_simplistic/Debug/../system/XMC4500_startup.c:278
+	main();
+ c000838:	f000 f94a 	bl	c000ad0 <main>
+/home/horauer/workspace/io_simplistic/Debug/../system/XMC4500_startup.c:279
+}
+ c00083c:	3708      	adds	r7, #8
+ c00083e:	46bd      	mov	sp, r7
+ c000840:	bd80      	pop	{r7, pc}
+ c000842:	bf00      	nop
+ c000844:	0c000200 	.word	0x0c000200
+ c000848:	20000000 	.word	0x20000000
+ c00084c:	20000000 	.word	0x20000000
+ c000850:	20000004 	.word	0x20000004
+ c000854:	20000004 	.word	0x20000004
+
+Disassembly of section .text.Dummy_Handler:
+
+0c000858 <Dummy_Handler>:
+Dummy_Handler():
+/home/horauer/workspace/io_simplistic/Debug/../system/XMC4500_startup.c:283
+
+// Empty handler used as default.
+void Dummy_Handler(void)
+{
+ c000858:	b480      	push	{r7}
+ c00085a:	af00      	add	r7, sp, #0
+/home/horauer/workspace/io_simplistic/Debug/../system/XMC4500_startup.c:285 (discriminator 1)
+	while(1)
+		;
+ c00085c:	e7fe      	b.n	c00085c <Dummy_Handler+0x4>
+VADC0_C0_3_IRQHandler():
+ c00085e:	bf00      	nop
+
+Disassembly of section .text.AllowPLLInitByStartup:
+
+0c000860 <AllowPLLInitByStartup>:
+AllowPLLInitByStartup():
+/home/horauer/workspace/io_simplistic/Debug/../system/XMC4500_startup.c:289
+}
+
+uint32_t AllowPLLInitByStartup(void)
+{
+ c000860:	b480      	push	{r7}
+ c000862:	af00      	add	r7, sp, #0
+/home/horauer/workspace/io_simplistic/Debug/../system/XMC4500_startup.c:290
+	return 1;
+ c000864:	2301      	movs	r3, #1
+/home/horauer/workspace/io_simplistic/Debug/../system/XMC4500_startup.c:291
+}
+ c000866:	4618      	mov	r0, r3
+ c000868:	46bd      	mov	sp, r7
+ c00086a:	f85d 7b04 	ldr.w	r7, [sp], #4
+ c00086e:	4770      	bx	lr
+
+Disassembly of section .text.NVIC_SetPriority:
+
+0c000870 <NVIC_SetPriority>:
+NVIC_SetPriority():
+/home/horauer/workspace/io_simplistic/system/CMSIS/Include/core_cm4.h:1551
+
+    \param [in]      IRQn  Interrupt number.
+    \param [in]  priority  Priority to set.
+ */
+__STATIC_INLINE void NVIC_SetPriority(IRQn_Type IRQn, uint32_t priority)
+{
+ c000870:	b480      	push	{r7}
+ c000872:	b083      	sub	sp, #12
+ c000874:	af00      	add	r7, sp, #0
+ c000876:	4603      	mov	r3, r0
+ c000878:	6039      	str	r1, [r7, #0]
+ c00087a:	71fb      	strb	r3, [r7, #7]
+/home/horauer/workspace/io_simplistic/system/CMSIS/Include/core_cm4.h:1552
+  if(IRQn < 0) {
+ c00087c:	f997 3007 	ldrsb.w	r3, [r7, #7]
+ c000880:	2b00      	cmp	r3, #0
+ c000882:	da0b      	bge.n	c00089c <NVIC_SetPriority+0x2c>
+/home/horauer/workspace/io_simplistic/system/CMSIS/Include/core_cm4.h:1553
+    SCB->SHP[((uint32_t)(IRQn) & 0xF)-4] = ((priority << (8 - __NVIC_PRIO_BITS)) & 0xff); } /* set Priority for Cortex-M  System Interrupts */
+ c000884:	490d      	ldr	r1, [pc, #52]	; (c0008bc <NVIC_SetPriority+0x4c>)
+ c000886:	79fb      	ldrb	r3, [r7, #7]
+ c000888:	f003 030f 	and.w	r3, r3, #15
+ c00088c:	3b04      	subs	r3, #4
+ c00088e:	683a      	ldr	r2, [r7, #0]
+ c000890:	b2d2      	uxtb	r2, r2
+ c000892:	0092      	lsls	r2, r2, #2
+ c000894:	b2d2      	uxtb	r2, r2
+ c000896:	440b      	add	r3, r1
+ c000898:	761a      	strb	r2, [r3, #24]
+ c00089a:	e009      	b.n	c0008b0 <NVIC_SetPriority+0x40>
+/home/horauer/workspace/io_simplistic/system/CMSIS/Include/core_cm4.h:1555
+  else {
+    NVIC->IP[(uint32_t)(IRQn)] = ((priority << (8 - __NVIC_PRIO_BITS)) & 0xff);    }        /* set Priority for device specific Interrupts  */
+ c00089c:	4908      	ldr	r1, [pc, #32]	; (c0008c0 <NVIC_SetPriority+0x50>)
+ c00089e:	f997 3007 	ldrsb.w	r3, [r7, #7]
+ c0008a2:	683a      	ldr	r2, [r7, #0]
+ c0008a4:	b2d2      	uxtb	r2, r2
+ c0008a6:	0092      	lsls	r2, r2, #2
+ c0008a8:	b2d2      	uxtb	r2, r2
+ c0008aa:	440b      	add	r3, r1
+ c0008ac:	f883 2300 	strb.w	r2, [r3, #768]	; 0x300
+/home/horauer/workspace/io_simplistic/system/CMSIS/Include/core_cm4.h:1556
+}
+ c0008b0:	370c      	adds	r7, #12
+ c0008b2:	46bd      	mov	sp, r7
+ c0008b4:	f85d 7b04 	ldr.w	r7, [sp], #4
+ c0008b8:	4770      	bx	lr
+ c0008ba:	bf00      	nop
+ c0008bc:	e000ed00 	.word	0xe000ed00
+ c0008c0:	e000e100 	.word	0xe000e100
+
+Disassembly of section .text.SysTick_Config:
+
+0c0008c4 <SysTick_Config>:
+SysTick_Config():
+/home/horauer/workspace/io_simplistic/system/CMSIS/Include/core_cm4.h:1678
+    function <b>SysTick_Config</b> is not included. In this case, the file <b><i>device</i>.h</b>
+    must contain a vendor-specific implementation of this function.
+
+ */
+__STATIC_INLINE uint32_t SysTick_Config(uint32_t ticks)
+{
+ c0008c4:	b580      	push	{r7, lr}
+ c0008c6:	b082      	sub	sp, #8
+ c0008c8:	af00      	add	r7, sp, #0
+ c0008ca:	6078      	str	r0, [r7, #4]
+/home/horauer/workspace/io_simplistic/system/CMSIS/Include/core_cm4.h:1679
+  if ((ticks - 1) > SysTick_LOAD_RELOAD_Msk)  return (1);      /* Reload value impossible */
+ c0008cc:	687b      	ldr	r3, [r7, #4]
+ c0008ce:	3b01      	subs	r3, #1
+ c0008d0:	f1b3 7f80 	cmp.w	r3, #16777216	; 0x1000000
+ c0008d4:	d301      	bcc.n	c0008da <SysTick_Config+0x16>
+/home/horauer/workspace/io_simplistic/system/CMSIS/Include/core_cm4.h:1679 (discriminator 1)
+ c0008d6:	2301      	movs	r3, #1
+ c0008d8:	e00f      	b.n	c0008fa <SysTick_Config+0x36>
+/home/horauer/workspace/io_simplistic/system/CMSIS/Include/core_cm4.h:1681
+
+  SysTick->LOAD  = ticks - 1;                                  /* set reload register */
+ c0008da:	4b0a      	ldr	r3, [pc, #40]	; (c000904 <SysTick_Config+0x40>)
+ c0008dc:	687a      	ldr	r2, [r7, #4]
+ c0008de:	3a01      	subs	r2, #1
+ c0008e0:	605a      	str	r2, [r3, #4]
+/home/horauer/workspace/io_simplistic/system/CMSIS/Include/core_cm4.h:1682
+  NVIC_SetPriority (SysTick_IRQn, (1<<__NVIC_PRIO_BITS) - 1);  /* set Priority for Systick Interrupt */
+ c0008e2:	f04f 30ff 	mov.w	r0, #4294967295
+ c0008e6:	213f      	movs	r1, #63	; 0x3f
+ c0008e8:	f7ff ffc2 	bl	c000870 <NVIC_SetPriority>
+/home/horauer/workspace/io_simplistic/system/CMSIS/Include/core_cm4.h:1683
+  SysTick->VAL   = 0;                                          /* Load the SysTick Counter Value */
+ c0008ec:	4b05      	ldr	r3, [pc, #20]	; (c000904 <SysTick_Config+0x40>)
+ c0008ee:	2200      	movs	r2, #0
+ c0008f0:	609a      	str	r2, [r3, #8]
+/home/horauer/workspace/io_simplistic/system/CMSIS/Include/core_cm4.h:1684
+  SysTick->CTRL  = SysTick_CTRL_CLKSOURCE_Msk |
+ c0008f2:	4b04      	ldr	r3, [pc, #16]	; (c000904 <SysTick_Config+0x40>)
+ c0008f4:	2207      	movs	r2, #7
+ c0008f6:	601a      	str	r2, [r3, #0]
+/home/horauer/workspace/io_simplistic/system/CMSIS/Include/core_cm4.h:1687
+                   SysTick_CTRL_TICKINT_Msk   |
+                   SysTick_CTRL_ENABLE_Msk;                    /* Enable SysTick IRQ and SysTick Timer */
+  return (0);                                                  /* Function successful */
+ c0008f8:	2300      	movs	r3, #0
+/home/horauer/workspace/io_simplistic/system/CMSIS/Include/core_cm4.h:1688
+}
+ c0008fa:	4618      	mov	r0, r3
+ c0008fc:	3708      	adds	r7, #8
+ c0008fe:	46bd      	mov	sp, r7
+ c000900:	bd80      	pop	{r7, pc}
+ c000902:	bf00      	nop
+ c000904:	e000e010 	.word	0xe000e010
+
+Disassembly of section .text.P1_0_set_mode:
+
+0c000908 <P1_0_set_mode>:
+P1_0_set_mode():
+/home/horauer/workspace/io_simplistic/system/GPIO.h:439
+
+__STATIC_INLINE uint32_t P0_12_read(void){
+    return(PORT0->IN & 0x00001000UL);
+}
+
+__STATIC_INLINE void P1_0_set_mode(uint8_t mode){
+ c000908:	b480      	push	{r7}
+ c00090a:	b083      	sub	sp, #12
+ c00090c:	af00      	add	r7, sp, #0
+ c00090e:	4603      	mov	r3, r0
+ c000910:	71fb      	strb	r3, [r7, #7]
+/home/horauer/workspace/io_simplistic/system/GPIO.h:440
+    PORT1->IOCR0 &= ~0x000000f8UL;
+ c000912:	4b08      	ldr	r3, [pc, #32]	; (c000934 <P1_0_set_mode+0x2c>)
+ c000914:	4a07      	ldr	r2, [pc, #28]	; (c000934 <P1_0_set_mode+0x2c>)
+ c000916:	6912      	ldr	r2, [r2, #16]
+ c000918:	f022 02f8 	bic.w	r2, r2, #248	; 0xf8
+ c00091c:	611a      	str	r2, [r3, #16]
+/home/horauer/workspace/io_simplistic/system/GPIO.h:441
+    PORT1->IOCR0 |= mode << 0;
+ c00091e:	4b05      	ldr	r3, [pc, #20]	; (c000934 <P1_0_set_mode+0x2c>)
+ c000920:	4a04      	ldr	r2, [pc, #16]	; (c000934 <P1_0_set_mode+0x2c>)
+ c000922:	6911      	ldr	r1, [r2, #16]
+ c000924:	79fa      	ldrb	r2, [r7, #7]
+ c000926:	430a      	orrs	r2, r1
+ c000928:	611a      	str	r2, [r3, #16]
+/home/horauer/workspace/io_simplistic/system/GPIO.h:442
+}
+ c00092a:	370c      	adds	r7, #12
+ c00092c:	46bd      	mov	sp, r7
+ c00092e:	f85d 7b04 	ldr.w	r7, [sp], #4
+ c000932:	4770      	bx	lr
+ c000934:	48028100 	.word	0x48028100
+
+Disassembly of section .text.P1_0_set_driver_strength:
+
+0c000938 <P1_0_set_driver_strength>:
+P1_0_set_driver_strength():
+/home/horauer/workspace/io_simplistic/system/GPIO.h:444
+
+__STATIC_INLINE void P1_0_set_driver_strength(uint8_t strength){
+ c000938:	b480      	push	{r7}
+ c00093a:	b083      	sub	sp, #12
+ c00093c:	af00      	add	r7, sp, #0
+ c00093e:	4603      	mov	r3, r0
+ c000940:	71fb      	strb	r3, [r7, #7]
+/home/horauer/workspace/io_simplistic/system/GPIO.h:445
+    PORT1->PDR0 &= ~0x00000007UL;
+ c000942:	4b08      	ldr	r3, [pc, #32]	; (c000964 <P1_0_set_driver_strength+0x2c>)
+ c000944:	4a07      	ldr	r2, [pc, #28]	; (c000964 <P1_0_set_driver_strength+0x2c>)
+ c000946:	6c12      	ldr	r2, [r2, #64]	; 0x40
+ c000948:	f022 0207 	bic.w	r2, r2, #7
+ c00094c:	641a      	str	r2, [r3, #64]	; 0x40
+/home/horauer/workspace/io_simplistic/system/GPIO.h:446
+    PORT1->PDR0 |= strength << 0;
+ c00094e:	4b05      	ldr	r3, [pc, #20]	; (c000964 <P1_0_set_driver_strength+0x2c>)
+ c000950:	4a04      	ldr	r2, [pc, #16]	; (c000964 <P1_0_set_driver_strength+0x2c>)
+ c000952:	6c11      	ldr	r1, [r2, #64]	; 0x40
+ c000954:	79fa      	ldrb	r2, [r7, #7]
+ c000956:	430a      	orrs	r2, r1
+ c000958:	641a      	str	r2, [r3, #64]	; 0x40
+/home/horauer/workspace/io_simplistic/system/GPIO.h:447
+}
+ c00095a:	370c      	adds	r7, #12
+ c00095c:	46bd      	mov	sp, r7
+ c00095e:	f85d 7b04 	ldr.w	r7, [sp], #4
+ c000962:	4770      	bx	lr
+ c000964:	48028100 	.word	0x48028100
+
+Disassembly of section .text.P1_0_reset:
+
+0c000968 <P1_0_reset>:
+P1_0_reset():
+/home/horauer/workspace/io_simplistic/system/GPIO.h:458
+
+__STATIC_INLINE void P1_0_set(void){
+    PORT1->OMR = 0x00000001UL;
+}
+
+__STATIC_INLINE void P1_0_reset(void){
+ c000968:	b480      	push	{r7}
+ c00096a:	af00      	add	r7, sp, #0
+/home/horauer/workspace/io_simplistic/system/GPIO.h:459
+    PORT1->OMR = 0x00010000UL;
+ c00096c:	4b03      	ldr	r3, [pc, #12]	; (c00097c <P1_0_reset+0x14>)
+ c00096e:	f44f 3280 	mov.w	r2, #65536	; 0x10000
+ c000972:	605a      	str	r2, [r3, #4]
+/home/horauer/workspace/io_simplistic/system/GPIO.h:460
+}
+ c000974:	46bd      	mov	sp, r7
+ c000976:	f85d 7b04 	ldr.w	r7, [sp], #4
+ c00097a:	4770      	bx	lr
+ c00097c:	48028100 	.word	0x48028100
+
+Disassembly of section .text.P1_0_toggle:
+
+0c000980 <P1_0_toggle>:
+P1_0_toggle():
+/home/horauer/workspace/io_simplistic/system/GPIO.h:462
+
+__STATIC_INLINE void P1_0_toggle(void){
+ c000980:	b480      	push	{r7}
+ c000982:	af00      	add	r7, sp, #0
+/home/horauer/workspace/io_simplistic/system/GPIO.h:463
+    PORT1->OMR = 0x00010001UL;
+ c000984:	4b03      	ldr	r3, [pc, #12]	; (c000994 <P1_0_toggle+0x14>)
+ c000986:	f04f 1201 	mov.w	r2, #65537	; 0x10001
+ c00098a:	605a      	str	r2, [r3, #4]
+/home/horauer/workspace/io_simplistic/system/GPIO.h:464
+}
+ c00098c:	46bd      	mov	sp, r7
+ c00098e:	f85d 7b04 	ldr.w	r7, [sp], #4
+ c000992:	4770      	bx	lr
+ c000994:	48028100 	.word	0x48028100
+
+Disassembly of section .text.P1_1_set_mode:
+
+0c000998 <P1_1_set_mode>:
+P1_1_set_mode():
+/home/horauer/workspace/io_simplistic/system/GPIO.h:470
+
+__STATIC_INLINE uint32_t P1_0_read(void){
+    return(PORT1->IN & 0x00000001UL);
+}
+
+__STATIC_INLINE void P1_1_set_mode(uint8_t mode){
+ c000998:	b480      	push	{r7}
+ c00099a:	b083      	sub	sp, #12
+ c00099c:	af00      	add	r7, sp, #0
+ c00099e:	4603      	mov	r3, r0
+ c0009a0:	71fb      	strb	r3, [r7, #7]
+/home/horauer/workspace/io_simplistic/system/GPIO.h:471
+    PORT1->IOCR0 &= ~0x0000f800UL;
+ c0009a2:	4b09      	ldr	r3, [pc, #36]	; (c0009c8 <P1_1_set_mode+0x30>)
+ c0009a4:	4a08      	ldr	r2, [pc, #32]	; (c0009c8 <P1_1_set_mode+0x30>)
+ c0009a6:	6912      	ldr	r2, [r2, #16]
+ c0009a8:	f422 4278 	bic.w	r2, r2, #63488	; 0xf800
+ c0009ac:	611a      	str	r2, [r3, #16]
+/home/horauer/workspace/io_simplistic/system/GPIO.h:472
+    PORT1->IOCR0 |= mode << 8;
+ c0009ae:	4b06      	ldr	r3, [pc, #24]	; (c0009c8 <P1_1_set_mode+0x30>)
+ c0009b0:	4a05      	ldr	r2, [pc, #20]	; (c0009c8 <P1_1_set_mode+0x30>)
+ c0009b2:	6911      	ldr	r1, [r2, #16]
+ c0009b4:	79fa      	ldrb	r2, [r7, #7]
+ c0009b6:	0212      	lsls	r2, r2, #8
+ c0009b8:	430a      	orrs	r2, r1
+ c0009ba:	611a      	str	r2, [r3, #16]
+/home/horauer/workspace/io_simplistic/system/GPIO.h:473
+}
+ c0009bc:	370c      	adds	r7, #12
+ c0009be:	46bd      	mov	sp, r7
+ c0009c0:	f85d 7b04 	ldr.w	r7, [sp], #4
+ c0009c4:	4770      	bx	lr
+ c0009c6:	bf00      	nop
+ c0009c8:	48028100 	.word	0x48028100
+
+Disassembly of section .text.P1_1_set_driver_strength:
+
+0c0009cc <P1_1_set_driver_strength>:
+P1_1_set_driver_strength():
+/home/horauer/workspace/io_simplistic/system/GPIO.h:475
+
+__STATIC_INLINE void P1_1_set_driver_strength(uint8_t strength){
+ c0009cc:	b480      	push	{r7}
+ c0009ce:	b083      	sub	sp, #12
+ c0009d0:	af00      	add	r7, sp, #0
+ c0009d2:	4603      	mov	r3, r0
+ c0009d4:	71fb      	strb	r3, [r7, #7]
+/home/horauer/workspace/io_simplistic/system/GPIO.h:476
+    PORT1->PDR0 &= ~0x00000070UL;
+ c0009d6:	4b09      	ldr	r3, [pc, #36]	; (c0009fc <P1_1_set_driver_strength+0x30>)
+ c0009d8:	4a08      	ldr	r2, [pc, #32]	; (c0009fc <P1_1_set_driver_strength+0x30>)
+ c0009da:	6c12      	ldr	r2, [r2, #64]	; 0x40
+ c0009dc:	f022 0270 	bic.w	r2, r2, #112	; 0x70
+ c0009e0:	641a      	str	r2, [r3, #64]	; 0x40
+/home/horauer/workspace/io_simplistic/system/GPIO.h:477
+    PORT1->PDR0 |= strength << 4;
+ c0009e2:	4b06      	ldr	r3, [pc, #24]	; (c0009fc <P1_1_set_driver_strength+0x30>)
+ c0009e4:	4a05      	ldr	r2, [pc, #20]	; (c0009fc <P1_1_set_driver_strength+0x30>)
+ c0009e6:	6c11      	ldr	r1, [r2, #64]	; 0x40
+ c0009e8:	79fa      	ldrb	r2, [r7, #7]
+ c0009ea:	0112      	lsls	r2, r2, #4
+ c0009ec:	430a      	orrs	r2, r1
+ c0009ee:	641a      	str	r2, [r3, #64]	; 0x40
+/home/horauer/workspace/io_simplistic/system/GPIO.h:478
+}
+ c0009f0:	370c      	adds	r7, #12
+ c0009f2:	46bd      	mov	sp, r7
+ c0009f4:	f85d 7b04 	ldr.w	r7, [sp], #4
+ c0009f8:	4770      	bx	lr
+ c0009fa:	bf00      	nop
+ c0009fc:	48028100 	.word	0x48028100
+
+Disassembly of section .text.P1_1_reset:
+
+0c000a00 <P1_1_reset>:
+P1_1_reset():
+/home/horauer/workspace/io_simplistic/system/GPIO.h:489
+
+__STATIC_INLINE void P1_1_set(void){
+    PORT1->OMR = 0x00000002UL;
+}
+
+__STATIC_INLINE void P1_1_reset(void){
+ c000a00:	b480      	push	{r7}
+ c000a02:	af00      	add	r7, sp, #0
+/home/horauer/workspace/io_simplistic/system/GPIO.h:490
+    PORT1->OMR = 0x00020000UL;
+ c000a04:	4b03      	ldr	r3, [pc, #12]	; (c000a14 <P1_1_reset+0x14>)
+ c000a06:	f44f 3200 	mov.w	r2, #131072	; 0x20000
+ c000a0a:	605a      	str	r2, [r3, #4]
+/home/horauer/workspace/io_simplistic/system/GPIO.h:491
+}
+ c000a0c:	46bd      	mov	sp, r7
+ c000a0e:	f85d 7b04 	ldr.w	r7, [sp], #4
+ c000a12:	4770      	bx	lr
+ c000a14:	48028100 	.word	0x48028100
+
+Disassembly of section .text.P1_1_toggle:
+
+0c000a18 <P1_1_toggle>:
+P1_1_toggle():
+/home/horauer/workspace/io_simplistic/system/GPIO.h:493
+
+__STATIC_INLINE void P1_1_toggle(void){
+ c000a18:	b480      	push	{r7}
+ c000a1a:	af00      	add	r7, sp, #0
+/home/horauer/workspace/io_simplistic/system/GPIO.h:494
+    PORT1->OMR = 0x00020002UL;
+ c000a1c:	4b03      	ldr	r3, [pc, #12]	; (c000a2c <P1_1_toggle+0x14>)
+ c000a1e:	f04f 1202 	mov.w	r2, #131074	; 0x20002
+ c000a22:	605a      	str	r2, [r3, #4]
+/home/horauer/workspace/io_simplistic/system/GPIO.h:495
+}
+ c000a24:	46bd      	mov	sp, r7
+ c000a26:	f85d 7b04 	ldr.w	r7, [sp], #4
+ c000a2a:	4770      	bx	lr
+ c000a2c:	48028100 	.word	0x48028100
+
+Disassembly of section .text.P1_14_set_mode:
+
+0c000a30 <P1_14_set_mode>:
+P1_14_set_mode():
+/home/horauer/workspace/io_simplistic/system/GPIO.h:873
+
+__STATIC_INLINE uint32_t P1_13_read(void){
+    return(PORT1->IN & 0x00002000UL);
+}
+
+__STATIC_INLINE void P1_14_set_mode(uint8_t mode){
+ c000a30:	b480      	push	{r7}
+ c000a32:	b083      	sub	sp, #12
+ c000a34:	af00      	add	r7, sp, #0
+ c000a36:	4603      	mov	r3, r0
+ c000a38:	71fb      	strb	r3, [r7, #7]
+/home/horauer/workspace/io_simplistic/system/GPIO.h:874
+    PORT1->IOCR12 &= ~0x00f80000UL;
+ c000a3a:	4b09      	ldr	r3, [pc, #36]	; (c000a60 <P1_14_set_mode+0x30>)
+ c000a3c:	4a08      	ldr	r2, [pc, #32]	; (c000a60 <P1_14_set_mode+0x30>)
+ c000a3e:	69d2      	ldr	r2, [r2, #28]
+ c000a40:	f422 0278 	bic.w	r2, r2, #16252928	; 0xf80000
+ c000a44:	61da      	str	r2, [r3, #28]
+/home/horauer/workspace/io_simplistic/system/GPIO.h:875
+    PORT1->IOCR12 |= mode << 16;
+ c000a46:	4b06      	ldr	r3, [pc, #24]	; (c000a60 <P1_14_set_mode+0x30>)
+ c000a48:	4a05      	ldr	r2, [pc, #20]	; (c000a60 <P1_14_set_mode+0x30>)
+ c000a4a:	69d1      	ldr	r1, [r2, #28]
+ c000a4c:	79fa      	ldrb	r2, [r7, #7]
+ c000a4e:	0412      	lsls	r2, r2, #16
+ c000a50:	430a      	orrs	r2, r1
+ c000a52:	61da      	str	r2, [r3, #28]
+/home/horauer/workspace/io_simplistic/system/GPIO.h:876
+}
+ c000a54:	370c      	adds	r7, #12
+ c000a56:	46bd      	mov	sp, r7
+ c000a58:	f85d 7b04 	ldr.w	r7, [sp], #4
+ c000a5c:	4770      	bx	lr
+ c000a5e:	bf00      	nop
+ c000a60:	48028100 	.word	0x48028100
+
+Disassembly of section .text.P1_14_read:
+
+0c000a64 <P1_14_read>:
+P1_14_read():
+/home/horauer/workspace/io_simplistic/system/GPIO.h:900
+
+__STATIC_INLINE void P1_14_toggle(void){
+    PORT1->OMR = 0x40004000UL;
+}
+
+__STATIC_INLINE uint32_t P1_14_read(void){
+ c000a64:	b480      	push	{r7}
+ c000a66:	af00      	add	r7, sp, #0
+/home/horauer/workspace/io_simplistic/system/GPIO.h:901
+    return(PORT1->IN & 0x00004000UL);
+ c000a68:	4b04      	ldr	r3, [pc, #16]	; (c000a7c <P1_14_read+0x18>)
+ c000a6a:	6a5b      	ldr	r3, [r3, #36]	; 0x24
+ c000a6c:	f403 4380 	and.w	r3, r3, #16384	; 0x4000
+/home/horauer/workspace/io_simplistic/system/GPIO.h:902
+}
+ c000a70:	4618      	mov	r0, r3
+ c000a72:	46bd      	mov	sp, r7
+ c000a74:	f85d 7b04 	ldr.w	r7, [sp], #4
+ c000a78:	4770      	bx	lr
+ c000a7a:	bf00      	nop
+ c000a7c:	48028100 	.word	0x48028100
+
+Disassembly of section .text.P1_15_set_mode:
+
+0c000a80 <P1_15_set_mode>:
+P1_15_set_mode():
+/home/horauer/workspace/io_simplistic/system/GPIO.h:904
+
+__STATIC_INLINE void P1_15_set_mode(uint8_t mode){
+ c000a80:	b480      	push	{r7}
+ c000a82:	b083      	sub	sp, #12
+ c000a84:	af00      	add	r7, sp, #0
+ c000a86:	4603      	mov	r3, r0
+ c000a88:	71fb      	strb	r3, [r7, #7]
+/home/horauer/workspace/io_simplistic/system/GPIO.h:905
+    PORT1->IOCR12 &= ~0xf8000000UL;
+ c000a8a:	4b09      	ldr	r3, [pc, #36]	; (c000ab0 <P1_15_set_mode+0x30>)
+ c000a8c:	4a08      	ldr	r2, [pc, #32]	; (c000ab0 <P1_15_set_mode+0x30>)
+ c000a8e:	69d2      	ldr	r2, [r2, #28]
+ c000a90:	f022 4278 	bic.w	r2, r2, #4160749568	; 0xf8000000
+ c000a94:	61da      	str	r2, [r3, #28]
+/home/horauer/workspace/io_simplistic/system/GPIO.h:906
+    PORT1->IOCR12 |= mode << 24;
+ c000a96:	4b06      	ldr	r3, [pc, #24]	; (c000ab0 <P1_15_set_mode+0x30>)
+ c000a98:	4a05      	ldr	r2, [pc, #20]	; (c000ab0 <P1_15_set_mode+0x30>)
+ c000a9a:	69d1      	ldr	r1, [r2, #28]
+ c000a9c:	79fa      	ldrb	r2, [r7, #7]
+ c000a9e:	0612      	lsls	r2, r2, #24
+ c000aa0:	430a      	orrs	r2, r1
+ c000aa2:	61da      	str	r2, [r3, #28]
+/home/horauer/workspace/io_simplistic/system/GPIO.h:907
+}
+ c000aa4:	370c      	adds	r7, #12
+ c000aa6:	46bd      	mov	sp, r7
+ c000aa8:	f85d 7b04 	ldr.w	r7, [sp], #4
+ c000aac:	4770      	bx	lr
+ c000aae:	bf00      	nop
+ c000ab0:	48028100 	.word	0x48028100
+
+Disassembly of section .text.P1_15_read:
+
+0c000ab4 <P1_15_read>:
+P1_15_read():
+/home/horauer/workspace/io_simplistic/system/GPIO.h:931
+
+__STATIC_INLINE void P1_15_toggle(void){
+    PORT1->OMR = 0x80008000UL;
+}
+
+__STATIC_INLINE uint32_t P1_15_read(void){
+ c000ab4:	b480      	push	{r7}
+ c000ab6:	af00      	add	r7, sp, #0
+/home/horauer/workspace/io_simplistic/system/GPIO.h:932
+    return(PORT1->IN & 0x00008000UL);
+ c000ab8:	4b04      	ldr	r3, [pc, #16]	; (c000acc <P1_15_read+0x18>)
+ c000aba:	6a5b      	ldr	r3, [r3, #36]	; 0x24
+ c000abc:	f403 4300 	and.w	r3, r3, #32768	; 0x8000
+/home/horauer/workspace/io_simplistic/system/GPIO.h:933
+}
+ c000ac0:	4618      	mov	r0, r3
+ c000ac2:	46bd      	mov	sp, r7
+ c000ac4:	f85d 7b04 	ldr.w	r7, [sp], #4
+ c000ac8:	4770      	bx	lr
+ c000aca:	bf00      	nop
+ c000acc:	48028100 	.word	0x48028100
+
+Disassembly of section .text.main:
+
+0c000ad0 <main>:
+main():
+/home/horauer/workspace/io_simplistic/Debug/../src/io_simplistic.c:35
+/**
+ * @brief Configure the pins associated to the buttons and LEDs, and configures
+ *        the system timer. Enters sleep mode in the background loop.
+ */
+int main(void)
+{
+ c000ad0:	b580      	push	{r7, lr}
+ c000ad2:	af00      	add	r7, sp, #0
+/home/horauer/workspace/io_simplistic/Debug/../src/io_simplistic.c:37
+  // init ports connected to LED1 and LED2
+  P1_0_set_mode(OUTPUT_PP_GP);
+ c000ad4:	2080      	movs	r0, #128	; 0x80
+ c000ad6:	f7ff ff17 	bl	c000908 <P1_0_set_mode>
+/home/horauer/workspace/io_simplistic/Debug/../src/io_simplistic.c:38
+  P1_0_set_driver_strength(STRONG);
+ c000ada:	2002      	movs	r0, #2
+ c000adc:	f7ff ff2c 	bl	c000938 <P1_0_set_driver_strength>
+/home/horauer/workspace/io_simplistic/Debug/../src/io_simplistic.c:39
+  P1_0_reset();
+ c000ae0:	f7ff ff42 	bl	c000968 <P1_0_reset>
+/home/horauer/workspace/io_simplistic/Debug/../src/io_simplistic.c:40
+  P1_1_set_mode(OUTPUT_PP_GP);
+ c000ae4:	2080      	movs	r0, #128	; 0x80
+ c000ae6:	f7ff ff57 	bl	c000998 <P1_1_set_mode>
+/home/horauer/workspace/io_simplistic/Debug/../src/io_simplistic.c:41
+  P1_1_set_driver_strength(STRONG);
+ c000aea:	2002      	movs	r0, #2
+ c000aec:	f7ff ff6e 	bl	c0009cc <P1_1_set_driver_strength>
+/home/horauer/workspace/io_simplistic/Debug/../src/io_simplistic.c:42
+  P1_1_reset();
+ c000af0:	f7ff ff86 	bl	c000a00 <P1_1_reset>
+/home/horauer/workspace/io_simplistic/Debug/../src/io_simplistic.c:44
+  // init ports connected to the buttons
+  P1_14_set_mode(INPUT);
+ c000af4:	2000      	movs	r0, #0
+ c000af6:	f7ff ff9b 	bl	c000a30 <P1_14_set_mode>
+/home/horauer/workspace/io_simplistic/Debug/../src/io_simplistic.c:45
+  P1_15_set_mode(INPUT);
+ c000afa:	2000      	movs	r0, #0
+ c000afc:	f7ff ffc0 	bl	c000a80 <P1_15_set_mode>
+/home/horauer/workspace/io_simplistic/Debug/../src/io_simplistic.c:47
+  // init globals
+  p1_14_pressed = 0;
+ c000b00:	4b08      	ldr	r3, [pc, #32]	; (c000b24 <main+0x54>)
+ c000b02:	2200      	movs	r2, #0
+ c000b04:	601a      	str	r2, [r3, #0]
+/home/horauer/workspace/io_simplistic/Debug/../src/io_simplistic.c:48
+  p1_15_pressed = 0;
+ c000b06:	4b08      	ldr	r3, [pc, #32]	; (c000b28 <main+0x58>)
+ c000b08:	2200      	movs	r2, #0
+ c000b0a:	601a      	str	r2, [r3, #0]
+/home/horauer/workspace/io_simplistic/Debug/../src/io_simplistic.c:50
+  // configure system timer for a 10ms period
+  SysTick_Config(SystemCoreClock/100);
+ c000b0c:	4b07      	ldr	r3, [pc, #28]	; (c000b2c <main+0x5c>)
+ c000b0e:	681a      	ldr	r2, [r3, #0]
+ c000b10:	4b07      	ldr	r3, [pc, #28]	; (c000b30 <main+0x60>)
+ c000b12:	fba3 1302 	umull	r1, r3, r3, r2
+ c000b16:	095b      	lsrs	r3, r3, #5
+ c000b18:	4618      	mov	r0, r3
+ c000b1a:	f7ff fed3 	bl	c0008c4 <SysTick_Config>
+__WFI():
+/home/horauer/workspace/io_simplistic/system/CMSIS/Include/core_cmInstr.h:338 (discriminator 1)
+    Wait For Interrupt is a hint instruction that suspends execution
+    until one of a number of events occurs.
+ */
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __WFI(void)
+{
+  __ASM volatile ("wfi");
+ c000b1e:	bf30      	wfi
+main():
+/home/horauer/workspace/io_simplistic/Debug/../src/io_simplistic.c:57 (discriminator 1)
+  // background loop
+  while(1)
+  {
+    // enter sleep mode
+    __WFI();
+  }
+ c000b20:	e7fd      	b.n	c000b1e <main+0x4e>
+ c000b22:	bf00      	nop
+ c000b24:	20000008 	.word	0x20000008
+ c000b28:	20000004 	.word	0x20000004
+ c000b2c:	20000000 	.word	0x20000000
+ c000b30:	51eb851f 	.word	0x51eb851f
+
+Disassembly of section .text.SysTick_Handler:
+
+0c000b34 <SysTick_Handler>:
+SysTick_Handler():
+/home/horauer/workspace/io_simplistic/Debug/../src/io_simplistic.c:67
+ *        routine with debounce functionality. The time needs to be selected in 
+ *        a way that ensures that bouncing effects are negligible. Toggles the
+ *        LED next to the button whenever a click is recognized.
+ */
+void SysTick_Handler(void)
+{
+ c000b34:	b580      	push	{r7, lr}
+ c000b36:	af00      	add	r7, sp, #0
+/home/horauer/workspace/io_simplistic/Debug/../src/io_simplistic.c:68
+  if ((P1_14_read() == 0) && (p1_14_pressed == 0))
+ c000b38:	f7ff ff94 	bl	c000a64 <P1_14_read>
+ c000b3c:	4603      	mov	r3, r0
+ c000b3e:	2b00      	cmp	r3, #0
+ c000b40:	d106      	bne.n	c000b50 <SysTick_Handler+0x1c>
+/home/horauer/workspace/io_simplistic/Debug/../src/io_simplistic.c:68 (discriminator 1)
+ c000b42:	4b25      	ldr	r3, [pc, #148]	; (c000bd8 <SysTick_Handler+0xa4>)
+ c000b44:	681b      	ldr	r3, [r3, #0]
+ c000b46:	2b00      	cmp	r3, #0
+ c000b48:	d102      	bne.n	c000b50 <SysTick_Handler+0x1c>
+/home/horauer/workspace/io_simplistic/Debug/../src/io_simplistic.c:69
+    p1_14_pressed = 1;
+ c000b4a:	4b23      	ldr	r3, [pc, #140]	; (c000bd8 <SysTick_Handler+0xa4>)
+ c000b4c:	2201      	movs	r2, #1
+ c000b4e:	601a      	str	r2, [r3, #0]
+/home/horauer/workspace/io_simplistic/Debug/../src/io_simplistic.c:70
+  if ((P1_14_read() == 0) && (p1_14_pressed == 1))
+ c000b50:	f7ff ff88 	bl	c000a64 <P1_14_read>
+ c000b54:	4603      	mov	r3, r0
+ c000b56:	2b00      	cmp	r3, #0
+ c000b58:	d106      	bne.n	c000b68 <SysTick_Handler+0x34>
+/home/horauer/workspace/io_simplistic/Debug/../src/io_simplistic.c:70 (discriminator 1)
+ c000b5a:	4b1f      	ldr	r3, [pc, #124]	; (c000bd8 <SysTick_Handler+0xa4>)
+ c000b5c:	681b      	ldr	r3, [r3, #0]
+ c000b5e:	2b01      	cmp	r3, #1
+ c000b60:	d102      	bne.n	c000b68 <SysTick_Handler+0x34>
+/home/horauer/workspace/io_simplistic/Debug/../src/io_simplistic.c:71
+    p1_14_pressed = 2;
+ c000b62:	4b1d      	ldr	r3, [pc, #116]	; (c000bd8 <SysTick_Handler+0xa4>)
+ c000b64:	2202      	movs	r2, #2
+ c000b66:	601a      	str	r2, [r3, #0]
+/home/horauer/workspace/io_simplistic/Debug/../src/io_simplistic.c:72
+  if ((P1_14_read() == 0x00004000UL) && (p1_14_pressed == 2)) 
+ c000b68:	f7ff ff7c 	bl	c000a64 <P1_14_read>
+ c000b6c:	4603      	mov	r3, r0
+ c000b6e:	f5b3 4f80 	cmp.w	r3, #16384	; 0x4000
+ c000b72:	d108      	bne.n	c000b86 <SysTick_Handler+0x52>
+/home/horauer/workspace/io_simplistic/Debug/../src/io_simplistic.c:72 (discriminator 1)
+ c000b74:	4b18      	ldr	r3, [pc, #96]	; (c000bd8 <SysTick_Handler+0xa4>)
+ c000b76:	681b      	ldr	r3, [r3, #0]
+ c000b78:	2b02      	cmp	r3, #2
+ c000b7a:	d104      	bne.n	c000b86 <SysTick_Handler+0x52>
+/home/horauer/workspace/io_simplistic/Debug/../src/io_simplistic.c:74
+  {
+    P1_1_toggle();
+ c000b7c:	f7ff ff4c 	bl	c000a18 <P1_1_toggle>
+/home/horauer/workspace/io_simplistic/Debug/../src/io_simplistic.c:75
+    p1_14_pressed = 0;
+ c000b80:	4b15      	ldr	r3, [pc, #84]	; (c000bd8 <SysTick_Handler+0xa4>)
+ c000b82:	2200      	movs	r2, #0
+ c000b84:	601a      	str	r2, [r3, #0]
+/home/horauer/workspace/io_simplistic/Debug/../src/io_simplistic.c:77
+  }
+  if ((P1_15_read() == 0) && (p1_15_pressed == 0))
+ c000b86:	f7ff ff95 	bl	c000ab4 <P1_15_read>
+ c000b8a:	4603      	mov	r3, r0
+ c000b8c:	2b00      	cmp	r3, #0
+ c000b8e:	d106      	bne.n	c000b9e <SysTick_Handler+0x6a>
+/home/horauer/workspace/io_simplistic/Debug/../src/io_simplistic.c:77 (discriminator 1)
+ c000b90:	4b12      	ldr	r3, [pc, #72]	; (c000bdc <SysTick_Handler+0xa8>)
+ c000b92:	681b      	ldr	r3, [r3, #0]
+ c000b94:	2b00      	cmp	r3, #0
+ c000b96:	d102      	bne.n	c000b9e <SysTick_Handler+0x6a>
+/home/horauer/workspace/io_simplistic/Debug/../src/io_simplistic.c:78
+    p1_15_pressed = 1;
+ c000b98:	4b10      	ldr	r3, [pc, #64]	; (c000bdc <SysTick_Handler+0xa8>)
+ c000b9a:	2201      	movs	r2, #1
+ c000b9c:	601a      	str	r2, [r3, #0]
+/home/horauer/workspace/io_simplistic/Debug/../src/io_simplistic.c:79
+  if ((P1_15_read() == 0) && (p1_15_pressed == 1))
+ c000b9e:	f7ff ff89 	bl	c000ab4 <P1_15_read>
+ c000ba2:	4603      	mov	r3, r0
+ c000ba4:	2b00      	cmp	r3, #0
+ c000ba6:	d106      	bne.n	c000bb6 <SysTick_Handler+0x82>
+/home/horauer/workspace/io_simplistic/Debug/../src/io_simplistic.c:79 (discriminator 1)
+ c000ba8:	4b0c      	ldr	r3, [pc, #48]	; (c000bdc <SysTick_Handler+0xa8>)
+ c000baa:	681b      	ldr	r3, [r3, #0]
+ c000bac:	2b01      	cmp	r3, #1
+ c000bae:	d102      	bne.n	c000bb6 <SysTick_Handler+0x82>
+/home/horauer/workspace/io_simplistic/Debug/../src/io_simplistic.c:80
+    p1_15_pressed = 2;
+ c000bb0:	4b0a      	ldr	r3, [pc, #40]	; (c000bdc <SysTick_Handler+0xa8>)
+ c000bb2:	2202      	movs	r2, #2
+ c000bb4:	601a      	str	r2, [r3, #0]
+/home/horauer/workspace/io_simplistic/Debug/../src/io_simplistic.c:81
+  if ((P1_15_read() == 0x00008000UL) && (p1_15_pressed == 2)) 
+ c000bb6:	f7ff ff7d 	bl	c000ab4 <P1_15_read>
+ c000bba:	4603      	mov	r3, r0
+ c000bbc:	f5b3 4f00 	cmp.w	r3, #32768	; 0x8000
+ c000bc0:	d108      	bne.n	c000bd4 <SysTick_Handler+0xa0>
+/home/horauer/workspace/io_simplistic/Debug/../src/io_simplistic.c:81 (discriminator 1)
+ c000bc2:	4b06      	ldr	r3, [pc, #24]	; (c000bdc <SysTick_Handler+0xa8>)
+ c000bc4:	681b      	ldr	r3, [r3, #0]
+ c000bc6:	2b02      	cmp	r3, #2
+ c000bc8:	d104      	bne.n	c000bd4 <SysTick_Handler+0xa0>
+/home/horauer/workspace/io_simplistic/Debug/../src/io_simplistic.c:83
+  {
+    P1_0_toggle();
+ c000bca:	f7ff fed9 	bl	c000980 <P1_0_toggle>
+/home/horauer/workspace/io_simplistic/Debug/../src/io_simplistic.c:84
+    p1_15_pressed = 0;
+ c000bce:	4b03      	ldr	r3, [pc, #12]	; (c000bdc <SysTick_Handler+0xa8>)
+ c000bd0:	2200      	movs	r2, #0
+ c000bd2:	601a      	str	r2, [r3, #0]
+/home/horauer/workspace/io_simplistic/Debug/../src/io_simplistic.c:86
+  }
+}
+ c000bd4:	bd80      	pop	{r7, pc}
+ c000bd6:	bf00      	nop
+ c000bd8:	20000008 	.word	0x20000008
+ c000bdc:	20000004 	.word	0x20000004

@@ -1,0 +1,22 @@
+system/CMSIS/Infineon/Lib/System_LibcStubs.o: \
+ system/CMSIS/Infineon/Lib/System_LibcStubs.c \
+ /home/horauer/bin/gcc-arm-none-eabi-4_8-2014q2/arm-none-eabi/include/sys/stat.h \
+ /home/horauer/bin/gcc-arm-none-eabi-4_8-2014q2/arm-none-eabi/include/_ansi.h \
+ /home/horauer/bin/gcc-arm-none-eabi-4_8-2014q2/arm-none-eabi/include/newlib.h \
+ /home/horauer/bin/gcc-arm-none-eabi-4_8-2014q2/arm-none-eabi/include/sys/config.h \
+ /home/horauer/bin/gcc-arm-none-eabi-4_8-2014q2/arm-none-eabi/include/machine/ieeefp.h \
+ /home/horauer/bin/gcc-arm-none-eabi-4_8-2014q2/arm-none-eabi/include/sys/features.h \
+ /home/horauer/bin/gcc-arm-none-eabi-4_8-2014q2/arm-none-eabi/include/time.h \
+ /home/horauer/bin/gcc-arm-none-eabi-4_8-2014q2/arm-none-eabi/include/_ansi.h \
+ /home/horauer/bin/gcc-arm-none-eabi-4_8-2014q2/arm-none-eabi/include/sys/reent.h \
+ /home/horauer/bin/gcc-arm-none-eabi-4_8-2014q2/lib/gcc/arm-none-eabi/4.8.4/include/stddef.h \
+ /home/horauer/bin/gcc-arm-none-eabi-4_8-2014q2/arm-none-eabi/include/sys/_types.h \
+ /home/horauer/bin/gcc-arm-none-eabi-4_8-2014q2/arm-none-eabi/include/machine/_types.h \
+ /home/horauer/bin/gcc-arm-none-eabi-4_8-2014q2/arm-none-eabi/include/machine/_default_types.h \
+ /home/horauer/bin/gcc-arm-none-eabi-4_8-2014q2/arm-none-eabi/include/sys/lock.h \
+ /home/horauer/bin/gcc-arm-none-eabi-4_8-2014q2/arm-none-eabi/include/machine/time.h \
+ /home/horauer/bin/gcc-arm-none-eabi-4_8-2014q2/arm-none-eabi/include/sys/types.h \
+ /home/horauer/bin/gcc-arm-none-eabi-4_8-2014q2/arm-none-eabi/include/machine/types.h \
+ /home/horauer/bin/gcc-arm-none-eabi-4_8-2014q2/arm-none-eabi/include/sys/times.h \
+ /home/horauer/bin/gcc-arm-none-eabi-4_8-2014q2/arm-none-eabi/include/unistd.h \
+ /home/horauer/bin/gcc-arm-none-eabi-4_8-2014q2/arm-none-eabi/include/sys/unistd.h

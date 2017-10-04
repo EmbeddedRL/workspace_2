@@ -1,0 +1,595 @@
+
+Allocating common symbols
+Common symbol       size              file
+
+p1_15_pressed       0x4               ./src/io_simplistic.o
+p1_14_pressed       0x4               ./src/io_simplistic.o
+
+Discarded input sections
+
+ .group         0x00000000        0x8 ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+ .group         0x00000000        0x8 ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+ .group         0x00000000        0x8 ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+ .group         0x00000000        0x8 ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+ .group         0x00000000        0x8 ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+ .group         0x00000000        0x8 ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+ .group         0x00000000        0x8 ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+ .group         0x00000000        0x8 ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+ .group         0x00000000        0x8 ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+ .group         0x00000000        0x8 ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+ .group         0x00000000        0x8 ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+ .group         0x00000000        0x8 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .group         0x00000000        0x8 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .group         0x00000000        0x8 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .group         0x00000000        0x8 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .group         0x00000000        0x8 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .group         0x00000000        0x8 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .group         0x00000000        0x8 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .group         0x00000000        0x8 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .group         0x00000000        0x8 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .group         0x00000000        0x8 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .group         0x00000000        0x8 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .group         0x00000000        0x8 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .group         0x00000000        0x8 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .group         0x00000000        0x8 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .group         0x00000000        0x8 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .group         0x00000000        0x8 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .group         0x00000000        0x8 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .group         0x00000000        0x8 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .group         0x00000000        0x8 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .group         0x00000000        0x8 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .group         0x00000000        0x8 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .group         0x00000000        0x8 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .debug_macro   0x00000000      0x856 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .debug_macro   0x00000000       0x16 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .group         0x00000000        0x8 ./system/XMC4500_startup.o
+ .group         0x00000000        0x8 ./system/XMC4500_startup.o
+ .group         0x00000000        0x8 ./system/XMC4500_startup.o
+ .group         0x00000000        0x8 ./system/XMC4500_startup.o
+ .debug_macro   0x00000000      0x856 ./system/XMC4500_startup.o
+ .debug_macro   0x00000000       0x16 ./system/XMC4500_startup.o
+ .debug_macro   0x00000000       0x44 ./system/XMC4500_startup.o
+ .debug_macro   0x00000000      0x209 ./system/XMC4500_startup.o
+ .group         0x00000000        0x8 ./src/io_simplistic.o
+ .group         0x00000000        0x8 ./src/io_simplistic.o
+ .group         0x00000000        0x8 ./src/io_simplistic.o
+ .group         0x00000000        0x8 ./src/io_simplistic.o
+ .group         0x00000000        0x8 ./src/io_simplistic.o
+ .group         0x00000000        0x8 ./src/io_simplistic.o
+ .group         0x00000000        0x8 ./src/io_simplistic.o
+ .group         0x00000000        0x8 ./src/io_simplistic.o
+ .group         0x00000000        0x8 ./src/io_simplistic.o
+ .group         0x00000000        0x8 ./src/io_simplistic.o
+ .group         0x00000000        0x8 ./src/io_simplistic.o
+ .group         0x00000000        0x8 ./src/io_simplistic.o
+ .group         0x00000000        0x8 ./src/io_simplistic.o
+ .debug_macro   0x00000000      0x856 ./src/io_simplistic.o
+ .debug_macro   0x00000000       0x16 ./src/io_simplistic.o
+ .debug_macro   0x00000000       0x44 ./src/io_simplistic.o
+ .debug_macro   0x00000000      0x209 ./src/io_simplistic.o
+ .debug_macro   0x00000000       0x2d ./src/io_simplistic.o
+ .debug_macro   0x00000000       0x3b ./src/io_simplistic.o
+ .debug_macro   0x00000000       0x2d ./src/io_simplistic.o
+ .debug_macro   0x00000000       0x42 ./src/io_simplistic.o
+ .debug_macro   0x00000000      0xd39 ./src/io_simplistic.o
+ .debug_macro   0x00000000    0x150f5 ./src/io_simplistic.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH_cached     0x08000000         0x00100000         xr
+FLASH_uncached   0x0c000000         0x00100000         xr
+PRAM             0x10000000         0x00010000         xrw
+DSRAM_system     0x20000000         0x00010000         xrw
+STACK            0x2000ffff         0x00000000         xrw
+DSRAM_comm       0x30000000         0x00008000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+LOAD ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+LOAD ./system/XMC4500_startup.o
+LOAD ./src/io_simplistic.o
+LOAD /home/horauer/workspace/XMC4500_IO_Simplistic/system/CMSIS/Lib/GCC/libarm_cortexM4_mathL_2.a
+LOAD /home/horauer/workspace/XMC4500_IO_Simplistic/system/CMSIS/Infineon/Lib/libxmclibcstubs.a
+LOAD /home/horauer/bin/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libm.a
+START GROUP
+LOAD /home/horauer/bin/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m/libgcc.a
+LOAD /home/horauer/bin/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libg.a
+LOAD /home/horauer/bin/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m/libc.a
+END GROUP
+                0x0c000000                . = ORIGIN (FLASH_uncached)
+
+.text           0x0c000000      0x200
+ *(.reset_table)
+ .reset_table   0x0c000000      0x200 ./system/XMC4500_startup.o
+                0x0c000000                myvectors
+ *(.text)
+ .text          0x0c000200        0x0 ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+ .text          0x0c000200        0x0 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .text          0x0c000200        0x0 ./system/XMC4500_startup.o
+ .text          0x0c000200        0x0 ./src/io_simplistic.o
+ *(.rodata)
+ *(.rodata.*)
+                0x0c000200                _end_text = .
+
+.glue_7         0x0c000200        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x0c000200        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x0c000200        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x0c000200        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.text.SystemInit
+                0x0c000200       0x60
+ .text.SystemInit
+                0x0c000200       0x60 ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+                0x0c000200                SystemInit
+
+.text.SystemCoreClockUpdate
+                0x0c000260       0xdc
+ .text.SystemCoreClockUpdate
+                0x0c000260       0xdc ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+                0x0c000260                SystemCoreClockUpdate
+
+.text.SystemClockSetup
+                0x0c00033c      0x2b8
+ .text.SystemClockSetup
+                0x0c00033c      0x2b8 ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+
+.iplt           0x0c0005f4        0x0
+ .iplt          0x00000000        0x0 ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+
+.text._open     0x0c0005f4       0x1c
+ .text._open    0x0c0005f4       0x1c ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+                0x0c0005f4                _open
+
+.text._lseek    0x0c000610       0x1c
+ .text._lseek   0x0c000610       0x1c ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+                0x0c000610                _lseek
+
+.text._read     0x0c00062c       0x1c
+ .text._read    0x0c00062c       0x1c ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+                0x0c00062c                _read
+
+.text._write    0x0c000648       0x1c
+ .text._write   0x0c000648       0x1c ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+                0x0c000648                _write
+
+.text._close    0x0c000664       0x14
+ .text._close   0x0c000664       0x14 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+                0x0c000664                _close
+
+.text._fstat    0x0c000678       0x28
+ .text._fstat   0x0c000678       0x28 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+                0x0c000678                _fstat
+
+.text._link     0x0c0006a0       0x28
+ .text._link    0x0c0006a0       0x28 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+                0x0c0006a0                _link
+
+.text._unlink   0x0c0006c8       0x18
+ .text._unlink  0x0c0006c8       0x18 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+                0x0c0006c8                _unlink
+
+.text._sbrk     0x0c0006e0       0x70
+ .text._sbrk    0x0c0006e0       0x70 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+                0x0c0006e0                _sbrk
+
+.text._times    0x0c000750       0x18
+ .text._times   0x0c000750       0x18 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+                0x0c000750                _times
+
+.text._wait     0x0c000768       0x18
+ .text._wait    0x0c000768       0x18 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+                0x0c000768                _wait
+
+.text._kill     0x0c000780       0x1c
+ .text._kill    0x0c000780       0x1c ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+                0x0c000780                _kill
+
+.text._fork     0x0c00079c       0x14
+ .text._fork    0x0c00079c       0x14 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+                0x0c00079c                _fork
+
+.text._getpid   0x0c0007b0       0x14
+ .text._getpid  0x0c0007b0       0x14 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+                0x0c0007b0                _getpid
+
+.text._exit     0x0c0007c4        0xc
+ .text._exit    0x0c0007c4        0xc ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+                0x0c0007c4                _exit
+
+.text._init     0x0c0007d0        0xc
+ .text._init    0x0c0007d0        0xc ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+                0x0c0007d0                _init
+
+.text._isatty   0x0c0007dc       0x18
+ .text._isatty  0x0c0007dc       0x18 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+                0x0c0007dc                _isatty
+
+.text.Reset_Handler
+                0x0c0007f4       0x64
+ .text.Reset_Handler
+                0x0c0007f4       0x64 ./system/XMC4500_startup.o
+                0x0c0007f4                Reset_Handler
+
+.text.Dummy_Handler
+                0x0c000858        0x8
+ .text.Dummy_Handler
+                0x0c000858        0x8 ./system/XMC4500_startup.o
+                0x0c000858                VADC0_C0_3_IRQHandler
+                0x0c000858                DSD0_7_IRQHandler
+                0x0c000858                DebugMon_Handler
+                0x0c000858                VADC0_C0_0_IRQHandler
+                0x0c000858                CAN0_4_IRQHandler
+                0x0c000858                VADC0_G2_0_IRQHandler
+                0x0c000858                USIC0_5_IRQHandler
+                0x0c000858                POSIF0_0_IRQHandler
+                0x0c000858                POSIF1_0_IRQHandler
+                0x0c000858                HardFault_Handler
+                0x0c000858                VADC0_G1_1_IRQHandler
+                0x0c000858                PendSV_Handler
+                0x0c000858                NMI_Handler
+                0x0c000858                USIC1_3_IRQHandler
+                0x0c000858                CCU40_2_IRQHandler
+                0x0c000858                SCU_0_IRQHandler
+                0x0c000858                ERU0_0_IRQHandler
+                0x0c000858                CCU41_0_IRQHandler
+                0x0c000858                USIC1_5_IRQHandler
+                0x0c000858                DSD0_4_IRQHandler
+                0x0c000858                CCU80_1_IRQHandler
+                0x0c000858                CCU81_0_IRQHandler
+                0x0c000858                UsageFault_Handler
+                0x0c000858                USIC0_0_IRQHandler
+                0x0c000858                POSIF1_1_IRQHandler
+                0x0c000858                ERU0_2_IRQHandler
+                0x0c000858                CCU81_1_IRQHandler
+                0x0c000858                ERU1_1_IRQHandler
+                0x0c000858                VADC0_G2_3_IRQHandler
+                0x0c000858                VADC0_G2_2_IRQHandler
+                0x0c000858                CCU42_3_IRQHandler
+                0x0c000858                ERU0_3_IRQHandler
+                0x0c000858                DSD0_5_IRQHandler
+                0x0c000858                CAN0_6_IRQHandler
+                0x0c000858                CCU43_0_IRQHandler
+                0x0c000858                VADC0_G0_1_IRQHandler
+                0x0c000858                Dummy_Handler
+                0x0c000858                CCU81_2_IRQHandler
+                0x0c000858                USIC2_4_IRQHandler
+                0x0c000858                CCU81_3_IRQHandler
+                0x0c000858                CCU42_1_IRQHandler
+                0x0c000858                USIC1_1_IRQHandler
+                0x0c000858                USIC2_5_IRQHandler
+                0x0c000858                CCU40_0_IRQHandler
+                0x0c000858                CAN0_0_IRQHandler
+                0x0c000858                ERU1_0_IRQHandler
+                0x0c000858                CCU42_2_IRQHandler
+                0x0c000858                USIC1_4_IRQHandler
+                0x0c000858                ERU1_3_IRQHandler
+                0x0c000858                USIC1_0_IRQHandler
+                0x0c000858                POSIF0_1_IRQHandler
+                0x0c000858                VADC0_G0_0_IRQHandler
+                0x0c000858                DSD0_2_IRQHandler
+                0x0c000858                CCU80_3_IRQHandler
+                0x0c000858                CCU41_3_IRQHandler
+                0x0c000858                CCU80_2_IRQHandler
+                0x0c000858                VADC0_G1_3_IRQHandler
+                0x0c000858                VADC0_G0_3_IRQHandler
+                0x0c000858                GPDMA0_0_IRQHandler
+                0x0c000858                PMU0_0_IRQHandler
+                0x0c000858                CAN0_7_IRQHandler
+                0x0c000858                DSD0_1_IRQHandler
+                0x0c000858                CCU41_2_IRQHandler
+                0x0c000858                VADC0_C0_1_IRQHandler
+                0x0c000858                CCU43_2_IRQHandler
+                0x0c000858                USIC2_2_IRQHandler
+                0x0c000858                MemManage_Handler
+                0x0c000858                VADC0_G3_1_IRQHandler
+                0x0c000858                DAC0_0_IRQHandler
+                0x0c000858                SVC_Handler
+                0x0c000858                VADC0_G3_3_IRQHandler
+                0x0c000858                ERU1_2_IRQHandler
+                0x0c000858                CCU41_1_IRQHandler
+                0x0c000858                DSD0_6_IRQHandler
+                0x0c000858                CCU43_1_IRQHandler
+                0x0c000858                VADC0_G1_2_IRQHandler
+                0x0c000858                USIC2_3_IRQHandler
+                0x0c000858                CAN0_2_IRQHandler
+                0x0c000858                USIC2_0_IRQHandler
+                0x0c000858                VADC0_G0_2_IRQHandler
+                0x0c000858                VADC0_G2_1_IRQHandler
+                0x0c000858                CAN0_3_IRQHandler
+                0x0c000858                ETH0_0_IRQHandler
+                0x0c000858                USIC0_3_IRQHandler
+                0x0c000858                DSD0_0_IRQHandler
+                0x0c000858                VADC0_C0_2_IRQHandler
+                0x0c000858                CCU42_0_IRQHandler
+                0x0c000858                FCE0_0_IRQHandler
+                0x0c000858                VADC0_G1_0_IRQHandler
+                0x0c000858                USB0_0_IRQHandler
+                0x0c000858                CAN0_5_IRQHandler
+                0x0c000858                CCU80_0_IRQHandler
+                0x0c000858                CCU40_1_IRQHandler
+                0x0c000858                USIC2_1_IRQHandler
+                0x0c000858                USIC0_1_IRQHandler
+                0x0c000858                VADC0_G3_2_IRQHandler
+                0x0c000858                CCU40_3_IRQHandler
+                0x0c000858                BusFault_Handler
+                0x0c000858                LEDTS0_0_IRQHandler
+                0x0c000858                USIC0_4_IRQHandler
+                0x0c000858                CCU43_3_IRQHandler
+                0x0c000858                ERU0_1_IRQHandler
+                0x0c000858                VADC0_G3_0_IRQHandler
+                0x0c000858                USIC1_2_IRQHandler
+                0x0c000858                DSD0_3_IRQHandler
+                0x0c000858                SDMMC0_0_IRQHandler
+                0x0c000858                CAN0_1_IRQHandler
+                0x0c000858                USIC0_2_IRQHandler
+                0x0c000858                DAC0_1_IRQHandler
+                0x0c000858                GPDMA1_0_IRQHandler
+
+.text.AllowPLLInitByStartup
+                0x0c000860       0x10
+ .text.AllowPLLInitByStartup
+                0x0c000860       0x10 ./system/XMC4500_startup.o
+                0x0c000860                AllowPLLInitByStartup
+
+.text.NVIC_SetPriority
+                0x0c000870       0x54
+ .text.NVIC_SetPriority
+                0x0c000870       0x54 ./src/io_simplistic.o
+
+.text.SysTick_Config
+                0x0c0008c4       0x44
+ .text.SysTick_Config
+                0x0c0008c4       0x44 ./src/io_simplistic.o
+
+.text.P1_0_set_mode
+                0x0c000908       0x30
+ .text.P1_0_set_mode
+                0x0c000908       0x30 ./src/io_simplistic.o
+
+.text.P1_0_set_driver_strength
+                0x0c000938       0x30
+ .text.P1_0_set_driver_strength
+                0x0c000938       0x30 ./src/io_simplistic.o
+
+.text.P1_0_reset
+                0x0c000968       0x18
+ .text.P1_0_reset
+                0x0c000968       0x18 ./src/io_simplistic.o
+
+.text.P1_0_toggle
+                0x0c000980       0x18
+ .text.P1_0_toggle
+                0x0c000980       0x18 ./src/io_simplistic.o
+
+.text.P1_1_set_mode
+                0x0c000998       0x34
+ .text.P1_1_set_mode
+                0x0c000998       0x34 ./src/io_simplistic.o
+
+.text.P1_1_set_driver_strength
+                0x0c0009cc       0x34
+ .text.P1_1_set_driver_strength
+                0x0c0009cc       0x34 ./src/io_simplistic.o
+
+.text.P1_1_reset
+                0x0c000a00       0x18
+ .text.P1_1_reset
+                0x0c000a00       0x18 ./src/io_simplistic.o
+
+.text.P1_1_toggle
+                0x0c000a18       0x18
+ .text.P1_1_toggle
+                0x0c000a18       0x18 ./src/io_simplistic.o
+
+.text.P1_14_set_mode
+                0x0c000a30       0x34
+ .text.P1_14_set_mode
+                0x0c000a30       0x34 ./src/io_simplistic.o
+
+.text.P1_14_read
+                0x0c000a64       0x1c
+ .text.P1_14_read
+                0x0c000a64       0x1c ./src/io_simplistic.o
+
+.text.P1_15_set_mode
+                0x0c000a80       0x34
+ .text.P1_15_set_mode
+                0x0c000a80       0x34 ./src/io_simplistic.o
+
+.text.P1_15_read
+                0x0c000ab4       0x1c
+ .text.P1_15_read
+                0x0c000ab4       0x1c ./src/io_simplistic.o
+
+.text.main      0x0c000ad0       0x64
+ .text.main     0x0c000ad0       0x64 ./src/io_simplistic.o
+                0x0c000ad0                main
+
+.text.SysTick_Handler
+                0x0c000b34       0xac
+ .text.SysTick_Handler
+                0x0c000b34       0xac ./src/io_simplistic.o
+                0x0c000b34                SysTick_Handler
+
+.rel.dyn        0x0c000be0        0x0
+ .rel.iplt      0x00000000        0x0 ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+
+.data           0x20000000        0x0 load address 0x0c000be0
+                0x20000000                _start_data = .
+ *(.data)
+ .data          0x20000000        0x0 ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+ .data          0x20000000        0x0 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .data          0x20000000        0x0 ./system/XMC4500_startup.o
+ .data          0x20000000        0x0 ./src/io_simplistic.o
+                0x20000000                _end_data = .
+
+.data.SystemCoreClock
+                0x20000000        0x4 load address 0x0c000be0
+ .data.SystemCoreClock
+                0x20000000        0x4 ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+                0x20000000                SystemCoreClock
+
+.igot.plt       0x20000004        0x0 load address 0x0c000be4
+ .igot.plt      0x00000000        0x0 ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+
+.bss            0x20000004        0x8 load address 0x0c000be4
+                0x20000004                _start_bss = .
+ *(.bss)
+ .bss           0x20000004        0x0 ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+ .bss           0x20000004        0x0 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .bss           0x20000004        0x0 ./system/XMC4500_startup.o
+ .bss           0x20000004        0x0 ./src/io_simplistic.o
+                0x20000004                _end_bss = .
+ COMMON         0x20000004        0x8 ./src/io_simplistic.o
+                0x20000004                p1_15_pressed
+                0x20000008                p1_14_pressed
+
+.bss.__dso_handle
+                0x2000000c        0x4 load address 0x0c000be4
+ .bss.__dso_handle
+                0x2000000c        0x4 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+                0x2000000c                __dso_handle
+
+.bss.heap.4627  0x20000010        0x4 load address 0x0c000be4
+ .bss.heap.4627
+                0x20000010        0x4 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+
+.bss.HeapBound.4626
+                0x20000014        0x4 load address 0x0c000be4
+ .bss.HeapBound.4626
+                0x20000014        0x4 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+
+.stack          0x2000ffff        0x0
+                0x2000ffff                _stack_top = .
+                0x20010000                __Xmc4500_heap_start = ALIGN (0x8)
+                0x20010000                __Xmc4500_heap_end = (ORIGIN (DSRAM_system) + 0x10000)
+                0x20010000                Heap_Bank1_Start = __Xmc4500_heap_start
+                0x00000000                Heap_Bank1_Size = (__Xmc4500_heap_end - __Xmc4500_heap_start)
+                0x20010000                Heap_Bank1_End = ABSOLUTE (__Xmc4500_heap_end)
+
+DSRAM2_Heap     0x30000000        0x0
+                0x30000000                Heap_Bank2_Start = .
+                0x00008000                Heap_Bank2_Size = (0x8000 - (Heap_Bank2_Start - ORIGIN (DSRAM_comm)))
+
+PRAM_Heap       0x10000000        0x0
+                0x10000000                Heap_Bank3_Start = .
+                0x00010000                Heap_Bank3_Size = (0x10000 - (Heap_Bank3_Start - ORIGIN (PRAM)))
+OUTPUT(XMC4500_IO_Simplistic.elf elf32-littlearm)
+
+.debug_info     0x00000000     0x1b45
+ .debug_info    0x00000000      0x9fa ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+ .debug_info    0x000009fa      0x5da ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .debug_info    0x00000fd4      0x15a ./system/XMC4500_startup.o
+ .debug_info    0x0000112e      0xa17 ./src/io_simplistic.o
+
+.debug_abbrev   0x00000000      0x560
+ .debug_abbrev  0x00000000      0x170 ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+ .debug_abbrev  0x00000170      0x147 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .debug_abbrev  0x000002b7       0xd9 ./system/XMC4500_startup.o
+ .debug_abbrev  0x00000390      0x1d0 ./src/io_simplistic.o
+
+.debug_aranges  0x00000000      0x198
+ .debug_aranges
+                0x00000000       0x30 ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+ .debug_aranges
+                0x00000030       0xa0 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .debug_aranges
+                0x000000d0       0x30 ./system/XMC4500_startup.o
+ .debug_aranges
+                0x00000100       0x98 ./src/io_simplistic.o
+
+.debug_ranges   0x00000000      0x158
+ .debug_ranges  0x00000000       0x20 ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+ .debug_ranges  0x00000020       0x90 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .debug_ranges  0x000000b0       0x20 ./system/XMC4500_startup.o
+ .debug_ranges  0x000000d0       0x88 ./src/io_simplistic.o
+
+.debug_macro    0x00000000    0x17b0c
+ .debug_macro   0x00000000      0x15c ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+ .debug_macro   0x0000015c      0x856 ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+ .debug_macro   0x000009b2       0x16 ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+ .debug_macro   0x000009c8       0x44 ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+ .debug_macro   0x00000a0c      0x209 ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+ .debug_macro   0x00000c15       0x6a ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+ .debug_macro   0x00000c7f       0x2d ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+ .debug_macro   0x00000cac       0x3b ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+ .debug_macro   0x00000ce7       0x2d ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+ .debug_macro   0x00000d14       0x42 ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+ .debug_macro   0x00000d56      0xd39 ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+ .debug_macro   0x00001a8f    0x150f5 ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+ .debug_macro   0x00016b84      0x11b ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .debug_macro   0x00016c9f       0x58 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .debug_macro   0x00016cf7       0x35 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .debug_macro   0x00016d2c       0xa3 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .debug_macro   0x00016dcf      0x16d ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .debug_macro   0x00016f3c       0x4a ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .debug_macro   0x00016f86       0x52 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .debug_macro   0x00016fd8       0x16 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .debug_macro   0x00016fee       0x43 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .debug_macro   0x00017031      0x180 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .debug_macro   0x000171b1       0x10 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .debug_macro   0x000171c1       0x35 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .debug_macro   0x000171f6       0x10 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .debug_macro   0x00017206       0x10 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .debug_macro   0x00017216       0x10 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .debug_macro   0x00017226       0x22 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .debug_macro   0x00017248       0xbd ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .debug_macro   0x00017305       0x35 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .debug_macro   0x0001733a      0x120 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .debug_macro   0x0001745a       0x16 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .debug_macro   0x00017470      0x48e ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .debug_macro   0x000178fe       0x42 ./system/XMC4500_startup.o
+ .debug_macro   0x00017940       0xa0 ./src/io_simplistic.o
+ .debug_macro   0x000179e0       0x22 ./src/io_simplistic.o
+ .debug_macro   0x00017a02       0x70 ./src/io_simplistic.o
+ .debug_macro   0x00017a72       0x9a ./src/io_simplistic.o
+
+.debug_line     0x00000000      0xde0
+ .debug_line    0x00000000      0x3bd ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+ .debug_line    0x000003bd      0x3a3 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .debug_line    0x00000760      0x1ef ./system/XMC4500_startup.o
+ .debug_line    0x0000094f      0x491 ./src/io_simplistic.o
+
+.debug_str      0x00000000    0x93985
+ .debug_str     0x00000000    0x9012e ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+                              0x9046b (size before relaxing)
+ .debug_str     0x0009012e     0x2e3b ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+                               0x54ee (size before relaxing)
+ .debug_str     0x00092f69       0x97 ./system/XMC4500_startup.o
+                               0x2f8d (size before relaxing)
+ .debug_str     0x00093000      0x985 ./src/io_simplistic.o
+                              0x9080e (size before relaxing)
+
+.comment        0x00000000       0x70
+ .comment       0x00000000       0x70 ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .comment       0x00000000       0x71 ./system/XMC4500_startup.o
+ .comment       0x00000000       0x71 ./src/io_simplistic.o
+
+.ARM.attributes
+                0x00000000       0x33
+ .ARM.attributes
+                0x00000000       0x33 ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+ .ARM.attributes
+                0x00000033       0x33 ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .ARM.attributes
+                0x00000066       0x33 ./system/XMC4500_startup.o
+ .ARM.attributes
+                0x00000099       0x33 ./src/io_simplistic.o
+
+.debug_frame    0x00000000      0x464
+ .debug_frame   0x00000000       0x6c ./system/CMSIS/Infineon/XMC4500_series/Source/System_XMC4500.o
+ .debug_frame   0x0000006c      0x1dc ./system/CMSIS/Infineon/Lib/System_LibcStubs.o
+ .debug_frame   0x00000248       0x60 ./system/XMC4500_startup.o
+ .debug_frame   0x000002a8      0x1bc ./src/io_simplistic.o

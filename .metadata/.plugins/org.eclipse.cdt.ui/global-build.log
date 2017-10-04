@@ -1,2 +1,9 @@
-12:19:42 **** Incremental Build of configuration Debug for project xmc4500_IO_Task ****
+11:49:48 **** Incremental Build of configuration Debug for project xmc4500_template ****
 make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-eabi-gcc -mcpu=cortex-m4 -mthumb -O2  -g -DXMC4500_F100x1024 -D__FPU_PRESENT -DARM_MATH_CM4 -I"D:\Software\eclipse\workspace_2\xmc4500_template\system" -I"D:\Software\eclipse\workspace_2\xmc4500_template\inc" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Der Befehl "arm-eabi-gcc" ist entweder falsch geschrieben oder
+konnte nicht gefunden werden.
+src/subdir.mk:18: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1

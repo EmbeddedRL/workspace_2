@@ -43,7 +43,7 @@ all: XMC4500_USIC_UART.elf secondary-outputs
 XMC4500_USIC_UART.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cross ARM C Linker'
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "D:\Studium_FH\2017_WS\Embedded_Systems_Software_Design\XMC4500_USIC_UART\Linker\xmc4500-1024.ld" -nostartfiles -L"D:\Studium_FH\2017_WS\Embedded_Systems_Software_Design\XMC4500_USIC_UART\Linker" -Wl,-Map,"XMC4500_USIC_UART.map" -o "XMC4500_USIC_UART.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "D:\Software\eclipse\workspace_2\XMC4500_USIC_UART\Linker\xmc4500-1024.ld" -nostartfiles -L"D:\Software\eclipse\workspace_2\XMC4500_USIC_UART\Linker" -Wl,-Map,"XMC4500_USIC_UART.map" -o "XMC4500_USIC_UART.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
